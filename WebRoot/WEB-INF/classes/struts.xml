@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- struts2委托spring管理 -->
+    <constant name="struts.objectFactory" value="spring"/>
+    <!-- 链接是否可以使用斜线/ -->
+    <constant name="struts.enable.SlashesInActionNames" value="true"/>
+    <!-- 是否使用动态方法调用.类名!(感叹号)方法名形式    -->
+    <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+    <!-- 是否为开发模式  -->
+    <constant name="struts.devMode" value="false"/>
+    <constant name="struts.action.extension" value="action"></constant>
+    <constant name="struts.multipart.saveDir" value="/tmp"></constant>
+    <!-- 设置上传文件大小 -->
+    <constant name="struts.multipart.maxSize" value="10000000"/>
+
+    <include file="example.xml"/>
+    <include file="admin.xml"/>
+    <!-- Add packages here -->
+
+    <package name="default" namespace="/" extends="struts-default">
+        <default-action-ref name="notfound"></default-action-ref>
+        <action name="notfound" class="com.opensymphony.xwork2.ActionSupport">
+            <result name="success" type="dispatcher">/WEB-INF/template/error/index.jsp</result>
+        </action>
+    </package>
+
+</struts>

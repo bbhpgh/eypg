@@ -1,0 +1,67 @@
+LAMP（Linux、Apache、MySQL、PHP）是一套用于提供php架构网站服务的完美组合的简称，LAMP组合有着极高的性能，完善的支持体系，灵活的配置方法，但是Lamp架构其本身也越来越臃肿，在Lamp安装完成后最好进行针对硬件的优化，以获得更好的性能。
+LAMP可以在很多平台（Linux、Windows、Unix、MacOS X）中搭建，本文以CentOS系统安装LAMP套件进行举例。
+搭建需要有一台安装有CentOS的服务器，并且最好是纯净安装：即仅仅安装最少的系统组件。
+
+首先安装Apache2
+一条命令即可：
+1
+yum install httpd
+回车后，yum会提示当前已经安装的httpd版本，并自动更新；如果没有安装，则会自动安装。注意在yum安装过程中输入“Y”以确认安装。
+Apache安装完成后，手动启动Apache2：
+1
+/etc/init.d/httpd start
+这时，直接在浏览器中输入服务器的IP地址，即可看到Apache2的默认页面。此时的Apache仅仅能提供HTTP服务，不能执行php、也不能连接MySQL数据库。
+
+随后安装MySQL
+由于CentOS中已经包含了MySQL，因此也仅需要yum即可：
+1
+yum install mysql mysql-server
+完成后，使用如下命令启动MySQL服务：
+1
+/etc/init.d/mysqld start
+
+下面继续安装php5
+使用如下命令安装php5：
+1
+yum install php
+安装完php5后，必须要重新启动Apache以使php生效：
+1
+/etc/init.d/httpd restart
+这时，Apache已经可以解析执行php脚本了。由于Apache的默认网站根目录位于：/var/www/html/，因此在此目录建立一个info.php用来测试Apache+PHP的正确安装与否：
+1
+echo "<?php phpinfo(); ?>" > /var/www/html/info.php
+然后在浏览器中访问IP/info.php，出现了PHPINFO的输出信息：
+ 
+
+表示PHP与Apache已经正确安装。
+接下来安装MySQL数据库与其它模块（如GD图形库、mbstring库等）：
+1
+yum install php-mysql php-gd php-imap php-ldap php-odbc php-pear php-xml php-xmlrpc
+安装过程可能比较慢，请耐心等待。完成后再次重启Apache：
+1
+/etc/init.d/httpd restart
+重新在浏览器中打开IP/info.php页面，应该能找到MySQL、GD、mbstring等模块：
+ 
+ 
+ 
+
+
+
+此时LAMP运行环境已经初步安装完毕。最后还需要将LAMP组件设置为自动启动：
+1
+chkconfig --levels 2345 httpd on
+2
+chkconfig --levels 2345 mysqld on
+
+最后介绍相关配置与环境
+Apache主配置文件：/etc/httpd/conf/httpd.conf
+Apache主配置目录，可以将不同类型的配置分门别类放入这个目录中：/etc/httpd/conf.d/
+Apache网站根目录：/var/www/html/
+Apache日志文件目录：/var/log/httpd
+MySQL的my.cnf配置文件：/etc/my.cnf
+MySQL数据库文件位置：/usr/lib/mysql
+
+安装完成后，一是留意防火墙，打开相关端口，而是必须要对MySQL、Apache进行安全设置，避免安全漏洞。 
+
+
+http://winsdomwen.blog.163.com/blog/static/1836360902012315111655537/

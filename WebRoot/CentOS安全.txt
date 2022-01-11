@@ -1,0 +1,186 @@
+1、注释掉不需要的用户和用户组
+
+    vi /etc/passwd
+
+    #adm
+    #lp
+    #sync
+    #shutdown
+    #halt
+    #news
+    #uucp
+    #operator
+    #games
+    #gopher
+    #ftp
+
+    vi /etc/group
+
+    #adm
+    #lp
+    #news
+    #uucp
+    #games
+    #dip
+
+2、给下面的文件加上不可更改属性，从而防止非授权用户获得权限
+
+    #chattr +i /etc/passwd
+    #chattr +i /etc/shadow
+    #chattr +i /etc/group
+    #chattr +i /etc/gshadow
+
+权限修改之后，就无法添加删除用户了。要取消之前的修改，
+
+    #lsattr /etc/passwd /etc/shadow /etc/group /etc/gshadow
+
+lsattr 只是显示文件的属性
+
+    #chattr -i /etc/passwd
+    #chattr -i /etc/shadow
+    #chattr -i /etc/group
+    #chattr -i /etc/gshadow
+
+再次查看
+lsattr /etc/passwd /etc/shadow /etc/group /etc/gshadow
+————- /etc/passwd
+————- /etc/shadow
+————- /etc/group
+————- /etc/gshadow
+修改完之后，再执行
+
+    chattr +i /etc/passwd
+    chattr +i/etc/shadow
+    chattr +i /etc/group
+    chattr +i/etc/gshadow
+
+禁止Ctrl+Alt+Delete重新启动机器命令
+3、修改/etc/inittab文件，将”ca::ctrlaltdel:/sbin/shutdown-t3-rnow”一行注释掉。
+
+然后重新设置/etc/rc.d/init.d/目录下所有文件的许可权限，运行如下命令：
+
+    # chmod -R 700 /etc/rc.d/init.d/*
+
+这样便仅有root可以读、写或执行上述所有脚本文件。
+4、限制su命令
+
+当不想任何人能够su作为root，可以编辑/etc/pam.d/su文件，增加如下两行：
+
+    auth sufficient /lib/security/pam_rootok.sodebug
+    auth required /lib/security/pam_wheel.sogroup=isd
+
+这时，仅isd组的用户可以su作为root。此后，如果希望用户admin能够su作为root，可以运行如下命令：
+
+    #usermod -G 10 admin
+
+5、防止攻击
+
+1）阻止ping, 抵御SYN:
+如果没人能ping通系统，安全性自然增加了，为此，我们可以在/etc/rc.d/rc.local文件中增加如下一行
+
+CentOS系统防止别人ping的方法：
+iptables -A INPUT -p icmp -j DROP
+/etc/rc.d/init.d/iptables save
+/etc/init.d/iptables restart 
+
+    echo 1>/proc/sys/net/ipv4/icmp_echo_ignore_all
+
+SYN攻击是利用TCP/IP协议3次握手的原理，发送大量的建立连接的网络包，但不实际建立连接，最终导致被攻击服务器的网络队列被占满，无法被正常用户访问。
+Linux内核提供了若干SYN相关的配置，用命令：
+
+    sysctl -a | grep syn
+
+看到：
+net.ipv4.tcp_max_syn_backlog = 1024
+net.ipv4.tcp_syncookies = 0
+net.ipv4.tcp_synack_retries = 5
+net.ipv4.tcp_syn_retries = 5
+tcp_max_syn_backlog是SYN队列的长度，tcp_syncookies是一个开关，是否打开SYN Cookie功能，该功能可以防止部分SYN攻击。tcp_synack_retries和tcp_syn_retries定义SYN的重试次数。
+加大SYN队列长度可以容纳更多等待连接的网络连接数，打开SYN Cookie功能可以阻止部分SYN攻击，降低重试次数也有一定效果。
+调整上述设置的方法是：
+vi /etc/rc.d/rc.local ,将下面的命令法添加进去
+
+    sysctl -w net.ipv4.tcp_max_syn_backlog=2048 #增加SYN队列长度到2048
+    sysctl -w net.ipv4.tcp_syncookies=1 #打开SYN COOKIE功能
+    sysctl -w net.ipv4.tcp_synack_retries=3 #降低重试次数
+    sysctl -w net.ipv4.tcp_syn_retries=3
+
+2）防止IP欺骗
+编辑host.conf文件并增加如下几行来防止IP欺骗攻击。
+
+    order hosts,bind #名称解释顺序
+    multi on #允许主机拥有多个IP地址
+    nospoof on #禁止IP地址欺骗
+
+3）防止DoS攻击
+对系统所有的用户设置资源限制可以防止DoS类型攻击，如最大进程数和内存使用数量等。
+例如，可以在/etc/security/limits.conf中添加如下几行：
+
+    * hard core 0
+    * hard rss 5000
+    * hard nproc 20
+
+然后必须编辑/etc/pam.d/login文件检查下面一行是否存在。
+session required /lib/security/pam_limits.so
+4）修改sshd_config文件
+首先修改配置文件 vi /etc/ssh/sshd_config
+a 修改SSH端口
+找到#Port 22一段，这里是标识默认使用22端口，修改为如下：
+
+    Port 22
+    Port 50000
+
+然后保存退出
+执行/etc/init.d/sshd restart
+这样SSH端口将同时工作与22和50000上。
+现在编辑防火墙配置：vi /etc/sysconfig/iptables
+启用50000端口。
+执行/etc/init.d/iptables restart
+现在请使用ssh工具连接50000端口，来测试是否成功。
+如果连接成功了，则再次编辑sshd_config的设置，将里边的Port22删除，即可。
+b 只使用SSH v2
+将#Protocol 2,1改为 Protocol 2
+c 限制用户的SSH访问
+假设我们只要root，vivek和jerry用户能通过SSH使用系统，向sshd_config配置文件中添加：
+
+    AllowUsers root vivek jerry
+
+d 配置空闲超时退出时间间隔
+用户可以通过ssh登录到服务器，你可以设置一个空闲超时时间间隔避免出现孤儿ssh会话，打开sshd_config配置文件，确保有如下的配置项：
+
+    ClientAliveInterval 300
+    ClientAliveCountMax 0
+
+上面的例子设置的空闲超时时间间隔是300秒，即5分钟，过了这个时间后，空闲用户将被自动踢出出去（可以理解为退出登录/注销）。
+e 禁用.rhosts文件
+不要读取用户的~/.rhosts和~/.shosts文件，使用下面的设置更新sshd_config配置文件：
+IgnoreRhosts yes
+SSH可以模拟过时的rsh命令的行为，rsh被公认为是不安全的远程访问协议，因此必须得禁用掉。
+6、限制不同文件的权限
+
+    [root@localhost ~]# chmod 700 /usr/bin/
+    [root@localhost ~]# chmod 750 /usr/bin/*++*
+    [root@localhost ~]# chmod 750 /usr/bin/c++*
+    [root@localhost ~]# chmod 750 /usr/bin/ld
+    [root@localhost ~]# chmod 750 /usr/bin/as
+    [root@localhost ~]# locate sqlaccess
+    /opt/lampp/bin/mysqlaccess
+    [root@localhost ~]# chmod 755 /opt/lampp/bin/mysqlaccess
+    [root@localhost ~]# chattr +a .bash_history
+    [root@localhost ~]# chattr +i .bash_history
+    [root@localhost ~]# chmod 700 /bin/ping
+    [root@localhost ~]# chmod 700 /usr/bin/finger
+    [root@localhost ~]# chmod 700 /usr/bin/who
+    [root@localhost ~]# chmod 700 /usr/bin/w
+    [root@localhost ~]# chmod 700 /usr/bin/locate
+    [root@localhost ~]# chmod 700 /usr/bin/whereis
+    [root@localhost ~]# chmod 700 /usr/bin/vim
+    [root@localhost ~]# chmod 700 /usr/bin/make
+    [root@localhost ~]# chmod 700 /bin/netstat
+    [root@localhost ~]# chmod 700 /usr/bin/tail
+    [root@localhost ~]# chmod 700 /usr/bin/less
+    [root@localhost ~]# chmod 700 /usr/bin/head
+    [root@localhost ~]# chmod 700 /bin/cat
+    [root@localhost ~]# chmod 700 /bin/uname
+    [root@localhost ~]# chmod 500 /bin/ps
+    [root@localhost ~]# chmod 500 /usr/sbin/lsof

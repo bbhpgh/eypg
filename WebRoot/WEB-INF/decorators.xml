@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/root">
+    <decorator name="template_footer" page="template_footer.jsp">
+        <pattern>/WEB-INF/template/*</pattern>
+    </decorator>
+    <decorator name="index_template" page="index_template.jsp">
+        <pattern>/WEB-INF/template/*</pattern>
+    </decorator>
+    <decorator name="admin_main" page="admin_main.jsp">
+        <pattern>/WEB-INF/admin/*</pattern>
+    </decorator>
+    <decorator name="admin_template" page="admin_template.jsp">
+        <pattern>/WEB-INF/admin/*</pattern>
+    </decorator>
+</decorators>

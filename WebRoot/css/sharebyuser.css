@@ -1,0 +1,325 @@
+@charset "utf-8";
+
+.member_center .member_right .myshare_list {
+    width: 784px;
+    padding: 10px;
+    float: left
+}
+
+.member_center .member_right .myshare_list .goods_lotter {
+    width: 784px;
+    border-top: 1px solid #ebebeb;
+    float: left;
+    margin: 10px 0 0
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.title {
+    height: 31px;
+    margin: 1px 0 0 0;
+    background: #fcfcfc;
+    border-bottom: 1px solid #ebebeb
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.title li {
+    float: left;
+    line-height: 31px;
+    padding: 0 0 0 10px;
+    color: #7d7d7d
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul li.name {
+    width: 464px
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul li.share_status, .member_center .member_right .myshare_list .goods_lotter ul li.do {
+    width: 200px
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul li.do {
+    width: 90px
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list {
+    height: 72px;
+    padding: 17px 0;
+    border-bottom: 1px solid #ebebeb;
+    overflow: hidden
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list li {
+    float: left;
+    padding: 0 0 0 10px;
+    color: #7d7d7d
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list a.pic {
+    width: 70px;
+    height: 70px;
+    display: block;
+    border: 1px solid #f1f1f1;
+    float: left;
+    margin: 0 10px 0 0
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list a.pic:hover {
+    width: 70px;
+    height: 70px;
+    display: block;
+    border: 1px solid #F60
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list a.pic img {
+    width: 70px;
+    height: 70px;
+    display: block;
+    overflow: hidden
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list a.name, .member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list li.do a {
+    color: #0e71c2
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list a.name:hover, .member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list li.do a:hover {
+    color: #f60
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list li div p {
+    width: 360px;
+    float: left
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list li div p.title {
+    width: 360px;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+    display: block;
+    float: left
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list li span.wrong, .member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list li span.ok {
+    color: #f60
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list li span.nothing {
+    color: #7d7d7d
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list li a.go_share {
+    width: 82px;
+    height: 27px;
+    display: block;
+    line-height: 27px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    background: url(/Images/arrow_button.png) 0 -320px
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list li a.go_share:hover {
+    text-decoration: none;
+    color: #fff
+}
+
+.member_center .member_right .myshare {
+    width: 784px;
+    padding: 10px;
+    float: left
+}
+
+.text_myshare ul.upload {
+    width: 708px;
+    padding-left: 20px
+}
+
+.text_myshare ul.upload li {
+    width: 718px;
+    padding-bottom: 10px;
+    float: left
+}
+
+.text_myshare ul.upload li span.titl {
+    width: 70px;
+    height: 27px;
+    display: block;
+    line-height: 27px;
+    float: left
+}
+
+.text_myshare ul.upload li span.content {
+    width: 70px;
+    height: 27px;
+    display: block;
+    float: left
+}
+
+.text_myshare ul.upload li span.pic {
+    width: 70px;
+    height: 27px;
+    display: block;
+    margin-top: 2px;
+    float: left
+}
+
+.text_myshare ul.upload li input.title {
+    width: 300px;
+    height: 27px;
+    line-height: 27px;
+    text-indent: 10px;
+    color: #ccc;
+    border: 0;
+    border: 1px solid #e6e7e8
+}
+
+.text_myshare ul.upload li input.title_click {
+    width: 300px;
+    height: 27px;
+    line-height: 27px;
+    text-indent: 10px;
+    color: #333;
+    border: 0;
+    font-size: 12px;
+    font-family: "微软雅黑" "宋体";
+    border: 1px solid #e6e7e8
+}
+
+.text_myshare ul.upload li div.uppic {
+    width: 648px;
+    float: right
+}
+
+.text_myshare ul.upload li div.uppic div.pic, .text_myshare ul.upload li div.uppic p {
+    width: 648px;
+    float: left
+}
+
+.text_myshare ul.upload li div.uppic div.pic {
+    padding: 0;
+    *padding: 0 0 10px 0;
+    _padding: 0 0 10px 0
+}
+
+.text_myshare ul.upload li div.uppic div.pic div {
+    width: 102px;
+    height: 102px;
+    margin: 0 15px 10px 0;
+    float: left;
+    position: relative
+}
+
+.text_myshare ul.upload li div.uppic div.pic div a {
+    width: 11px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    background: url(/Images/arrow_button.png) -173px -176px;
+    text-indent: -9999px;
+    z-index: 1;
+    top: 5px;
+    right: 5px;
+    overflow: hidden
+}
+
+.text_myshare ul.upload li div.uppic div.pic div.delpic a {
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    background: url(/Images/arrow_button.png) -173px -176px;
+    text-indent: -9999px;
+    z-index: 1;
+    top: 5px;
+    right: 5px;
+    overflow: hidden
+}
+
+.text_myshare ul.upload li div.uppic p {
+    height: 27px;
+    line-height: 27px;
+    color: #666
+}
+
+.text_myshare ul.upload li div.uppic p a.click {
+    width: 85px;
+    height: 27px;
+    line-height: 27px;
+    color: #666;
+    display: block;
+    text-indent: 25px;
+    background: url(/Images/arrow_button.png) 0 -350px;
+    float: left;
+    margin: 0 10px 0 0;
+    cursor: pointer
+}
+
+.text_myshare ul.upload li div.uppic p a.click:hover {
+    text-decoration: none;
+    color: #666
+}
+
+.text_myshare ul.upload li .textarea {
+    overflow-x: hidden;
+    overflow: scroll;
+    height: 170px;
+    width: 620px;
+    border: 0;
+    border: 1px solid #e6e7e8;
+    color: #ccc;
+    padding: 10px
+}
+
+.text_myshare ul.upload li .textarea_click {
+    overflow-x: hidden;
+    overflow: scroll;
+    height: 170px;
+    width: 620px;
+    border: 0;
+    border: 1px solid #e6e7e8;
+    color: #333;
+    padding: 10px
+}
+
+.text_myshare ul.upload li img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    border: 1px solid #f2f2f2;
+    float: left
+}
+
+.text_myshare ul.upload li.value {
+    width: 600px;
+    padding: 20px 0 0 70px
+}
+
+.text_myshare ul.upload li.value input {
+    width: 82px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    background: url(/Images/arrow_button.png) 0 -320px
+}
+
+.myshare ul.text {
+    width: 744px;
+    padding: 20px 20px;
+    color: #666;
+    border-top: 1px solid #ccc;
+    float: left;
+    margin-top: 20px
+}
+
+.myshare ul.text li {
+    width: 744px;
+    line-height: 25px;
+    float: left
+}
+
+.myshare ul.text li.tit {
+    font-weight: bold
+}

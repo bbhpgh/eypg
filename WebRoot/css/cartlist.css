@@ -1,0 +1,1870 @@
+@charset "utf-8";
+
+.logo {
+    width: 980px;
+    height: 75px;
+    padding-top: 20px
+}
+
+.logo .float span.tel {
+    float: right;
+    display: block;
+    padding-right: 20px;
+    padding-top: 60px
+}
+
+.logo .float span.logo_pic {
+    width: 275px;
+    height: 75px;
+    background: url(/Images/new-logo.png) no-repeat;
+    float: left;
+    display: block
+}
+
+.logo .float a.a {
+    padding-left: 275px;
+    float: left
+}
+
+.logo .float span.text {
+    width: 284px;
+    float: left;
+    font-weight: bold;
+    display: block;
+    margin: 41px 0 0 40px
+}
+
+.logo .float span.help {
+    width: 284px;
+    text-align: right;
+    float: right;
+    display: block;
+    margin: 41px 0 0 40px
+}
+
+.logo .float span.help a {
+    padding: 0 10px;
+    color: #666
+}
+
+.logo .float span.help a.help_center {
+    border-left: 1px solid #ccc;
+    padding: 0 0 0 10px
+}
+
+.shop_process {
+    width: 980px;
+    height: auto;
+    color: #666
+}
+
+.shop_process ul.process {
+    width: 980px;
+    height: 30px;
+    float: left;
+    margin: 20px 0;
+    background: #d8e8f9
+}
+
+.shop_process ul.process li {
+    text-align: center;
+    float: left;
+    line-height: 30px;
+    font-size: 12px
+}
+
+.shop_process ul.process li.first_step {
+    color: #fff;
+    width: 165px;
+    background: #ff7c21;
+    font-weight: bold
+}
+
+.shop_process ul.process li.secend_step {
+    width: 165px
+}
+
+.shop_process ul.process li.third_step {
+    width: 202px
+}
+
+.shop_process ul.process li.fourth_step {
+    width: 165px
+}
+
+.shop_process ul.process li.fifth_step {
+    width: 165px
+}
+
+.shop_process ul.process li.arrow_1, .shop_process ul.process li.arrow_2 {
+    width: 27px;
+    height: 30px;
+    overflow: hidden;
+    display: block
+}
+
+.shop_process ul.process li.arrow_1 {
+    background: url(/Images/shop_process.png) no-repeat -205px 0
+}
+
+.shop_process ul.process li.arrow_2 {
+    background: url(/Images/shop_process.png) no-repeat -240px 0
+}
+
+.shop_process .submitted {
+    width: 978px;
+    clear: both;
+    position: relative;
+    clear: both
+}
+
+.shop_process .submitted ul.order {
+    width: 978px;
+    min-height: 150px;
+    border: 1px solid #dfdfdf;
+    clear: both;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll: no
+}
+
+.shop_process .submitted ul.order li {
+    width: 978px;
+    float: left
+}
+
+.shop_process .submitted ul.order li.ts {
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #dfdfdf;
+    background: #f8f8f8
+}
+
+.shop_process .submitted ul.order li.ts p {
+    width: 400px;
+    float: left
+}
+
+.shop_process .submitted ul.order li.ts p.right {
+    width: 400px;
+    float: right;
+    text-align: right;
+    padding: 0 20px 0 0
+}
+
+.shop_process .submitted ul.order li.ts p.left {
+    color: #333
+}
+
+.shop_process .submitted ul.order li.ts p.left input {
+    margin: 15px 10px 0 20px;
+    *margin: 10px 10px 0 20px;
+    _margin: 10px 10px 0 20px;
+    float: left
+}
+
+.shop_process .submitted ul.order li.ts p.left a.all {
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin: 10px 0 0 0;
+    display: block;
+    float: left
+}
+
+.shop_process .submitted ul.order li.ts p.left a.del {
+    width: 110px;
+    height: 29px;
+    display: block;
+    line-height: 29px;
+    text-align: center;
+    margin: 5px 0 0 10px;
+    background: url(/Images/shop_process.png) -120px -320px;
+    float: left
+}
+
+.shop_process .submitted ul.order li.ts p.right span {
+    font-size: 18px;
+    font-family: arial;
+    color: #f60;
+    padding: 0 5px
+}
+
+.shop_process .submitted ul.order li.ts span.ts {
+    width: 18px;
+    height: 19px;
+    display: block;
+    background: url(/Images/shop_process.png) no-repeat -205px -300px;
+    float: left;
+    margin: 10px 10px 0 25px
+}
+
+.shop_process .submitted ul.order li.end {
+    width: 978px;
+    min-height: 90px;
+    border-top: 1px solid #e6e7e8;
+    margin: 0 0 12px 0;
+    overflow: hidden
+}
+
+.shop_process .submitted ul.order li.end p.ts {
+    width: 978px;
+    height: 25px;
+    line-height: 25px;
+    color: #f60;
+    text-align: center;
+    background-color: #fffdf0;
+    border-bottom: 1px solid #f9f9f9
+}
+
+.shop_process .submitted ul.order li.top {
+    width: 978px;
+    height: 35px;
+    line-height: 35px;
+    color: #555;
+    background: none repeat scroll 0 0 #F8F8F8;
+    border-bottom: 1px solid #dfdfdf
+}
+
+.shop_process .submitted ul.order li span {
+    text-align: center
+}
+
+.shop_process .submitted ul.order li span.color {
+    color: #f00
+}
+
+.shop_process .submitted ul.order li span img {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 15px auto 0 auto;
+    border: 1px solid #ccc
+}
+
+.shop_process .submitted ul.order li.top span.goods, .shop_process .submitted ul.order li.top span.xj {
+    width: 120px;
+    display: block;
+    float: left
+}
+
+.shop_process .submitted ul.order li.end span.goods {
+    width: 120px;
+    height: 72px;
+    display: block;
+    float: left
+}
+
+.shop_process .submitted ul.order li.end span.goods input {
+    margin: 40px 0 0 20px;
+    float: left
+}
+
+.shop_process .submitted ul.order li.end span.goods a {
+    width: 72px;
+    height: 72px;
+    display: block;
+    float: right
+}
+
+.shop_process .submitted ul.order li.top span.name {
+    width: 228px;
+    height: 30px;
+    display: block;
+    float: left;
+    padding: 0 20px
+}
+
+.shop_process .submitted ul.order li.end span.name {
+    width: 248px;
+    display: block;
+    float: left;
+    overflow: hidden;
+    font-size: 14px;
+    margin: 12px auto 0 auto;
+    padding: 0 10px
+}
+
+.shop_process .submitted ul.order li.end span.name p {
+    font-size: 12px;
+    text-align: left;
+    line-height: 25px
+}
+
+.shop_process .submitted ul.order li span.do {
+    padding-left: 20px
+}
+
+.shop_process .submitted ul.order li.end span.do a {
+    width: 26px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    display: block;
+    float: left;
+    margin: 37px 0 0 10px
+}
+
+.shop_process .submitted ul.order li.end span.name a {
+    width: 248px;
+    height: 50px;
+    line-height: 25px;
+    display: block;
+    float: left;
+    overflow: hidden;
+    font-size: 12px;
+    text-align: left;
+    color: #0082f0
+}
+
+.shop_process .submitted ul.order li span.num, span.money, span.all, span.moneys, span.xj {
+    width: 130px;
+    display: block;
+    float: left
+}
+
+.shop_process .submitted ul.order li.end span.num {
+    padding: 5px 0 0 0;
+    position: relative
+}
+
+.shop_process .submitted ul.order li.end span.num, li.end span.money, li.end span.all, li.end span.moneys, li.end span.xj {
+    line-height: 90px
+}
+
+.shop_process .submitted ul.order li.end span.jian {
+    width: 12px;
+    height: 12px;
+    display: block;
+    float: left;
+    background: url(/Images/shop_process.png) -170px -35px;
+    cursor: pointer;
+    margin: 38px 0 0 18px;
+    *margin: 38px 0 0 18px;
+    _margin: 38px 0 0 12px
+}
+
+.shop_process .submitted ul.order li.end span.jia {
+    width: 16px;
+    height: 12px;
+    display: block;
+    float: left;
+    background: url(/Images/shop_process.png) -185px -35px;
+    cursor: pointer;
+    margin: 38px 0 0 10px
+}
+
+.shop_process .submitted ul.order li.end span input.text {
+    background: none repeat scroll 0 0 #fdf2d9;
+    border: 1px solid #d8d8d8;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50px;
+    height: 25px;
+    line-height: 15px;
+    text-align: center;
+    display: block;
+    float: left;
+    margin: 30px 0 0 10px
+}
+
+.shop_process .submitted h3 {
+    width: 205px;
+    height: 30px;
+    display: block;
+    line-height: 35px;
+    text-align: left;
+    text-indent: 10px;
+    color: #d2b080;
+    background: url(/Images/shop_process.png) no-repeat 0 0;
+    top: 106px;
+    right: 63px;
+    position: absolute
+}
+
+.shop_process .submitted h3 span {
+    width: 180px;
+    display: block;
+    float: left
+}
+
+.shop_process .submitted h3 a {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    float: left;
+    text-indent: -9999px;
+    margin: 8px 0 0 0
+}
+
+.shop_process h5 {
+    width: 980px;
+    height: 34px;
+    padding: 15px 0
+}
+
+.shop_process h5 a {
+    width: 144px;
+    height: 44px;
+    display: block;
+    background: url(/Images/shop_process.png) no-repeat 0 -461px;
+    float: left;
+    margin-left: 660px;
+    *margin-left: 660px;
+    _margin-left: 330px
+}
+
+.shop_process h5 input {
+    width: 165px;
+    height: 44px;
+    display: block;
+    border: 0;
+    color: #d2b080;
+    background: url(/Images/shop_process.png) no-repeat 0 -35px;
+    cursor: pointer;
+    float: right
+}
+
+.shop_process div.ts {
+    width: 978px;
+    height: 40px;
+    line-height: 40px;
+    border-left: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    float: right;
+    text-indent: 20px
+}
+
+.shop_process .cartno p {
+    line-height: 30px;
+    width: 340px;
+    margin: 15px auto
+}
+
+.shop_process .cartno p span {
+    width: 15px;
+    height: 15px;
+    display: block;
+    float: left;
+    background: url(/Images/shop_process.png) no-repeat -160px -300px;
+    margin: 8px 5px 0 0
+}
+
+.shop_process .cartno p a {
+    display: inline;
+    padding: 0 5px;
+    color: #0082dd
+}
+
+.fast {
+    width: 976px;
+    height: 200px;
+    border: 1px solid #ebebeb;
+    padding: 1px 1px 0 1px;
+    clear: both;
+    margin: 20px auto 10px auto
+}
+
+.fast h3 {
+    width: 966px;
+    height: 30px;
+    background: #f4f4f4;
+    padding-left: 10px
+}
+
+.fast h3 span {
+    width: 300px;
+    height: 17px;
+    display: block;
+    margin-top: 5px;
+    float: left;
+    color: #fe8500;
+    font-size: 14px;
+    font-weight: bold
+}
+
+.fast .fast_list {
+    width: 307px;
+    height: 152px;
+    padding: 10px 8px;
+    float: left
+}
+
+.fast .fast_list h4 {
+    width: 142px;
+    height: 152px;
+    float: left
+}
+
+.fast .fast_list h4 a {
+    width: 140px;
+    height: 150px;
+    display: block;
+    border: 1px solid #ebebeb
+}
+
+.fast .fast_list h4 a:hover {
+    border: 1px solid #fb8c00
+}
+
+.fast .fast_list h4 a img {
+    width: 140px;
+    height: 150px;
+    display: block
+}
+
+.fast .fast_list ul {
+    width: 140px;
+    height: 140px;
+    padding: 6px 5px;
+    float: left;
+    overflow: hidden
+}
+
+.fast .fast_list ul li {
+    width: 140px;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    margin-bottom: 5px
+}
+
+.fast .fast_list li.title {
+    width: 140px;
+    height: 30px;
+    line-height: 15px;
+    overflow: hidden;
+    font-size: 12px
+}
+
+.fast .fast_list li.title a, .fast .fast_list li.title a:hover {
+    color: #0082f0
+}
+
+.fast .fast_list li.buy {
+    width: 105px;
+    height: 28px
+}
+
+.fast .fast_list li.buy a {
+    width: 105px;
+    height: 28px;
+    line-height: 28px;
+    text-indent: 30px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    background: url(/Images/shop_process.png) no-repeat -150px -465px
+}
+
+.shop_login_regsiter {
+    width: 605px;
+    height: 345px;
+    border: 5px solid #d6f1ff;
+    margin: auto
+}
+
+.shop_login_regsiter .clo {
+    width: 600px;
+    padding: 5px 5px 5px 0
+}
+
+.shop_login_regsiter .clo a {
+    width: 18px;
+    height: 18px;
+    display: block;
+    float: right;
+    background: url(/Images/shop_process.png) no-repeat -220px -105px
+}
+
+.shop_regsiter {
+    width: 300px;
+    height: 315px;
+    float: left;
+    padding: 15px 15px 0 15px;
+    background: url(/Images/shop_line.png) no-repeat right
+}
+
+.shop_regsiter h3 {
+    width: 242px;
+    height: 20px;
+    background: url(/Images/shop_process.png) no-repeat 0 -80px;
+    float: left;
+    margin-bottom: 10px
+}
+
+.menu {
+    width: 290px;
+    height: 32px;
+    padding-left: 10px;
+    border-bottom: 1px solid #d9d9d9;
+    clear: both
+}
+
+.menu li {
+    text-align: center;
+    float: left;
+    width: 89px;
+    height: 32px;
+    display: block;
+    line-height: 32px;
+    cursor: pointer
+}
+
+.menu li.tabFocus {
+    width: 89px;
+    height: 32px;
+    font-weight: bold;
+    z-index: 100;
+    background: 0;
+    background: url(/Images/shop_process.png) no-repeat 0 -160px;
+    position: relative;
+    top: 1px
+}
+
+.shop_login {
+    width: 260px;
+    height: 315px;
+    float: left;
+    padding: 15px 0 0 15px
+}
+
+.shop_login h3 {
+    width: 217px;
+    height: 18px;
+    background: url(/Images/shop_process.png) no-repeat 0 -105px;
+    float: left;
+    margin-bottom: 30px
+}
+
+.shop_login ul {
+    width: 254px;
+    float: left;
+    padding-left: 6px
+}
+
+.shop_login ul li {
+    width: 254px;
+    float: left;
+    padding: 6px 0
+}
+
+.shop_login ul li.login {
+    width: 214px;
+    float: left;
+    padding: 6px 0 6px 30px
+}
+
+.shop_login ul li input.zh, .shop_login ul li input.password {
+    width: 193px;
+    height: 32px;
+    line-height: 32px;
+    text-indent: 10px;
+    border: 0;
+    background: url(/Images/shop_process.png) no-repeat 0 -125px
+}
+
+.shop_login ul li input.dl {
+    width: 73px;
+    height: 32px;
+    border: 0;
+    background: url(/Images/shop_process.png) no-repeat -175px -160px
+}
+
+.shop_login ul li p {
+    float: left;
+    line-height: 42px
+}
+
+.shop_login ul li a {
+    padding-left: 10px
+}
+
+.shop_payment {
+    width: 980px;
+    height: auto;
+    color: #666;
+    position: relative
+}
+
+.shop_payment ul.payment {
+    width: 980px;
+    height: 31px;
+    background: #d8e8f9;
+    float: left;
+    margin: 20px 0
+}
+
+.shop_payment ul.payment li {
+    text-align: center;
+    float: left;
+    line-height: 31px;
+    font-size: 12px
+}
+
+.shop_payment ul.payment li.first_step {
+    width: 165px
+}
+
+.shop_payment ul.payment li.secend_step {
+    width: 165px;
+    color: #fff;
+    background: #ff7c21;
+    font-weight: bold
+}
+
+.shop_payment ul.payment li.fourth_step {
+    width: 165px
+}
+
+.shop_payment ul.payment li.fifth_step {
+    width: 165px
+}
+
+.shop_payment ul.payment li.third_step {
+    width: 202px
+}
+
+.shop_payment ul.payment li.arrow_1, .shop_payment ul.payment li.arrow_2, .shop_payment ul.payment li.arrow_3 {
+    width: 27px;
+    height: 31px
+}
+
+.shop_payment ul.payment li.arrow_1 {
+    background: url(/Images/shop_process.png) no-repeat -205px -35px
+}
+
+.shop_payment ul.payment li.arrow_2 {
+    background: url(/Images/shop_process.png) -240px -0px
+}
+
+.shop_payment ul.payment li.arrow_3 {
+    background: url(/Images/shop_process.png) -240px -35px
+}
+
+.shop_payment .payment_list {
+    width: 978px;
+    min-height: 40px;
+    overflow: auto;
+    border: 1px solid #dfdfdf;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    clear: both
+}
+
+.shop_payment .payment_list ul.order_list {
+    width: 978px;
+    position: relative;
+    clear: both
+}
+
+.shop_payment a:hover {
+    color: #c33
+}
+
+.shop_payment .payment_list ul.order_list li {
+    float: left
+}
+
+.shop_payment .payment_list ul.order_list li.end {
+    width: 978px;
+    height: 40px;
+    border-top: 1px solid #eee;
+    overflow: hidden
+}
+
+.shop_payment .payment_list ul.order_list li.bottom {
+    width: 928px;
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #eee;
+    text-align: right;
+    padding-right: 50px;
+}
+
+.shop_payment .payment_list ul.order_list li.top {
+    width: 978px;
+    height: 35px;
+    line-height: 35px;
+    color: #555;
+    background: url(/Images/process_top.png);
+    border-bottom: 1px solid #dfdfdf
+}
+
+.shop_payment .payment_list ul.order_list li span {
+    text-align: center
+}
+
+.shop_payment .payment_list ul.order_list li.end span.num, .shop_payment .payment_list ul.order_list li.bottom span {
+    color: #FF6600;
+    font-size: 14px;
+    font-family: arial
+}
+
+.shop_payment .payment_list ul.order_list li.bottom span {
+    font-size: 20px;
+    font-family: Arial;
+    vertical-align: middle
+}
+
+.shop_payment .payment_list ul.order_list li.end span.all span {
+    font-size: 18px;
+    font-family: arial;
+    color: #f00;
+    padding: 0 5px
+}
+
+.shop_payment .payment_list ul.order_list li.top span.name {
+    width: 358px;
+    height: 30px;
+    display: block;
+    float: left;
+    text-align: left;
+    text-indent: 35px
+}
+
+.shop_payment .payment_list ul.order_list li.end span.name {
+    width: 318px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    float: left;
+    overflow: hidden;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+    text-indent: 15px
+}
+
+.shop_payment .payment_list ul.order_list li.end span.name a {
+    width: 318px;
+    height: 25px;
+    line-height: 25px;
+    display: block;
+    float: left;
+    overflow: hidden;
+    font-size: 14px;
+    margin: 8px 0 0 0;
+    color: #0082f0
+}
+
+.shop_payment .payment_list ul.order_list li span.num, .shop_payment .payment_list ul.order_list li span.money, .shop_payment .payment_list ul.order_list li span.all, .shop_payment .payment_list ul.order_list li span.moneys {
+    width: 155px;
+    display: block;
+    float: left
+}
+
+.shop_payment .payment_list ul.order_list li.end span.num, .shop_payment .payment_list ul.order_list li.end span.money, .shop_payment .payment_list ul.order_list li.end span.all, .shop_payment .payment_list ul.order_list li.end span.moneys {
+    line-height: 40px
+}
+
+.shop_payment .account {
+    width: 943px;
+    min-height: 99px;
+    border: 1px solid #e1e1e1;
+    float: left;
+    margin: 10px 0;
+    padding: 0 0 0 35px;
+}
+
+.shop_payment .account li {
+    width: 908px;
+    float: left;
+    height: 38px;
+    line-height: 38px;
+    color: #333;
+    font-size: 14px;
+    padding: 10px 0 0 0
+}
+
+.shop_payment .account li.tit {
+    border-top: 1px dashed #ccc;
+    padding: 10px 0 0 0;
+    color: #333;
+    font-size: 12px
+}
+
+.shop_payment .account li.tit span.s {
+    width: 16px;
+    height: 14px;
+    display: block;
+    float: left;
+    background: url(/Images/shop_process.png) repeat-x -240px -300px;
+    margin-top: 10px
+}
+
+.shop_payment .account li u {
+    color: #0088d6;
+    font-weight: bold;
+    padding-left: 5px
+}
+
+.shop_payment .account li p {
+    float: left;
+    font-size: 12px;
+    line-height: 25px
+}
+
+.shop_payment .account li p.cz {
+    width: 265px;
+    height: 25px;
+    background: url(/Images/shop_process.png) 0 -505px;
+    text-indent: 15px;
+    margin-left: 10px
+}
+
+.shop_payment .account li span {
+    color: #2d9f00;
+    font-family: arial;
+    font-size: 18px;
+    padding: 0 5px 0 0
+}
+
+.shop_payment .account li span.pay {
+    font-size: 14px;
+    color: red
+}
+
+.shop_payment .account li span.oth {
+    font-size: 14px;
+    color: #333
+}
+
+.shop_payment .other {
+    width: 976px;
+    min-height: 150px;
+    border: 2px solid #bedcec;
+    clear: both;
+    padding-bottom: 25px;
+    overflow: hidden
+}
+
+.shop_payment .other h3 {
+    width: 976px;
+    height: 30px;
+    line-height: 31px;
+    text-indent: 15px;
+    border-bottom: 1px solid #bedcec;
+    font-weight: bold
+}
+
+.shop_payment .other div {
+    width: 936px;
+    margin-top: 10px;
+    float: left;
+    color: #999;
+    padding-left: 20px
+}
+
+.shop_payment .other div span {
+    color: Red;
+    font-weight: bold;
+    font-size: 14px
+}
+
+.shop_payment .other ul {
+    clear: both;
+    float: left;
+    width: 928px;
+    padding: 5px 0 0 27px
+}
+
+.shop_payment .other li {
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px 0;
+    display: inline
+}
+
+.shop_payment .other li input {
+    float: left;
+    margin: 15px 5px 0 0
+}
+
+.shop_payment .other li span {
+    display: block;
+    width: 134px;
+    height: 36px;
+    float: left;
+    border: #ddd 1px solid
+}
+
+.shop_payment .other li span.zfb {
+    background: url(/Images/bank_logo.png) 8px -613px
+}
+
+.shop_payment .other li span.cft {
+    background: url(/Images/bank_logo.png) 8px -500px
+}
+
+.shop_payment .other li span.yl {
+    background: url(/Images/bank_logo.png) 8px -550px
+}
+
+.shop_payment .other li span.kq {
+    background: url(/Images/bank_logo.png) 12px -575px
+}
+
+.shop_payment .other li span.wy {
+    background: url(/Images/bank_logo.png) 8px -539px
+}
+
+#other h3 font {
+    color: #666;
+    font-size: 12px;
+    font-weight: normal
+}
+
+#other #yue {
+    color: #F00
+}
+
+#other .bor {
+    border-top: #CCC 1px dotted;
+    padding-top: 20px;
+    position: relative;
+    left: 20px;
+    padding-left: 0
+}
+
+.bank_logo li span.gh_bank {
+    background: url(/Images/bank_logo.png) 8px 0
+}
+
+.bank_logo li span.zh_bank {
+    background: url(/Images/bank_logo.png) 8px -32px
+}
+
+.bank_logo li span.jh_bank {
+    background: url(/Images/bank_logo.png) 8px -67px
+}
+
+.bank_logo li span.nh_bank {
+    background: url(/Images/bank_logo.png) 8px -99px
+}
+
+.bank_logo li span.pf_bank {
+    background: url(/Images/bank_logo.png) 8px -132px
+}
+
+.bank_logo li span.sf_bank {
+    background: url(/Images/bank_logo.png) 8px -165px
+}
+
+.bank_logo li span.xy_bank {
+    background: url(/Images/bank_logo.png) 8px -199px
+}
+
+.bank_logo li span.bj_bank {
+    background: url(/Images/bank_logo.png) 8px -232px
+}
+
+.bank_logo li span.gd_bank {
+    background: url(/Images/bank_logo.png) 8px -264px
+}
+
+.bank_logo li span.ms_bank {
+    background: url(/Images/bank_logo.png) 8px -297px
+}
+
+.bank_logo li span.zx_bank {
+    background: url(/Images/bank_logo.png) 8px -329px
+}
+
+.bank_logo li span.gf_bank {
+    background: url(/Images/bank_logo.png) 8px -362px
+}
+
+.bank_logo li span.pa_bank {
+    background: url(/Images/bank_logo.png) 8px -397px
+}
+
+.bank_logo li span.zg_bank {
+    background: url(/Images/bank_logo.png) 8px -429px
+}
+
+.bank_logo li span.jt_bank {
+    background: url(/Images/bank_logo.png) 8px -462px
+}
+
+.bank_logo li span.dy_bank {
+    background: url(/Images/bank_dy.png);
+}
+
+.shop_payment h5 {
+    height: 44px;
+    margin: 5px auto 0 780px;
+    *margin: 5px auto 0 780px;
+    _margin: 40px auto 0 180px;
+    float: left
+}
+
+.shop_payment h5 input {
+    width: 202px;
+    height: 44px;
+    border: 0;
+    cursor: pointer;
+    background: url(/Images/payment_bg.png) 0 -44px no-repeat;
+}
+
+.shop_payment .answer {
+    width: 980px;
+    float: left;
+    margin: 40px 0 0 0;
+    border-top: 1px solid #e5e5e5;
+    clear: both
+}
+
+.shop_payment .answer h6 {
+    width: 970px;
+    padding: 10px 0 10px 10px;
+    font-weight: bold;
+    font-size: 14px
+}
+
+.shop_payment .answer h6 span {
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: left;
+    background: url(/Images/shop_process.png) -175px -300px
+}
+
+.shop_payment .answer ul.answer_list {
+    width: 955px;
+    padding: 0 0 0 25px
+}
+
+.shop_payment .answer ul.answer_list li {
+    width: 955px;
+    padding: 0 0 5px 0
+}
+
+.shop_payment .answer ul.answer_list li.problem {
+    font-weight: bold
+}
+
+.shop_payment .answer ul.answer_list li.more {
+    padding: 10px 0
+}
+
+.shop_payment .answer ul.answer_list li.more, li.more a {
+    color: #0386d9
+}
+
+.shop_payment .all_money {
+    text-align: right;
+    padding: 10px 20px 0 0
+}
+
+.shop_payment .all_money span {
+    color: #f60;
+    font-size: 16px;
+    padding: 0 5px 0 0
+}
+
+.shop_wait {
+    width: 980px;
+    height: auto;
+    color: #666
+}
+
+.shop_wait ul.wait {
+    width: 980px;
+    height: 31px;
+    background: #d8e8f9;
+    float: left;
+    margin: 20px 0
+}
+
+.shop_wait ul.wait li {
+    text-align: center;
+    float: left;
+    line-height: 31px;
+    font-size: 12px
+}
+
+.shop_wait ul.wait li.first_step {
+    width: 165px
+}
+
+.shop_wait ul.wait li.secend_step {
+    width: 165px
+}
+
+.shop_wait ul.wait li.fourth_step {
+    width: 165px
+}
+
+.shop_wait ul.wait li.fifth_step {
+    width: 165px
+}
+
+.shop_wait ul.wait li.third_step {
+    width: 202px;
+    color: #fff;
+    background: #ff7c21;
+    font-weight: bold
+}
+
+.shop_wait ul.wait li.arrow_1, .shop_wait ul.wait li.arrow_2, .shop_wait ul.wait li.arrow_3 {
+    width: 27px;
+    height: 31px
+}
+
+.shop_wait ul.wait li.arrow_1 {
+    background: url(/Images/shop_process.png) no-repeat -205px -35px
+}
+
+.shop_wait ul.wait li.arrow_2 {
+    background: url(/Images/shop_process.png) -240px -0px
+}
+
+.shop_wait ul.wait li.arrow_3 {
+    background: url(/Images/shop_process.png) -240px -35px
+}
+
+.shop_wait .wait_list {
+    width: 978px;
+    border: 1px solid #e6e7e8;
+    min-height: 100px;
+    clear: both
+}
+
+.shop_wait .wait_list h3 {
+    width: 978px;
+    height: 59px;
+    background: url(/Images/shop_wait.png) no-repeat 19% center;
+    margin: 20px 0;
+    float: left
+}
+
+.shop_wait .wait_list ul {
+    width: 738px;
+    padding: 0 120px 20px 120px;
+    float: left
+}
+
+.shop_wait .wait_list ul li {
+    width: 738px;
+    float: left;
+    overflow: hidden;
+    margin-top: 20px
+}
+
+.shop_wait .wait_list ul li.tit {
+    height: 30px;
+    background: #f6f6f6;
+    border-bottom: 1px solid #eee
+}
+
+.shop_wait .wait_list ul li.cont {
+    border-bottom: 1px solid #eee;
+    padding: 0 0 20px 0
+}
+
+.shop_wait .wait_list ul li.tit span {
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    float: left
+}
+
+.shop_wait .wait_list ul li.cont span {
+    height: 60px;
+    line-height: 20px;
+    display: block;
+    float: left;
+    overflow: hidden
+}
+
+.shop_wait .wait_list ul li span.ygbh {
+    width: 103px;
+    padding: 0 0 0 15px
+}
+
+.shop_wait .wait_list ul li.cont span.ygbh {
+    line-height: 40px;
+    font-weight: bold
+}
+
+.shop_wait .wait_list ul li span.name {
+    width: 320px;
+    padding: 0 15px;
+    color: #555
+}
+
+.shop_wait .wait_list ul li.cont span.name a {
+    color: #0082dd
+}
+
+.shop_wait .wait_list ul li span.num {
+    width: 270px
+}
+
+.shop_wait .wait_list ul li span.num p {
+    height: 40px;
+    overflow: hidden
+}
+
+.shop_wait .wait_list ul li span.num a {
+    color: #0082dd
+}
+
+.shop_wait .wait_list p.ts {
+    font-size: 14px;
+    width: 758px;
+    padding: 0 0 20px 120px;
+    clear: both
+}
+
+.shop_wait .wait_list div {
+    width: 758px;
+    height: 95px;
+    padding: 0 0 20px 20px;
+    *padding: 0 0 20px 20px;
+    _padding: 0 0 20px 100px
+}
+
+.shop_wait .wait_list div a {
+    height: 95px;
+    display: block;
+    float: left;
+    margin-right: 80px
+}
+
+.shop_wait .wait_list div a.index {
+    width: 157px;
+    background: url(/Images/shop_process.png) 0 -775px
+}
+
+.shop_wait .wait_list div a.look {
+    width: 176px;
+    background: url(/Images/shop_process.png) 0 -870px
+}
+
+.shop_wait .wait_list div a.user {
+    width: 176px;
+    background: url(/Images/shop_process.png) 0 -680px
+}
+
+.fast .fast_list li.look_buy {
+    width: 111px;
+    height: 33px
+}
+
+.fast .fast_list li.look_buy a {
+    width: 111px;
+    height: 33px;
+    line-height: 28px;
+    text-indent: 30px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    background: url(/Images/shop_process.png) no-repeat -180px -680px
+}
+
+.payment_ts {
+    width: 395px;
+    height: 151px;
+    margin: 0;
+    padding: 0
+}
+
+.payment_ts h3 {
+    width: 385px;
+    height: 20px;
+    padding: 0 0 5px 10px;
+    border-bottom: 1px solid #eee
+}
+
+.payment_ts h3 span {
+    width: 300px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff7200;
+    display: block;
+    float: left
+}
+
+.payment_ts h3 a {
+    width: 48px;
+    display: block;
+    float: right;
+    color: #8c8c8c
+}
+
+.payment_ts h3 a div {
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin: 1px 5px 0 0;
+    background: url(/Images/shop_process.png) -140px -300px
+}
+
+.payment_ts p {
+    width: 385px;
+    padding: 0 0 0 10px;
+    margin-top: 10px;
+    color: #8c8c8c
+}
+
+.payment_ts p.bottom {
+    text-indent: 20px
+}
+
+.payment_ts p span {
+    width: 15px;
+    height: 15px;
+    display: block;
+    float: left;
+    background: url(/Images/shop_process.png) -160px -300px;
+    margin-right: 5px
+}
+
+.payment_ts ul {
+    width: 373px;
+    height: 29px;
+    border: 1px solid #e9e9e9;
+    background: #f4f4f4;
+    margin-top: 15px;
+    padding: 10px 0 10px 20px;
+    float: left
+}
+
+.payment_ts ul li {
+    line-height: 29px;
+    float: left
+}
+
+.payment_ts ul li.title {
+    padding-left: 10px
+}
+
+.payment_ts ul li a {
+    width: 110px;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    color: #0087dc;
+    font-weight: bold;
+    display: block;
+    background: url(/Images/shop_process.png) -120px -320px
+}
+
+.shop_win {
+    width: 980px;
+    overflow: hidden;
+    padding: 0 0 20px 0
+}
+
+.shop_win ul.ok {
+    width: 980px;
+    height: 31px;
+    background: #d8e8f9;
+    float: left;
+    margin: 20px 0
+}
+
+.shop_win ul.ok li {
+    text-align: center;
+    float: left;
+    line-height: 31px;
+    font-size: 14px;
+    font-weight: bold
+}
+
+.shop_win ul.ok li.first_step {
+    width: 307px
+}
+
+.shop_win ul.ok li.secend_step {
+    width: 302px
+}
+
+.shop_win ul.ok li.third_step {
+    width: 317px;
+    color: #fff;
+    background: #ff7c21
+}
+
+.shop_win ul.ok li.arrow_1, .shop_win ul.ok li.arrow_2 {
+    width: 27px;
+    height: 31px
+}
+
+.shop_win ul.ok li.arrow_1 {
+    background: url(/Images/shop_process.png) no-repeat -240px -0px
+}
+
+.shop_win ul.ok li.arrow_2 {
+    background: url(/Images/shop_process.png) -205px -35px
+}
+
+.shop_win h3 {
+    width: 875px;
+    height: 62px;
+    float: left;
+    padding-left: 105px
+}
+
+.shop_win h3 span {
+    width: 292px;
+    height: 62px;
+    display: block;
+    background: url(/Images/shop_process.png) 0 -400px
+}
+
+.shop_win .serial_number {
+    width: 605px;
+    overflow: hidden;
+    margin: 10px auto;
+    padding: 20px 20px;
+    border: 1px solid #e7e7e7;
+    clear: both
+}
+
+.shop_win .serial_number p.title {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0 10px 0
+}
+
+.shop_win .serial_number p {
+    padding: 10px 0 10px 10px;
+    border-bottom: 1px solid #e7e7e7
+}
+
+.shop_win .serial_number p span {
+    color: #666
+}
+
+.shop_win .serial_number ul {
+    width: 595px;
+    height: auto;
+    overflow: hidden;
+    padding: 20px 0 0 10px;
+    float: left;
+    clear: both
+}
+
+.shop_win .serial_number ul li {
+    width: 595px;
+    float: left;
+    color: #666;
+    padding: 0 0 10px 0
+}
+
+.shop_win .serial_number ul li.more {
+    text-indent: 55px
+}
+
+.shop_win .serial_number ul li a {
+    color: #0082dd
+}
+
+.shop_win .end {
+    width: 647px;
+    margin: 30px auto 0 auto
+}
+
+.shop_win .end li {
+    padding-bottom: 15px;
+    color: #666
+}
+
+.shop_win .end li.title {
+    font-size: 14px
+}
+
+.shop_win .end li a {
+    padding-right: 15px;
+    color: #0082dd
+}
+
+.shop_win .end li span {
+    color: #f00
+}
+
+.error, .numhun {
+    clear: both;
+    border: 1px solid orange;
+    width: 135px;
+    line-height: 20px;
+    text-align: left;
+    background: url(/Images/error.jpg) no-repeat 3% center;
+    padding-left: 25px;
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    z-index: 99
+}
+
+.numhun {
+    display: block;
+    top: 12px;
+    border: 0;
+    color: #f60
+}
+
+.top-stripes, .sid-iconcur s, .signature, .money-red s, .signature_ect s, .tips s, .tips em, .tips i, .close, .grhead-join b, .grhead-joinCT b, .groups-name s, .subMenu a, .address-icon s, .button01 s, .button02 i, .service-btn s, .PopMsgC s, .top-stripes, .sidebar-nav s, .signature, .subMenu a, .localBtn .btn span, .steps li span, .count span, .prompt em, td.wrong s, td.ok s, .steps li span, .msg p i, .text_tel .wrong s, .text_email .wrong s, p.title i, .swop em, .Apply-con dd em, .info span s, dt.marRight s, .addAddress em s {
+    background: url(/Images/new-admin.png);
+}
+
+.PopMsg {
+    border: 1px solid #A2A2A2;
+    width: 282px;
+    height: 144px;
+    margin: 0 auto;
+}
+
+.PopMsgC {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    padding: 15px 0 25px 0;
+}
+
+.PopMsgC s {
+    width: 21px;
+    height: 21px;
+    background-position: -57px -96px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+}
+
+.PopMsgbtn {
+    text-align: center;
+    height: 30px;
+}
+
+.order_list li.payment_Total {
+    width: 978px;
+    clear: both;
+    vertical-align: bottom;
+}
+
+.order_list li.point_out, .order_list li.point_in {
+    width: 978px;
+    border-top: 1px solid #eee;
+    clear: both;
+    vertical-align: bottom;
+}
+
+.payment_Total {
+    height: 48px;
+    overflow: hidden;
+}
+
+.payment_Total .payment_List_Lc {
+    padding-top: 11px;
+}
+
+.payment_List_Lc {
+    float: left;
+    padding-left: 35px;
+    margin-left: 0;
+}
+
+.payment_List_Lc .input_choice, .payment_List_Lc .pay_input_text {
+    vertical-align: -2px;
+    *+vertical-align: -3px;
+    vertical-align: -2px \0;
+    _vertical-align: -3px;
+    margin-right: 3px;
+    *+margin-right: 0;
+    margin-left: 0;
+    *+margin-left: -4px;
+}
+
+.payment_List_Lc .pay_input_text_gray {
+    width: 60px;
+    height: 18px;
+    border: 1px solid #CAC8BB;
+    background: #ECE9D8;
+}
+
+.payment_List_Lc .pay_input_text {
+    border: 1px solid #BBB;
+    width: 60px;
+    height: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #666;
+}
+
+.payment_List_Lc .pay_input_text {
+    vertical-align: middle;
+}
+
+.payment_List_Lc .gray01 {
+    text-decoration: underline;
+}
+
+.payment_List_Rc {
+    float: right;
+    padding-right: 35px;
+    line-height: 40px;
+    padding-top: 3px;
+}
+
+.payment_List_Rc span {
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+.payment_List_Rc .F20 {
+    font-size: 20px;
+    font-family: Arial;
+}
+
+.payment_List_Lc .F18 {
+    font-size: 18px;
+    font-family: Arial;
+}
+
+.point_out, .point_in {
+    height: 55px;
+    overflow: hidden;
+}
+
+.point_out .payment_List_Lc {
+    padding-top: 16px;
+    float: left;
+}
+
+.point_in .payment_List_Lc {
+    padding-top: 11px;
+    float: left;
+}
+
+.point_bank {
+    height: 50px;
+}
+
+.point_gray {
+    background: #F4F4F4;
+    color: #BCBCBC;
+}
+
+.point_gray .input_gray {
+    border: 1px solid #CAC8BB;
+    width: 11px;
+    height: 11px;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    float: left;
+    margin-top: 3px;
+    *+margin-top: 6px;
+    margin-top: 2px \0;
+    _margin-top: 7px;
+    margin-right: 3px;
+    _margin-right: 0;
+}
+
+.point_in .input_gray {
+    margin-top: 9px;
+    *+margin-top: 9px;
+    _margin-top: 9px;
+}
+
+.point_gray .orange {
+    color: #BCBCBC;
+}
+
+.point_gray .green {
+    color: #BCBCBC;
+}
+
+.pay_bankC:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.pay_bankC {
+    border: 2px solid #B2C1C9;
+    zoom: 1;
+    margin-top: -1px;
+    position: relative;
+    padding-bottom: 7px;
+}
+
+.other .bank_arrow span, .other .bank_arrow em {
+    font-size: 16px;
+    font-weight: bold;
+    color: #B2C1C9;
+    top: -14px;
+    *+top: -13px;
+    top: -13px \0;
+    left: 60px;
+    position: absolute;
+}
+
+.other .bank_arrow em {
+    top: -11px;
+    *+top: -10px;
+    top: -10px \0;
+    color: #FFF;
+}
+
+.payment_but {
+    text-align: right;
+    clear: both;
+}
+
+.pay_but_txt {
+    color: #bbb;
+    padding: 11px 0 5px 0;
+}
+
+.pay_but_txt b {
+    color: #999;
+    font-family: Arial;
+    padding: 0 2px;
+}
+
+.payment_but .shop_pay_but {
+    width: 201px;
+    height: 43px;
+    border: none;
+    cursor: pointer;
+    background: url(/Images/payment_bg.png) 0 -44px no-repeat;
+}
+
+.pay_Value {
+    padding: 2px 8px;
+    float: left;
+    margin-top: 15px;
+    margin-top: 15px \9;
+    _margin-top: 15px;
+    border: 1px solid #FFD99E;
+    background: #FFFDF6;
+    color: #FF6F06;
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.pay_Value span {
+    position: absolute;
+    left: -6px;
+    color: #FFD99E;
+    top: 2px;
+}
+
+.pay_Value em {
+    position: absolute;
+    left: -5px;
+    color: #FFFDF6;
+    top: 2px;
+}

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_9" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+    <display-name>Struts Blank</display-name>
+    <!--
+        注意:Web.xml中加载顺序为：context-param -> listener -> filter -> servlet
+        加载顺序与它们在 web.xml 文件中的先后顺序无关,但同一类,还是按照顺序加载的
+    -->
+
+    <filter>
+        <!--
+            当请求被提交之后，过滤器会判断request.getCharacterEncoding()是否为null，如果是null那么就会进行
+            request.setCharacterEncoding("UTF-8")的操作，如果不是null那么过滤器什么也不会做
+        -->
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+        <init-param>
+            <!--
+                当request中已经被指定了一个字符集的时候是否再将用endcoding对应的字符集设置到request中去.
+                现在如果将forceEncoding设为true也会影响到response中的字符编码
+            -->
+            <param-name>forceEncoding</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>sitemesh</filter-name>
+        <filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>sitemesh</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>UrlRewriteFilter</filter-name>
+        <filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
+        <init-param>
+            <param-name>logLevel</param-name>
+            <param-value>WARN</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>UrlRewriteFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>FORWARD</dispatcher>
+    </filter-mapping>
+    <!-- ContextLoaderListener的作用就是启动Web容器时，自动装配ApplicationContext的配置信息 -->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <!--
+        它是一个在web应用关闭时清除JavaBean Introspector的监听器,在web.xml中注册这个listener
+        可以保证在web应用关闭的时候释放掉与这个web应用相关的class loader和由它管理的类.
+    -->
+    <listener>
+        <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+    </listener>
+
+    <filter>
+        <filter-name>struts2</filter-name>
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>struts2</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>FORWARD</dispatcher>
+    </filter-mapping>
+
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+            classpath:applicationContext*.xml
+        </param-value>
+    </context-param>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- 400错误 -->
+    <error-page>
+        <error-code>400</error-code>
+        <location>/WEB-INF/template/error/index.jsp</location>
+    </error-page>
+    <!-- 404 页面不存在错误 -->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/WEB-INF/template/error/index.jsp</location>
+    </error-page>
+    <!-- 500 服务器内部错误 -->
+    <error-page>
+        <error-code>500</error-code>
+        <location>/WEB-INF/template/error/index.jsp</location>
+    </error-page>
+    <!-- java.lang.Exception异常错误,依据这个标记可定义多个类似错误提示 -->
+    <error-page>
+        <exception-type>java.lang.Exception</exception-type>
+        <location>/WEB-INF/template/error/index.jsp</location>
+    </error-page>
+    <!-- java.lang.NullPointerException异常错误,依据这个标记可定义多个类似错误提示 -->
+    <error-page>
+        <exception-type>java.lang.NullPointerException</exception-type>
+        <location>/WEB-INF/template/error/index.jsp</location>
+    </error-page>
+    <error-page>
+        <exception-type>javax.servlet.ServletException</exception-type>
+        <location>/WEB-INF/template/error/index.jsp</location>
+    </error-page>
+
+</web-app>

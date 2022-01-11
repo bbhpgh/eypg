@@ -1,0 +1,426 @@
+@charset "utf-8";
+
+.single-C {
+    text-align: left;
+    color: #666;
+    vertical-align: top;
+}
+
+.single-C ul {
+    clear: both;
+    border-bottom: #e3e3e3 1px solid;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.single-C ul.listTitle li {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.single-C ul.listTitle li.single-img {
+    text-indent: 1em;
+}
+
+.single-C li {
+    padding: 12px 0 10px;
+}
+
+.single-C li.single-img {
+    width: 80px;
+    margin-right: 10px;
+}
+
+.single-C li.single-img a {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #f1f1f1;
+    display: block;
+}
+
+.single-C li.single-img a:hover {
+    border: 1px solid #ddd;
+}
+
+.single-C li.single-img img {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.single-C li.single-xx-has {
+    width: 380px;
+    padding-right: 30px;
+}
+
+.single-C li.sdzt {
+    width: 150px;
+    padding-left: 30px;
+}
+
+.single-C li.single-Control {
+    padding-left: 30px;
+    text-align: center;
+    width: 50px;
+}
+
+.single-C li.single-xx-not {
+    width: 550px;
+    padding-right: 50px;
+}
+
+.myshare {
+    width: 784px;
+    padding: 10px;
+    float: left;
+}
+
+.text_myshare ul.upload {
+    width: 708px;
+    padding-left: 20px;
+    color: #333;
+}
+
+.text_myshare ul.upload li {
+    width: 718px;
+    padding-bottom: 10px;
+    float: left;
+}
+
+.text_myshare ul.upload li.msg {
+    width: 660px;
+}
+
+.upload .msg {
+    position: relative;
+    background: #FFFDF0;
+    border: 1px solid #FFE0BC;
+    color: #FF9214;
+    line-height: 25px;
+    margin: 10px auto;
+    padding: 4px 17px 0 65px;
+    text-align: left;
+}
+
+.upload .msg b {
+    position: absolute;
+    background: url("/Images/arrow_button.png") no-repeat scroll -169px -206px;
+    width: 180px;
+    padding-left: 20px;
+    line-height: 18px;
+    height: 18px;
+    top: 8px;
+    left: 6px;
+    text-indent: 0;
+}
+
+.text_myshare ul.upload li span.titl {
+    width: 70px;
+    height: 27px;
+    display: block;
+    line-height: 27px;
+    float: left;
+}
+
+.text_myshare ul.upload li span.content {
+    width: 70px;
+    height: 27px;
+    display: block;
+    float: left;
+}
+
+.text_myshare ul.upload li p.content {
+    display: inline-block;
+    width: 648px;
+    overflow: hidden;
+}
+
+.text_myshare ul.upload li span.pic {
+    width: 70px;
+    height: 27px;
+    display: block;
+    margin-top: 2px;
+    float: left;
+}
+
+.text_myshare ul.upload li input.title, .text_myshare ul.upload li input.title_click {
+    width: 300px;
+    height: 27px;
+    line-height: 27px;
+    text-indent: 10px;
+}
+
+.text_myshare ul.upload li input.title {
+    width: 300px;
+    height: 27px;
+    line-height: 27px;
+    text-indent: 10px;
+    color: #ccc;
+    border: none;
+    border: 1px solid #999;
+}
+
+.text_myshare ul.upload li input.title_click {
+    color: #333;
+    border: none;
+    font-size: 12px;
+    font-family: "宋体";
+    border: 1px solid #999;
+}
+
+.text_myshare ul.upload li div.uppic {
+    width: 648px;
+    float: right;
+}
+
+.text_myshare ul.upload li div.uppic div.pic {
+    width: 648px;
+    float: left;
+}
+
+.text_myshare ul.upload li div.uppic div.pic {
+    padding: 0;
+    *padding: 0 0 10px 0;
+    _padding: 0 0 10px 0;
+}
+
+.text_myshare ul.upload li div.uppic div.pic div {
+    width: 102px;
+    height: 102px;
+    margin: 0 15px 10px 0;
+    float: left;
+    position: relative;
+}
+
+.text_myshare ul.upload li div.uppic div.pic div a {
+    width: 11px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    background: url(/Images/arrow_button.png) -173px -176px;
+    text-indent: -9999px;
+    z-index: 1;
+    top: 5px;
+    right: 5px;
+    overflow: hidden;
+}
+
+.text_myshare ul.upload li div.uppic div.pic div.delpic a {
+    width: 102px;
+    height: 102px;
+    display: block;
+    position: absolute;
+    background: url(/Images/arrow_button.png) -173px -176px;
+    text-indent: -9999px;
+    z-index: 1;
+    top: 5px;
+    right: 5px;
+    overflow: hidden;
+}
+
+.text_myshare ul.upload li div.uppic p {
+    height: 27px;
+    line-height: 27px;
+    color: #666;
+}
+
+.text_myshare ul.upload li div.uppic p a.click {
+    width: 85px;
+    height: 27px;
+    line-height: 27px;
+    color: #666;
+    display: block;
+    text-indent: 25px;
+    background: url(/Images/arrow_button.png) 0 -350px;
+    float: left;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.text_myshare ul.upload li div.uppic p a.click:hover {
+    text-decoration: none;
+    color: #666;
+}
+
+.text_myshare ul.upload li .textarea, .text_myshare ul.upload li .textarea_click {
+    overflow-x: hidden;
+    overflow: scroll;
+    height: 170px;
+    width: 620px;
+    border: none;
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+.text_myshare ul.upload li .textarea {
+    color: #ccc;
+    font-size: 12px;
+}
+
+.text_myshare ul.upload li .textarea_click {
+    color: #333;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.text_myshare ul.upload li img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    border: 1px solid #f2f2f2;
+    float: left;
+}
+
+.text_myshare ul.upload li.value {
+    width: 600px;
+    padding: 20px 0 0 70px;
+}
+
+.myshare ul.text {
+    width: 744px;
+    padding: 20px 20px;
+    color: #333;
+    border-top: 1px solid #ddd;
+    float: left;
+    margin-top: 20px;
+}
+
+.myshare ul.text li {
+    width: 744px;
+    line-height: 25px;
+    float: left;
+}
+
+.myshare ul.text li.tit {
+    font-weight: bold;
+}
+
+.localBtn {
+    position: relative;
+    z-index: 100;
+    width: 94px;
+    height: 27px;
+    line-height: 27px;
+    overflow: hidden;
+    float: left;
+}
+
+.localBtn .btn {
+    position: absolute;
+    top: 0;
+    width: 94px;
+    float: right;
+    z-index: 10;
+    background: url(/Images/upload.gif) 0 -28px no-repeat;
+    height: 27px;
+}
+
+.localBtn .btnhov {
+    position: absolute;
+    top: 0;
+    width: 94px;
+    float: right;
+    z-index: 10;
+    background: url(/Images/upload.gif) 0 0 no-repeat;
+    height: 27px;
+}
+
+.localBtn .btnFile {
+    width: 220px;
+    height: 16px;
+    position: absolute;
+    left: -190px;
+    top: -7px;
+    z-index: 100;
+    float: right;
+    cursor: pointer;
+}
+
+.uppic .upImgLoading {
+    float: left;
+    width: 82px;
+    border-radius: 2px;
+    height: 17px;
+    line-height: 17px;
+    text-indent: 23px;
+    padding: 4px 5px;
+    border: 1px solid #ddd;
+    background: #F4F4F4 url(/Images/uploading.gif) 5px 5px no-repeat;
+    color: #5E5E5E;
+    margin: 0;
+    color: #999;
+}
+
+.localBtn .btnFile input.file {
+    position: relative;
+    text-align: right;
+    cursor: hand;
+    width: 220px;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+
+.tips_main {
+    padding: 20px;
+    background: #fff;
+}
+
+.tips_main .title1 {
+    font-size: 18px;
+    font-family: 微软雅黑;
+    color: #666;
+    line-height: 30px;
+    padding: 10px 0 20px 0;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tips_main .text {
+    font-size: 12px;
+    color: #666;
+    line-height: 24px;
+    padding: 10px;
+}
+
+.tips_main .text .red {
+    color: #f00;
+    font-weight: bold;
+}
+
+.tips_main .text a {
+    color: #2af;
+    text-decoration: none;
+}
+
+.tips_main .text a:hover {
+    text-decoration: underline;
+}
+
+.tips_main .btn {
+    padding: 30px 0 10px 0;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+.tips_main .btn_OK {
+    width: 75px;
+    height: 23px;
+    background: #F60;
+    border: 1px solid #F65802;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 10px 30px;
+    font-weight: bold;
+}
+
+.tips_main .btn_OK:hover {
+    width: 75px;
+    background: #F65802;
+    color: #fff;
+}

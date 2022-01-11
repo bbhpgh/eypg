@@ -1,0 +1,1248 @@
+@charset "utf-8";
+
+.H_bgWhite {
+    background: #F7F7F7;
+    height: 10px;
+    overflow: hidden;
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.ShopExplainbg {
+    background: url(/Images/Explainbg.png);
+}
+
+.ShopExplain:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+}
+
+.ShopExplain {
+    width: 980px;
+    overflow: hidden;
+    position: relative;
+    zoom: 1;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.ShopExplain li {
+    line-height: 0;
+    font-size: 0;
+}
+
+.ShopExplain p a {
+    display: block;
+}
+
+.ShopExplainTu {
+    height: 234px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.ShopExplainClose, .ShopExplainOpen, .ShopExplainOff {
+    position: absolute;
+    width: 34px;
+    padding-left: 25px;
+    height: 23px;
+    display: inline-block;
+    font-size: 14px;
+    font-family: 微软雅黑, 宋体;
+    color: #fff;
+    top: 18px;
+    right: 18px;
+    line-height: 20px;
+    _line-height: 23px;
+    overflow: hidden;
+    background: #FFA264 url(/Images/Explain.png) no-repeat;
+}
+
+.ShopExplainClose:hover, .ShopExplainOpen:hover, .ShopExplainOff:hover {
+    color: #fff;
+}
+
+.ShopExplainClose {
+    background-position: -122px -1px;
+}
+
+.ShopExplainOpen {
+    background-position: 0 -1px;;
+    right: 82px;
+}
+
+.ShopExplainOff {
+    background-position: -61px -1px;;
+    right: 82px;
+}
+
+.ShopExplainTxt {
+    width: 710px;
+    line-height: 24px;
+    color: #F60;
+    font-size: 14px;
+    text-shadow: 1px 1px 0 #fff;
+    position: absolute;
+    top: 45px;
+    left: 245px;
+}
+
+.goods_loding {
+    font-size: 18px;
+    color: #666;
+    font-family: 微软雅黑, 宋体;
+    height: 80px;
+    min-height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 30px 0 0 0;
+}
+
+.goods_loding img {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.banner_recommend {
+    width: 980px;
+    height: 389px;
+}
+
+.banner-box {
+    width: 740px;
+    height: 389px;
+    overflow: hidden;
+    float: left;
+}
+
+.banner-box .yg-flow {
+    width: 742px;
+    height: 50px;
+    padding-bottom: 6px;
+}
+
+.banner-box .yg-flow a img {
+    width: 742px;
+    height: 50px;
+}
+
+.banner {
+    width: 740px;
+    height: 333px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner ul {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 10;
+}
+
+.banner ul li {
+    width: 16px;
+    height: 16px;
+    margin: 0 0 0 4px;
+    float: left;
+    border: 1px solid #ddd;
+    opacity: 0.8;
+    filter: Alpha(Opacity=60);
+    font-family: Arial;
+    line-height: 16px;
+    text-align: center;
+    background: #fefefe;
+    cursor: pointer;
+}
+
+.banner ul li.on {
+    color: #fff;
+    background: #f60;
+    font-weight: bold;
+}
+
+.recommend {
+    width: 230px;
+    float: right;
+}
+
+.recommend .Pro {
+    width: 208px;
+    height: 372px;
+    border: 1px solid #ebebeb;
+    padding: 5px 10px 10px 10px;
+    text-align: center;
+    position: relative;
+}
+
+.recommend .Pro i {
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    right: 26px;
+    top: 7px;
+    background: url(/Images/recommend-pic.png) no-repeat;
+    _background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/Images/recommend-pic.png");
+}
+
+.recommend .Pro .title {
+    width: 80px;
+    margin-right: 119px;
+    height: 20px;
+    margin: 0;
+    display: block;
+    background: url(/Images/index.png) no-repeat right 1px;
+    float: left;
+    color: #f60;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: arial;
+    padding: 0;
+    text-align: left;
+}
+
+.recommend .Pro .pic {
+    padding: 5px 12px;
+    width: 184px;
+}
+
+.recommend .Pro .pic a {
+    width: 184px;
+    height: 184px;
+    display: block;
+}
+
+.recommend .Pro .pic a img {
+    width: 184px;
+    height: 184px;
+    display: block;
+}
+
+.recommend .Pro .name {
+    text-align: left;
+    font-size: 14px;
+    padding: 0;
+}
+
+.recommend .Pro .money {
+    padding: 0 0 8px 0;
+    font-family: arial;
+    text-align: left;
+    color: #999;
+}
+
+.recommend .Pro .money span {
+    font-family: arial;
+    color: #666;
+}
+
+.recommend .Pro .name a {
+    height: 48px;
+    line-height: 22px;
+    color: #414141;
+    display: block;
+    overflow: hidden;
+}
+
+.recommend .Pro .name a:hover {
+    text-decoration: underline;
+    color: #f60;
+}
+
+.recommend dl dd span.all {
+    color: #fe0000;
+    font-family: arial;
+    padding: 0 3px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.recommend dl dd span.much {
+    color: #5db6ff;
+    font-weight: bold;
+    padding: 0 3px;
+}
+
+.recommend .Pro a.go_buy {
+    width: 143px;
+    height: 40px;
+    display: block;
+    background: url(/Images/index.png) no-repeat 0 0;
+    margin: 5px auto 0 auto;
+}
+
+.get_ready {
+    width: 980px;
+    clear: both;
+}
+
+.get_ready h3 {
+    width: 980px;
+    height: 44px;
+    clear: both;
+    border-bottom: 2px solid #EBEBEB;
+    overflow: hidden;
+}
+
+.get_ready h3 span {
+    width: 100px;
+    font-size: 18px;
+    height: 25px;
+    display: block;
+    color: #666;
+    font-family: microsoft yahei;
+    float: left;
+    margin: 12px 0 0 5px;
+}
+
+.get_ready h3 a {
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #9B9B9B;
+    font-weight: normal;
+    display: block;
+    float: right;
+    font-family: "宋体";
+    margin: 20px 10px 0 0;
+}
+
+.get_ready h3 a:hover {
+    color: #f60;
+    text-decoration: underline;
+}
+
+.get_ready .hot-list {
+    width: 980px;
+    position: relative;
+}
+
+.get_ready .hot-list .list-block {
+    width: 222px;
+    height: 358px;
+    background: #fff;
+    float: left;
+    border: 1px solid #EBEBEB;
+    border-top: 0;
+    margin: 0 -1px 0 0;
+    position: relative;
+    padding: 0 11px;
+    overflow: hidden;
+}
+
+.get_ready .hot-list .list-blockmal {
+    width: 221px;
+}
+
+.get_ready .Progress-bar {
+    width: 221px;
+}
+
+.get_ready .hot-list .cursor {
+    border: 1px solid #FFAE3C;
+    height: 358px;
+    z-index: 10;
+    margin: -1px -1px 0 0;
+    position: relative;
+}
+
+.get_ready .list-block .pic a img {
+    width: 185px;
+    height: 185px;
+}
+
+.get_ready .list-block .pic {
+    width: 185px;
+    padding: 9px 8px;
+}
+
+.get_ready .list-block .name {
+    text-align: left;
+    font-size: 12px;
+    padding: 0;
+}
+
+.get_ready .list-block .name a {
+    height: 24px;
+    line-height: 24px;
+    color: #414141;
+    display: block;
+    overflow: hidden;
+}
+
+.get_ready .list-block .name a:hover {
+    text-decoration: underline;
+    color: #f60;
+}
+
+.get_ready .list-block .money {
+    padding: 0 0 9px 0;
+    font-family: arial;
+    text-align: left;
+    color: #999;
+}
+
+.get_ready .list-block .money span {
+    font-family: arial;
+    color: #666;
+}
+
+.goods_hot {
+    width: 980px;
+    clear: both;
+    margin-top: 10px;
+}
+
+.goods_hot .goods_left {
+    width: 740px;
+    float: left;
+}
+
+.goods_hot .goods_left .new_lottery {
+    width: 740px;
+    height: 237px;
+    float: left;
+    position: relative;
+}
+
+.goods_hot .goods_left .new_lottery h4 {
+    width: 740px;
+    height: 30px;
+    line-height: 26px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.goods_hot .goods_left .new_lottery h4 span {
+    width: 100px;
+    font-size: 18px;
+    height: 25px;
+    display: block;
+    color: #FF6500;
+    font-family: microsoft yahei;
+    float: left;
+    margin: 0 0 0 5px;
+}
+
+.goods_hot .goods_left .new_lottery h4 a {
+    text-indent: 0;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    display: block;
+    float: right;
+    margin: 7px 10px 0 0;
+    font-family: "宋体";
+    color: #9B9B9B;
+}
+
+.goods_hot .goods_left .new_lottery h4 a:hover {
+    color: #f60;
+    text-decoration: underline;
+}
+
+.goods_hot .goods_left .new_lottery ul {
+    border: 1px solid #ebebeb;
+    padding: 1px;
+    width: 736px;
+    height: 202px;
+    overflow: hidden;
+}
+
+.goods_hot .goods_left .new_lottery ul li.countdown_li {
+    width: 150px;
+    height: 201px;
+    border: 1px solid red;
+    margin: 0 1px;
+    padding: 0 14px;
+    float: left;
+    position: relative;
+}
+
+.goods_hot .goods_left .new_lottery ul li.countdown_li img {
+    width: 110px;
+    height: 110px;
+    display: block;
+}
+
+.goods_hot .goods_left .new_lottery ul li.countdown_li div.newawary {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(/Images/index.png) 0 -46px no-repeat;
+}
+
+.goods_hot .goods_left .new_lottery ul li.countdown_li div.countdown_div {
+    width: 150px;
+    height: 25px;
+    background-color: #F00;
+    float: left;
+    margin-top: 3px;
+}
+
+.goods_hot .goods_left .new_lottery ul li.countdown_li div.countdown_div img {
+    width: 14px;
+    height: 14px;
+    border: 0;
+    margin-top: 5px;
+    margin-left: 4px;
+    float: left;
+}
+
+.goods_hot .goods_left .new_lottery ul li.countdown_li div.countdown_div span.wenzi {
+    width: 48px;
+    height: 20px;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFF;
+    margin-top: 2px;
+    margin-left: 4px;
+}
+
+.goods_hot .goods_left .new_lottery ul li.countdown_li div.countdown_div span.shi {
+    width: 75px;
+    height: 20px;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FF0;
+    font-family: "宋体";
+}
+
+.goods_hot .goods_left .new_lottery ul li.countdown_li div.countdown_div span.lateron {
+    width: 175px;
+    height: 20px;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFF;
+    font-family: "宋体";
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+.goods_hot .goods_left .new_lottery ul li.new_li {
+    width: 150px;
+    height: 202px;
+    border: 1px solid #fff;
+    padding: 0 16px;
+    float: left;
+}
+
+.goods_hot .goods_left .new_lottery ul li.new_li.hover {
+    border-color: #ebebeb;
+    background: #f3f3f3;
+}
+
+.goods_hot .goods_left .new_lottery ul li a.pic {
+    width: 150px;
+    margin: 10px auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.goods_hot .goods_left .new_lottery ul li a img {
+    width: 120px;
+    height: 120px;
+    display: block;
+}
+
+.goods_hot .goods_left .new_lottery ul li span.winner {
+    width: 150px;
+    text-align: center;
+    display: block;
+    float: left;
+}
+
+.goods_hot .goods_left .new_lottery ul li a.name {
+    width: 150px;
+    text-align: center;
+    height: 36px;
+    line-height: 18px;
+    overflow: hidden;
+    display: block;
+    float: left;
+}
+
+.goods_hot .goods_left .new_lottery ul li a.name:hover {
+    text-decoration: underline;
+    color: #f60;
+}
+
+.goods_hot .goods_left .new_lottery ul li span.winner, .goods_hot .goods_left .new_lottery ul li span.winner strong {
+    text-decoration: none;
+    color: #939393;
+    font-weight: normal;
+}
+
+.hot {
+    width: 739px;
+    clear: both;
+    margin: 0;
+    float: left;
+    overflow: hidden;
+}
+
+.hot .hot-list {
+    width: 744px;
+    position: relative;
+}
+
+.hot .hot-list .list-block {
+    width: 223px;
+    height: 358px;
+    background: #fff;
+    float: left;
+    border: 1px solid #EBEBEB;
+    border-top: 0;
+    margin: 0 -1px 0 0;
+    position: relative;
+    padding: 0 11px;
+    overflow: hidden;
+}
+
+.hot .hot-list .cursor {
+    border: 1px solid #FFAE3C;
+    height: 358px;
+    z-index: 99;
+    margin: -1px -1px 0 0;
+    position: relative;
+}
+
+.hot .list-block .pic a img {
+    width: 185px;
+    height: 185px;
+}
+
+.hot .list-block .pic {
+    width: 185px;
+    padding: 9px 8px;
+}
+
+.hot .list-block .name {
+    text-align: left;
+    font-size: 12px;
+    padding: 0;
+}
+
+.hot .list-block .name a {
+    height: 24px;
+    line-height: 24px;
+    color: #414141;
+    display: block;
+    overflow: hidden;
+}
+
+.hot .list-block .name a:hover {
+    text-decoration: underline;
+    color: #f60;
+}
+
+.hot .list-block .money {
+    padding: 0 0 9px 0;
+    font-family: arial;
+    text-align: left;
+    color: #999;
+}
+
+.hot .list-block .money span {
+    font-family: arial;
+    color: #666;
+}
+
+.goods_hot .goods_left .hot h3 {
+    width: 739px;
+    height: 44px;
+    clear: both;
+    border-bottom: 2px solid #EBEBEB;
+    overflow: hidden;
+}
+
+.goods_hot .goods_left .hot h3 span {
+    width: 200px;
+    font-size: 18px;
+    height: 25px;
+    display: block;
+    color: #666;
+    font-family: microsoft yahei;
+    float: left;
+    margin: 12px 0 0 5px;
+}
+
+.goods_hot .goods_left .hot h3 a {
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #9B9B9B;
+    font-weight: normal;
+    display: block;
+    float: right;
+    font-family: "宋体";
+    margin: 20px 10px 0 0;
+}
+
+.goods_hot .goods_left .hot h3 a:hover {
+    color: #f60;
+    text-decoration: underline;
+}
+
+.goods_hot .goods_right {
+    width: 230px;
+    float: right;
+}
+
+.goods_hot .goods_right .news {
+    width: 228px;
+    height: 143px;
+    border: 1px solid #ebebeb;
+    margin: 0 0 10px 0;
+    float: left;
+    overflow: hidden;
+    padding: 0 0 10px 0;
+}
+
+.goods_hot .goods_right .news ul {
+    width: 228px;
+}
+
+.goods_hot .goods_right .news h3 {
+    width: 228px;
+    height: 31px;
+    line-height: 31px;
+    background: #f4f4f4;
+    text-indent: 13px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.goods_hot .goods_right .news ul {
+    min-height: 110px;
+    padding: 4px 0 0 0;
+}
+
+.goods_hot .goods_right .news ul li {
+    width: 208px;
+    height: 22px;
+    line-height: 22px;
+    line-height: 23px \9;
+    text-indent: 5px;
+    overflow: hidden;
+    padding: 0 0 0 20px;
+    margin-top: 1px;
+    float: left;
+    background: url(/Images/index.png) no-repeat -180px -380px;
+}
+
+.goods_hot .goods_right .news ul li a:hover, .goods_hot .goods_right .wait_lottery a:hover {
+    text-decoration: underline;
+    color: #f60;
+    cursor: pointer;
+}
+
+.goods_hot .goods_right .wait_lottery {
+    width: 230px;
+    height: 198px;
+    clear: both;
+    overflow: hidden;
+}
+
+.goods_hot .goods_right .wait_lottery dl {
+    width: 210px;
+    height: 178px;
+    padding: 10px;
+    text-align: center;
+    background: url(/Images/index.png) no-repeat 0 -40px;
+    cursor: pointer;
+}
+
+.goods_hot .goods_right .wait_lottery dl dd span {
+    color: #f60;
+    font-weight: bold;
+    padding: 0 2px;
+}
+
+.goods_hot .goods_right .wait_lottery dl dd.num ul {
+    width: 198px;
+    height: 27px;
+    padding: 5px 0 0 12px;
+}
+
+.goods_hot .goods_right .wait_lottery dl dd.num ul li {
+    float: left;
+    width: 21px;
+    height: 27px;
+    line-height: 27px;
+    font-size: 22px;
+    font-family: arial;
+    color: #fff;
+    background: url(/Images/index.png) -120px -380px;
+    margin: 0 0 0 2px;
+    *margin: 0 0 0 2px;
+    _margin: 0 0 0 2px;
+}
+
+.goods_hot .goods_right .wait_lottery dl dt {
+    width: 100px;
+    height: 100px;
+    padding: 0 55px 10px 55px;
+}
+
+.goods_hot .goods_right .wait_lottery dl dt img {
+    width: 100px;
+    height: 100px;
+}
+
+.goods_hot .goods_right .wait_lottery dl dd {
+    line-height: 20px;
+}
+
+.goods_hot .goods_right .wait_lottery dl dd a {
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    overflow: hidden;
+}
+
+.goods_hot .goods_right .share {
+    width: 226px;
+    height: 623px;
+    overflow: hidden;
+    border: 1px solid #ebebeb;
+    padding: 1px;
+    float: left;
+    margin: 10px 0 0 0;
+}
+
+.goods_hot .goods_right .share h3 {
+    width: 226px;
+    height: 27px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    text-indent: 10px;
+    line-height: 27px;
+    background: url(/Images/index.png) 0 -410px;
+}
+
+.goods_hot .goods_right .share .buyList {
+    width: 215px;
+    height: 594px;
+    display: block;
+    padding: 0 8px;
+    overflow: hidden;
+}
+
+.goods_hot .goods_right .share ul {
+    width: 215px;
+    display: block;
+    overflow: hidden;
+}
+
+.goods_hot .goods_right .share ul li {
+    width: 215px;
+    float: left;
+    padding: 12px 0;
+    border-bottom: 1px dashed #e5e5e5;
+    margin: 0 auto;
+}
+
+.goods_hot .goods_right .share ul li a.pic img {
+    width: 58px;
+    height: 58px;
+    display: block;
+}
+
+.goods_hot .goods_right .share ul li a.pic {
+    width: 58px;
+    height: 58px;
+    display: block;
+    border: 1px solid #fff;
+    float: left;
+}
+
+.goods_hot .goods_right .share ul li a.pic:hover {
+    border: 1px solid #f60;
+}
+
+.goods_hot .goods_right .share ul li span {
+    width: 140px;
+    line-height: 20px;
+    padding: 0 0 0 12px;
+    display: block;
+    overflow: hidden;
+    float: left;
+}
+
+.goods_hot .goods_right .share ul li span.who {
+    width: 140px;
+    height: 20px;
+    display: block;
+    overflow: hidden;
+    color: #9f9f9f;
+}
+
+.goods_hot .goods_right .share ul li span a.name {
+    width: 140px;
+    height: 40px;
+    line-height: 20px;
+    display: block;
+    overflow: hidden;
+    float: left;
+}
+
+.goods_hot .goods_right .share ul li span a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.goods_hot .goods_right .small_banner, .goods_hot .goods_right .small_banner a, .goods_hot .goods_right .small_banner a img {
+    width: 230px;
+    height: 218px;
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+
+.lottery_show {
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+}
+
+.share_show {
+    width: 980px;
+    overflow: hidden;
+    padding: 0 0 10px 0;
+    clear: both;
+}
+
+.share_show h3 {
+    width: 980px;
+    height: 44px;
+    clear: both;
+    border-bottom: 2px solid #EBEBEB;
+    overflow: hidden;
+}
+
+.share_show h3 span {
+    width: 100px;
+    font-size: 18px;
+    height: 25px;
+    display: block;
+    color: #666;
+    font-family: microsoft yahei;
+    float: left;
+    margin: 12px 0 0 5px;
+}
+
+.share_show h3 a {
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #9B9B9B;
+    font-weight: normal;
+    display: block;
+    float: right;
+    font-family: "宋体";
+    margin: 20px 10px 0 0;
+}
+
+.share_show h3 a:hover {
+    color: #f60;
+    text-decoration: underline;
+}
+
+.share_show .show {
+    border: 1px solid #EBEBEB;
+    border-top: none;
+    width: 962px;
+    padding: 15px 8px 0 8px;
+    overflow: hidden;
+}
+
+.share_show .show dl {
+    width: 460px;
+    height: 124px;
+    float: left;
+    overflow: hidden;
+    padding: 0 0 0 19px;
+}
+
+.share_show .show dl dt {
+    width: 100px;
+    height: 124px;
+    display: block;
+    float: left;
+}
+
+.share_show .show dl dt a, .share_show .show dl dt img {
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+.share_show.show dl dd {
+    width: 355px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    display: block;
+}
+
+.share_show .show dl dd.bg {
+    width: 355px;
+    height: 108px;
+    display: block;
+    float: right;
+    background: url(/Images/show.png) no-repeat;
+    padding: 0;
+    margin: 0 0 5px 0;
+}
+
+.share_show .show dl dd.bg ul {
+    width: 315px;
+    height: 90px;
+    margin: 10px 10px 10px 25px;
+    line-height: 20px;
+    display: block;
+    overflow: hidden;
+}
+
+.share_show .show dl dd.bg ul li.name {
+    width: 315px;
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid #ffeed8;
+    margin: 0;
+    color: #f60;
+}
+
+.share_show .show dl dd.bg ul li.content {
+    width: 315px;
+    height: 55px;
+    word-wrap: break-word;
+    line-height: 18px;
+    padding: 5px 0 0 0;
+    overflow: hidden;
+    color: #666;
+}
+
+.share_show .show dl dd.bg ul li.name span a {
+    width: 150px;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    overflow: hidden;
+    color: #f60;
+    font-weight: bold;
+    float: left;
+    padding-right: 5px;
+}
+
+.share_show .show dl dd.bg ul li.name a:hover {
+    text-decoration: underline;
+}
+
+.share_show .show dl dd.bg p {
+    width: 315px;
+    height: 80px;
+    margin: 14px 15px 14px 30px;
+    line-height: 20px;
+    display: block;
+    overflow: hidden;
+}
+
+.share_show .show dl dd.bg p span {
+    width: 315px;
+    display: block;
+    padding: 0;
+    color: #f60;
+    border-bottom: 1px solid #ccc;
+}
+
+.share_show .show_list {
+    width: 944px;
+    padding: 15px 9px 10px 9px;
+    border-top: 1px dashed #e5e5e5;
+    clear: both;
+    float: left;
+}
+
+.share_show .show_list ul {
+    width: 146px;
+    float: left;
+    padding: 0 0 0 10px;
+}
+
+.share_show .show_list ul li {
+    width: 136px;
+    text-align: center;
+    padding: 3px 10px 0 0;
+    float: left;
+    color: #7d7d7d;
+}
+
+.share_show .show_list ul li.show_tit a {
+    width: 136px;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    overflow: hidden;
+}
+
+.share_show .show_list ul li a:hover {
+    text-decoration: underline;
+}
+
+.share_show .show_list ul li.pic {
+    width: 100px;
+    height: 100px;
+    padding: 0 18px;
+}
+
+.share_show .show_list ul li.pic a, .share_show .show_list ul li.pic img {
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+.Progress-bar {
+    height: 57px;
+}
+
+.Progress-bar p {
+    height: 4px;
+    background: #E7E7E7;
+    border: 1px solid #DBDBDB;
+    position: relative;
+    border-radius: 3px;
+}
+
+.Progress-bar p span {
+    height: 4px;
+    border: 1px solid #F55700;
+    background: #F60;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    font-size: 0;
+    border-radius: 3px;
+}
+
+.Progress-bar .Pro-bar-li li {
+    float: left;
+    color: #AEADAD;
+    font-size: 12px;
+    font-family: 宋体;
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border-radius: none;
+}
+
+.Progress-bar .Pro-bar-li li em {
+    display: block;
+    font-size: 12px;
+    font-family: arial;
+    height: 14px;
+    padding: 3px 0 5px 0;
+}
+
+.Progress-bar .Pro-bar-li li.P-bar01 em {
+    color: #F60;
+}
+
+.Progress-bar .Pro-bar-li li.P-bar02 em {
+    color: #777;
+}
+
+.Progress-bar .Pro-bar-li li.P-bar03 em {
+    color: #14A8E4;
+}
+
+.Progress-bar .Pro-bar-li li.P-bar01 {
+    width: 35%;
+    text-align: left;
+}
+
+.Progress-bar .Pro-bar-li li.P-bar02 {
+    width: 30%;
+    text-align: center;
+}
+
+.Progress-bar .Pro-bar-li li.P-bar03 {
+    width: 35%;
+    float: right;
+    text-align: right;
+}
+
+.shop_buttom {
+    height: 40px;
+    text-align: center;
+}
+
+.shop_but {
+    width: 126px;
+    height: 30px;
+    margin: 0 auto;
+    display: inline-block;
+    background: url(/Images/index.png) 0 -104px no-repeat;
+}
+
+.goods_tj, .goods_xp, .goods_rq, .goods_xs {
+    background: url(/Images/goods_tj.png) no-repeat;
+}
+
+.list-block .goods_tj {
+    width: 49px;
+    height: 45px;
+    display: inline-block;
+    background-position: right 0;
+    position: absolute;
+    right: 0;
+    _right: -1px;
+    top: 0;
+    z-index: 1;
+}
+
+.list-block .goods_xp {
+    width: 49px;
+    height: 45px;
+    display: inline-block;
+    background-position: right -49px;
+    position: absolute;
+    right: 0;
+    _right: -1px;
+    top: 0;
+    z-index: 1;
+}
+
+.list-block .goods_rq {
+    width: 49px;
+    height: 45px;
+    display: inline-block;
+    background-position: right -100px;
+    position: absolute;
+    right: 0;
+    _right: -1px;
+    top: 0;
+    z-index: 1;
+}
+
+.list-block .goods_xs {
+    width: 49px;
+    height: 45px;
+    display: inline-block;
+    background-position: right -192px;
+    position: absolute;
+    right: 0;
+    _right: -1px;
+    top: 0;
+    z-index: 1;
+}

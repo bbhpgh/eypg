@@ -1,0 +1,674 @@
+@charset "utf-8";
+
+.per-info ul {
+    margin-bottom: 7px;
+}
+
+.per-info .info-mane {
+    font-size: 14px;
+    font-family: "Arial";
+    font-weight: normal;
+    line-height: 20px;
+}
+
+.per-info .info-mane b {
+    font-size: 18px;
+}
+
+.per-info .info-mane span {
+    display: block;
+    padding-top: 3px;
+}
+
+.per-info .info-address em {
+    position: relative;
+    height: 18px;
+    overflow: hidden;
+    line-height: 22px \9;
+    _line-height: 18px;
+    padding-left: 12px;
+    float: left;
+    margin-right: 5px;
+}
+
+.per-info .info-address em s {
+    position: absolute;
+    background-position: 0 -64px;
+    width: 8px;
+    height: 14px;
+    display: inline-block;
+    top: 5px;
+    left: 0;
+}
+
+.per-info .info-address span {
+    position: relative;
+    height: 18px;
+    padding-left: 12px;
+    float: left;
+    display: inline;
+}
+
+.per-info .info-address span s {
+    position: absolute;
+    background-position: -14px -64px;
+    width: 8px;
+    height: 9px;
+    display: inline-block;
+    top: 5px;
+    left: 0;
+}
+
+.per-info .info-class {
+    clear: both;
+    margin-top: 5px;
+    _margin-top: -13px;
+}
+
+.per-info .info-class span {
+    margin-left: 10px;
+}
+
+.per-info li.info-intro {
+    height: auto;
+    padding-bottom: 25px;
+}
+
+.per-info li.account-money {
+    margin-top: 5px;
+}
+
+.per-info li.account-money .money-red {
+    text-align: center;
+    height: 24px;
+    _height: 21px;
+    padding-top: 0;
+    _padding-top: 3px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #f60;
+    position: relative;
+    vertical-align: middle;
+}
+
+.per-info li .money-red s {
+    background-position: 0 -37px;
+    width: 6px;
+    height: 9px;
+    display: inline-block;
+    vertical-align: 0;
+    margin-right: 3px;
+    font-size: 0;
+}
+
+.per-info li .money-red i {
+    height: 22px;
+    background: url(/Images/money-redbg.png);
+    border: 1px solid #F2F2F2;
+    top: 0;
+    left: 0;
+    position: absolute;
+    float: left;
+}
+
+.per-info li .money-red i a {
+    text-align: center;
+    line-height: 20px;
+    line-height: 24px \9;
+    _line-height: 18px;
+    font-size: 12px;
+    color: #bbb;
+    font-weight: normal;
+}
+
+.tips {
+    border: 1px solid #FD9;
+    background: #FFFCE2;
+    padding: 5px 0 5px 9px;
+    _padding-top: 7px;
+    height: 20px;
+    _height: 18px;
+    position: relative;
+    margin-bottom: 10px;
+    font-family: 宋体;
+}
+
+.tips s {
+    width: 16px;
+    height: 15px;
+    background-position: -22px -6px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 3px;
+    vertical-align: -2px;
+    vertical-align: 0 \9;
+}
+
+.tips em {
+    width: 21px;
+    height: 17px;
+    background-position: -134px -80px;
+    display: inline-block;
+    margin-right: 3px;
+    vertical-align: -2px;
+    vertical-align: 0 \9;
+}
+
+.tips i {
+    width: 14px;
+    height: 16px;
+    background-position: -182px -80px;
+    display: inline-block;
+    margin-right: 3px;
+    vertical-align: -2px;
+    vertical-align: 0 \9;
+}
+
+.tips .close {
+    background-position: -72px -80px;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 9px;
+    right: 5px;
+}
+
+.tips .close:hover {
+    background-position: -100px -80px;
+    background-color: #4AB9FF;
+}
+
+.per-invitation {
+    padding: 10px 0;
+    border-top: 1px solid #E9E9E9;
+    border-bottom: 1px solid #E9E9E9;
+    margin-top: 10px;
+    line-height: 26px;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.per-invitation label {
+    float: left;
+    cursor: text;
+}
+
+.per-invitation .button04 {
+    float: left;
+}
+
+.per-invitation span {
+    float: left;
+    border: #c2c2c2 1px solid;
+    height: 23px;
+    padding: 0;
+    margin-right: 6px;
+}
+
+.per-invitation input {
+    width: 383px;
+    padding-left: 5px;
+    height: 22px;
+    line-height: 22px;
+    border-top: #ddd 1px solid;
+    border-right: 0 none;
+    border-bottom: 0 none;
+    border-left: 0 none;
+    color: #333;
+    *margin-top: -1px;
+}
+
+.New-content {
+    width: 580px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.scroll-list {
+    padding: 30px 0 26px 0;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.scroll-list p img {
+    vertical-align: middle;
+}
+
+.R-tit {
+    line-height: 22px;
+    color: #999;
+    font-size: 14px;
+    padding-bottom: 6px;
+}
+
+.R-tit .tit-name {
+    margin-right: 6px;
+}
+
+.R-tit .tit {
+    margin-left: 6px;
+}
+
+.R-tit .tit-con {
+    margin-left: 5px;
+}
+
+.buy-com {
+    width: 378px;
+    height: 125px;
+    border: 1px solid #E6E6E6;
+    background: #FAFAFA;
+    margin: 0;
+}
+
+.buy-pic {
+    float: left;
+    width: 98px;
+    height: 105px;
+}
+
+.buy-pic img {
+    width: 80px;
+    height: 80px;
+    margin: 11px 0 0 6px;
+}
+
+.buy-rcon {
+    margin-left: 98px;
+}
+
+.buy-rcon .gray02 {
+    height: 22px;
+}
+
+.buy-name {
+    height: 18px;
+    padding-top: 8px;
+    white-space: nowrap;
+    width: 250px;
+    overflow: hidden;
+}
+
+.buy-money {
+    height: 22px;
+}
+
+.money {
+    position: relative;
+    padding-left: 2px;
+    line-height: 14px;
+}
+
+.buy-code {
+    height: 18px;
+    line-height: 18px;
+}
+
+.buy-code .orange {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 宋体;
+}
+
+.buy-time {
+    height: 22px;
+    height: 21px \9;
+}
+
+.post-pic {
+    height: 85px;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.post-pic li {
+    float: left;
+    margin-right: 10px;
+    display: inline;
+}
+
+.post-pic li img {
+    width: 108px;
+    height: 85px;
+}
+
+.Progress-bar {
+    height: 44px;
+    width: 208px;
+    margin: 0px;
+}
+
+.Progress-bar p {
+    height: 4px;
+    background: #E7E7E7;
+    border: 1px solid #DBDBDB;
+    position: relative;
+    border-radius: 3px;
+}
+
+.Progress-bar p span {
+    border: 1px solid #F55700;
+    background: #F60;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    height: 4px;
+    font-size: 0;
+    border-radius: 3px;
+}
+
+.Progress-bar .Pro-bar-li li {
+    float: left;
+    color: #AEADAD;
+    font-size: 12px;
+    font-family: 宋体;
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border-radius: none;
+}
+
+.Progress-bar .Pro-bar-li li em {
+    display: block;
+    font-size: 12px;
+    font-family: arial;
+    height: 14px;
+}
+
+.Progress-bar .Pro-bar-li li.P-bar01 em {
+    color: #F00;
+}
+
+.Progress-bar .Pro-bar-li li.P-bar02 em {
+    color: #777;
+}
+
+.Progress-bar .Pro-bar-li li.P-bar03 em {
+    color: #14A8E4;
+}
+
+.Progress-bar .Pro-bar-li li.P-bar01 {
+    width: 35%;
+    text-align: left;
+}
+
+.Progress-bar .Pro-bar-li li.P-bar02 {
+    width: 30%;
+    text-align: center;
+}
+
+.Progress-bar .Pro-bar-li li.P-bar03 {
+    width: 35%;
+    float: right;
+    text-align: right;
+}
+
+.Circle-con li {
+    width: 339px;
+    height: 98px;
+    border: 1px solid #E5E5E5;
+    background: #FAFAFA;
+    float: left;
+    margin-right: 19px;
+    display: inline;
+    margin-bottom: 10px;
+}
+
+.Circle-pic {
+    float: left;
+    width: 81px;
+    height: 81px;
+    overflow: hidden;
+    padding: 8px;
+}
+
+.Circle-pic img {
+    width: 81px;
+    height: 81px;
+}
+
+.Circle-R {
+    margin-left: 97px;
+    margin-top: -2px;
+    margin-top: 0 \9;
+}
+
+.Circle-R .buy-name {
+    font-size: 14px;
+    height: 25px;
+    width: 220px;
+    white-space: nowrap;
+}
+
+.Circle-R .gray01 {
+    height: 50px;
+    width: 234px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.signature {
+    display: none;
+    background-position: -38px -6px;
+    width: 162px;
+    height: 41px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.signature a {
+    width: 162px;
+    height: 41px;
+    display: block;
+}
+
+.signature i {
+    width: 40px;
+    text-align: center;
+    line-height: 14px;
+    line-height: 16px \9;
+    _line-height: 14px;
+    position: absolute;
+    top: 6px;
+    top: 4px \9;
+    _top: 6px;
+    left: 5px;
+    *left: 4px;
+}
+
+.signaturecur {
+    background-position: -38px -145px;
+    cursor: default;
+}
+
+.signaturecur a {
+    cursor: default;
+}
+
+.signaturecur i {
+    cursor: default;
+    color: #94D5FF;
+}
+
+.signature_ect {
+    position: absolute;
+    z-index: 9px;
+    width: 160px;
+    border: 1px solid #DCDCDC;
+    background: #FFF;
+    text-align: center;
+    color: #666;
+    padding: 6px 0;
+    box-shadow: 0 0 5px 1px rgba(34, 25, 25, .2);
+}
+
+.signature_ect b {
+    color: #3b0;
+}
+
+.signature_ect s {
+    width: 15px;
+    height: 14px;
+    background-position: -120px -106px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.R-grtit {
+    height: 20px;
+    height: 20px \9;
+    _height: 19px;
+    line-height: 14px;
+    line-height: 18px \9;
+    _line-height: 15px;
+    border-bottom: 1px solid #FAFAFA;
+    z-index: 9;
+    position: relative;
+}
+
+.R-grtit h3 {
+    height: 19px;
+    _height: 19px;
+    font-size: 12px;
+    float: left;
+    position: relative;
+    margin-bottom: -1px;
+    color: #666;
+    font-weight: bold;
+}
+
+.R-grtit span {
+    float: right;
+}
+
+.interest {
+    margin-top: 14px;
+    margin-bottom: 5px;
+}
+
+.interest-con {
+    width: 175px;
+    margin-top: 15px;
+}
+
+.interest-con li {
+    width: 175px;
+    height: 50px;
+    margin: 0 0 23px 0;
+}
+
+.interest-img {
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+.interest-img img {
+    width: 50px;
+    height: 50px;
+}
+
+.interest-info {
+    width: 119px;
+    overflow: hidden;
+    margin-left: 56px;
+    _margin-left: 53px;
+}
+
+.interest-info p {
+    white-space: nowrap;
+}
+
+.interest-name {
+    font-size: 12px;
+    height: 16px;
+    line-height: 14px;
+    width: 110px;
+    overflow: hidden;
+    margin-top: -2px;
+    margin-top: 0 \9;
+    _margin-top: -2px;
+    position: relative;
+}
+
+.interest-class {
+    height: 20px;
+    overflow: hidden;
+}
+
+.groups-shadow {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.R-list li {
+    width: 175px;
+    overflow: hidden;
+    border-top: 1px dotted #ddd;
+    padding: 15px 0 15px 0;
+    margin-top: -1px;
+    position: relative;
+}
+
+.R-list .groups-Rimg img {
+    width: 30px;
+    height: 30px;
+}
+
+.R-list .groups-Rinfo {
+    margin-left: 35px;
+    margin-top: -3px;
+    margin-top: -3px \9;
+}
+
+.R-list .groups-t {
+    white-space: nowrap;
+    width: 170px;
+    height: 18px;
+    overflow: hidden;
+}
+
+.R-list .groups-c {
+    white-space: nowrap;
+    width: 152px;
+    overflow: hidden;
+}
+
+.R-list .groups-c .gray03 {
+    color: #E0E0E0;
+}
+
+.gg-content {
+    margin-top: 15px;
+}
+
+.gg-list {
+    width: 175px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.gg-list li {
+    height: 22px;
+}
+
+.gg-list li .point {
+    width: 3px;
+    height: 3px;
+    float: left;
+    overflow: hidden;
+    background: #666;
+    margin: 7px 0 0 0;
+}
+
+.gg-list li .info {
+    width: 165px;
+    margin: 0 0 0 7px;
+    margin-left:: 7px \9;
+    _margin-left: 7px;
+    white-space: nowrap;
+    float: left;
+    overflow: hidden;
+}

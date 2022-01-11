@@ -1,0 +1,307 @@
+.data {
+    width: 784px;
+    padding: 10px;
+    float: left
+}
+
+.data p.title {
+    width: 720px;
+    height: 32px;
+    line-height: 32px;
+    text-indent: 5px;
+    color: #ff9214;
+    margin: 10px auto;
+    border: 1px solid #ffe0bc;
+    background: #fffdf0 url(/Images/arrow_button.png) no-repeat -160px -198px;
+    padding: 0 0 0 24px
+}
+
+.data ul {
+    width: 700px;
+    padding: 20px 42px 0 42px;
+    float: left
+}
+
+.data ul li {
+    width: 700px;
+    float: left;
+    padding: 0 0 10px 0
+}
+
+.data ul.main li span, .data ul.main li p, .data ul.main li input, .data ul.main li divs {
+    line-height: 29px;
+    float: left
+}
+
+.data ul.main li div.wrong, .data ul.sel li div.wrong {
+    background: url(/Images/arrow_button.png) no-repeat -162px -72px;
+    padding: 0 0 0 30px;
+    line-height: 29px;
+    width: 290px;
+    color: #f60;
+    float: left
+}
+
+.data ul.main li div.ok, .data ul.sel li div.ok {
+    background: url(/Images/arrow_button.png) no-repeat -162px -115px;
+    padding: 0 0 0 30px;
+    line-height: 29px;
+    width: 290px;
+    color: #f60;
+    float: left
+}
+
+.data ul li span {
+    width: 80px;
+    line-height: 27px;
+    text-align: right;
+    color: #666;
+    display: block;
+    float: left
+}
+
+.data ul.main li p {
+    color: #666;
+    font-weight: bold
+}
+
+.data ul.main li input {
+    width: 170px;
+    height: 27px;
+    line-height: 27px;
+    display: block;
+    border: 0;
+    border-left: 1px solid #c2c2c2;
+    border-top: 1px solid #c2c2c2;
+    border-bottom: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    padding: 0 0 0 3px
+}
+
+.data ul.main li a {
+    height: 18px;
+    display: block;
+    color: #0e71c2;
+    float: left;
+    margin: 5px 0 0 5px
+}
+
+.data ul.main li a.go {
+    margin: 5px 0 0 5px;
+    *margin: -10px 0 0 5px;
+    _margin: -10px 0 0 5px
+}
+
+.data ul.main li a:hover {
+    color: #f60
+}
+
+.data ul.main li div {
+    color: #c9c9c9;
+    padding: 5px 0 0 5px
+}
+
+.data h4 {
+    width: 769px;
+    float: left;
+    font-weight: bold;
+    padding: 20px 0 0 5px;
+    border-bottom: 1px solid #ebebeb;
+    margin: 0 5px
+}
+
+.data ul.sel li {
+    padding: 0 0 15px 0
+}
+
+.data ul.sel li .errmsg {
+    color: #f60;
+    display: none
+}
+
+.data ul.sel li div {
+    float: left
+}
+
+.data ul.sel li div.ok {
+    background: url(/Images/arrow_button.png) no-repeat -170px -115px
+}
+
+.data ul.sel li div.wrong {
+    background: url(/Images/arrow_button.png) no-repeat -170px -72px;
+    padding: 0 0 0 20px;
+    width: 290px;
+    color: #f60
+}
+
+.data ul.sel li.love div {
+    padding: 0 20px 0 0
+}
+
+.data ul.sel li.love div.text {
+    width: 650px;
+    padding: 10px 0 0 80px
+}
+
+.data ul.sel li div input {
+    display: block;
+    margin: 3px 0 0 0;
+    *margin: -2px 0 0 0;
+    _margin: 0;
+    float: left
+}
+
+.data ul.sel li div p {
+    float: left;
+    padding: 0 10px 0 0
+}
+
+.data ul.sel li.love div.text input.other, .data ul.sel li.love div.text p {
+    margin: 10px 0 0 0
+}
+
+.data ul.sel li.love div.text input.other {
+    margin: 10px 0 0 0;
+    *margin: 5px 0 0 0;
+    _margin: 5px 0 0 0
+}
+
+.data ul.sel li.love div.text p {
+    margin: 7px 0 0 0
+}
+
+.data ul.sel li.love input.text, .data ul.sel li.bor input {
+    width: 180px;
+    height: 27px;
+    line-height: 27px;
+    display: block;
+    border: 0;
+    border-left: 1px solid #c2c2c2;
+    border-top: 1px solid #c2c2c2;
+    border-bottom: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    padding: 0 0 0 3px
+}
+
+.data ul.sel li.bor input {
+    width: 120px
+}
+
+.data ul.sel li.end {
+    width: 620px;
+    padding: 0 0 10px 80px
+}
+
+.data ul.sel li div.ing, .member .member_right .password ul li div.ing {
+    width: 83px;
+    height: 29px;
+    line-height: 29px;
+    margin: 0 0 0 10px;
+    background: url(/Images/arrow_button.png) 0 -500px;
+    float: left;
+    padding: 0 0 0 10px
+}
+
+.data ul.sel li.bor select {
+    width: 55px
+}
+
+.data ul.sel li div.ing p, .member .member_right .password ul li div.ing p {
+    text-indent: 18px;
+    color: #666;
+    font-weight: bold;
+    background: url(/Images/loading.gif) no-repeat left center
+}
+
+.data ul.sel li input.save, .member .member_right .password ul li input.save {
+    width: 82px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    border: 0;
+    background: url(/Images/arrow_button.png) 0 -450px;
+    cursor: pointer;
+    float: left
+}
+
+.member .member_right .password {
+    width: 784px;
+    padding: 10px;
+    float: left
+}
+
+.member .member_right .password ul {
+    width: 700px;
+    padding: 30px 0 0 84px;
+    float: left
+}
+
+.member .member_right .password ul li {
+    width: 700px;
+    padding: 0 0 15px 0;
+    float: left
+}
+
+.member .member_right .password ul li span {
+    width: 100px;
+    height: 29px;
+    line-height: 29px;
+    text-align: right;
+    display: block;
+    float: left
+}
+
+.member .member_right .password ul li input {
+    width: 180px;
+    height: 27px;
+    line-height: 27px;
+    display: block;
+    border: 0;
+    border-left: 1px solid #c2c2c2;
+    border-top: 1px solid #c2c2c2;
+    border-bottom: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    float: left;
+    padding: 0 0 0 3px
+}
+
+.member .member_right .password ul li div {
+    width: 410px;
+    height: 29px;
+    line-height: 29px;
+    overflow: hidden;
+    color: #666;
+    float: right
+}
+
+.member .member_right .password ul li div.ok {
+    background: url(/Images/arrow_button.png) no-repeat -170px -115px
+}
+
+.member .member_right .password ul li div.wrong {
+    background: url(/Images/arrow_button.png) no-repeat -170px -72px;
+    padding: 0 0 0 20px;
+    width: 390px;
+    color: #f60
+}
+
+.member .member_right .password ul li.end {
+    padding: 0 0 0 100px;
+    width: 600px
+}
+
+.member .member_right .password div.ts {
+    width: 163px;
+    height: 51px;
+    line-height: 51px;
+    text-align: center;
+    float: left;
+    background: url(/Images/arrow_button.png) no-repeat 0 -530px;
+    margin: 0 0 0 184px;
+    *margin: 0 0 0 184px;
+    _margin: 0 0 0 92px
+}

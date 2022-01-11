@@ -1,0 +1,118 @@
+.consumer_records {
+    width: 784px;
+    padding: 10px;
+    float: left
+}
+
+.consumer_records .inquiry .right a.back {
+    width: 86px;
+    height: 23px;
+    line-height: 23px;
+    float: right;
+    display: block;
+    color: #666;
+    font-weight: bold;
+    text-indent: 23px;
+    background: url(/Images/arrow_button.png) 0 -290px
+}
+
+.consumer_records_list {
+    border-top: 1px solid #ebebeb;
+    float: left;
+    margin: 10px 0 0 0;
+    width: 784px
+}
+
+.consumer_records_list ul.title, .consumer_records_list ul.content, .consumer_records_list ul.gtitle {
+    width: 784px;
+    border-bottom: 1px solid #ebebeb;
+    height: 31px;
+    margin: 1px 0 0 0
+}
+
+.consumer_records_list ul.title li {
+    float: left;
+    line-height: 31px
+}
+
+.consumer_records_list ul.content li, .consumer_records_list ul.gtitle li {
+    width: 260px;
+    color: #7d7d7d;
+    float: left;
+    line-height: 31px;
+    height: 31px;
+    text-indent: 10px;
+    text-align: left
+}
+
+.consumer_records_list ul.content li.time {
+    color: #a7a7a7
+}
+
+.consumer_records_list ul.content li.much {
+    color: #fb0000;
+    float: right;
+    width: 80px;
+    padding: 0 10px 0 0
+}
+
+.consumer_records_list ul.gtitle li.much, .consumer_records_list ul.content li.bank {
+    width: 100px;
+    padding: 0 80px
+}
+
+.consumer_records_list ul.gtitle li.do {
+    color: #7d7d7d;
+    width: 70px;
+    padding: 0 0 0 190px
+}
+
+.consumer_records_list ul.gtitle li.status {
+    float: right;
+    width: 80px;
+    padding: 0 10px 0 0
+}
+
+.consumer_records_list ul.content li.do {
+    color: #1070c4;
+    width: 70px;
+    padding: 0 0 0 190px
+}
+
+.consumer_records_list ul.content li.do a {
+    color: #1070c4
+}
+
+.consumer_records_list ul.content li.do a:hover {
+    color: #f60
+}
+
+.consumer_records_list ul.content li.bank, .consumer_records_list ul.content li.ok {
+    color: #666
+}
+
+.consumer_records_list ul li.name {
+    width: 360px;
+    height: 31px;
+    display: block;
+    text-align: left;
+    padding: 0 0 0 10px;
+    overflow: hidden
+}
+
+.consumer_records_list ul.content li.name {
+    padding: 0
+}
+
+.consumer_records_list ul li.name a {
+    color: #1070c4
+}
+
+.consumer_records_list ul li.name a:hover {
+    color: #f60
+}
+
+.consumer_records_list ul li.num, .consumer_records_list ul li.all {
+    width: 105px;
+    padding: 0 0 0 100px
+}

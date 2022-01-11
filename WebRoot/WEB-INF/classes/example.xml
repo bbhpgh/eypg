@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <!-- 首页 -->
+    <package name="index" namespace="/" extends="struts-default">
+        <action name="*" method="{1}" class="com.eypg.action.IndexAction">
+            <result name="index">/WEB-INF/template/index/{1}.jsp</result>
+            <result name="referAuthLogin">/WEB-INF/template/referAuth/referAuthLogin.jsp</result>
+            <result name="allBuyRecord">/WEB-INF/template/index/allBuyRecord.jsp</result>
+            <result name="newRecord">/WEB-INF/template/index/newRecord.jsp</result>
+        </action>
+    </package>
+
+    <package name="register" namespace="/" extends="struts-default">
+        <action name="register/*" method="{1}" class="com.eypg.action.RegisterAction">
+            <result name="index">/WEB-INF/template/register/{1}.jsp</result>
+            <result name="mobilecheck">/WEB-INF/template/register/mobilecheck.jsp</result>
+            <result name="emailcheck">/WEB-INF/template/register/emailcheck.jsp</result>
+            <result name="emailok">/WEB-INF/template/register/emailok.jsp</result>
+            <result name="index_index" type="redirect">/index.html</result>
+        </action>
+    </package>
+
+    <package name="login" namespace="/" extends="struts-default">
+        <action name="login/*" method="{1}" class="com.eypg.action.LoginAction">
+            <result name="index">/WEB-INF/template/login/{1}.jsp</result>
+            <result name="fastLogin">/WEB-INF/template/login/fastLogin.jsp</result>
+            <result name="buyCartLogin">/WEB-INF/template/login/buyCartLogin.jsp</result>
+            <result name="postCommentLogin">/WEB-INF/template/login/postCommentLogin.jsp</result>
+            <result name="index_index" type="redirect">/index.html</result>
+        </action>
+    </package>
+
+    <package name="logout" namespace="/" extends="struts-default">
+        <action name="logout/*" method="{1}" class="com.eypg.action.LogoutAction">
+            <result name="index_index" type="redirect">/index.html</result>
+            <result name="logout">/WEB-INF/template/logout/index.jsp</result>
+        </action>
+    </package>
+
+    <package name="user" namespace="/" extends="struts-default">
+        <action name="user/*" method="{1}" class="com.eypg.action.UserAction">
+            <result name="index">/WEB-INF/template/user/{1}.jsp</result>
+            <result name="login_index" type="redirect">/login/index.html?forward=${forward}</result>
+            <result name="UserBuyList">/WEB-INF/template/user/UserBuyList.jsp</result>
+            <result name="OrderList">/WEB-INF/template/user/OrderList.jsp</result>
+            <result name="OrderDetail">/WEB-INF/template/user/OrderDetail.jsp</result>
+            <result name="PostSingleList">/WEB-INF/template/user/PostSingleList.jsp</result>
+            <result name="PostSingleAdd">/WEB-INF/template/user/PostSingleAdd.jsp</result>
+            <result name="UserBalance">/WEB-INF/template/user/UserBalance.jsp</result>
+            <result name="ConsumeList">/WEB-INF/template/user/ConsumeList.jsp</result>
+            <result name="RechargeList">/WEB-INF/template/user/RechargeList.jsp</result>
+            <result name="Address">/WEB-INF/template/user/Address.jsp</result>
+            <result name="MemberModify">/WEB-INF/template/user/MemberModify.jsp</result>
+            <result name="UserPhoto">/WEB-INF/template/user/UserPhoto.jsp</result>
+            <result name="UpdatePassWord">/WEB-INF/template/user/UpdatePassWord.jsp</result>
+            <result name="UserBuyDetail">/WEB-INF/template/user/UserBuyDetail.jsp</result>
+            <result name="UserRecharge">/WEB-INF/template/user/UserRecharge.jsp</result>
+            <result name="InvitedList">/WEB-INF/template/user/InvitedList.jsp</result>
+            <result name="CommissionQuery">/WEB-INF/template/user/CommissionQuery.jsp</result>
+            <result name="ApplyMention">/WEB-INF/template/user/ApplyMention.jsp</result>
+            <result name="MentionList">/WEB-INF/template/user/MentionList.jsp</result>
+            <result name="CommissionPoints">/WEB-INF/template/user/CommissionPoints.jsp</result>
+            <result name="userCardRecharge">/WEB-INF/template/user/userCardRecharge.jsp</result>
+        </action>
+    </package>
+
+    <package name="userInfo" namespace="/" extends="struts-default">
+        <action name="u/*" method="{1}" class="com.eypg.action.UserInfoAction">
+            <result name="index">/WEB-INF/template/userInfo/{1}.jsp</result>
+            <result name="UserBuy">/WEB-INF/template/userInfo/UserBuy.jsp</result>
+            <result name="UserRaffle">/WEB-INF/template/userInfo/UserRaffle.jsp</result>
+            <result name="UserPost">/WEB-INF/template/userInfo/UserPost.jsp</result>
+            <result name="UserFriends">/WEB-INF/template/userInfo/UserFriends.jsp</result>
+        </action>
+    </package>
+
+    <package name="ConsumeDetail" namespace="/" extends="struts-default">
+        <action name="ConsumeDetail/*" method="{1}" class="com.eypg.action.ConsumeDetailAction">
+            <result name="ConsumeDetail">/WEB-INF/template/user/ConsumeDetail.jsp</result>
+        </action>
+    </package>
+
+    <package name="products" namespace="/" extends="struts-default">
+        <action name="products/*" method="{1}" class="com.eypg.action.ProductsAction">
+            <result name="index">/WEB-INF/template/products/{1}.jsp</result>
+            <result name="lottery">/WEB-INF/template/products/lottery.jsp</result>
+        </action>
+    </package>
+
+    <package name="productInfo" namespace="/" extends="struts-default">
+        <action name="productInfo/*" method="{1}" class="com.eypg.action.ProductInfoAction">
+            <result name="index">/WEB-INF/template/productInfo/{1}.jsp</result>
+        </action>
+    </package>
+
+    <package name="getbackpwd" namespace="/" extends="struts-default">
+        <action name="getbackpwd/*" method="{1}" class="com.eypg.action.GetBackPwdAction">
+            <result name="index">/WEB-INF/template/getbackpwd/{1}.jsp</result>
+            <result name="findemailcheck">/WEB-INF/template/getbackpwd/findemailcheck.jsp</result>
+            <result name="findreset">/WEB-INF/template/getbackpwd/findreset.jsp</result>
+            <result name="findok">/WEB-INF/template/getbackpwd/findok.jsp</result>
+            <result name="login_index" type="redirect">/login/index.html?forward=${forward}</result>
+            <result name="index_index" type="redirect">/index.html</result>
+        </action>
+    </package>
+
+    <package name="setnamepwd" namespace="/" extends="struts-default">
+        <action name="setnamepwd/*" method="{1}" class="com.eypg.action.SetNamePwdAction">
+            <result name="index">/WEB-INF/template/setnamepwd/{1}.jsp</result>
+            <result name="login_index" type="redirect">/login/index.html?forward=${forward}</result>
+        </action>
+    </package>
+
+    <package name="news" namespace="/" extends="struts-default">
+        <action name="news/*" method="{1}" class="com.eypg.action.NewsAction">
+            <result name="index">/WEB-INF/template/news/{1}.jsp</result>
+        </action>
+    </package>
+
+    <package name="help" namespace="/" extends="struts-default">
+        <action name="help/*" method="{1}" class="com.eypg.action.HelpAction">
+            <result name="index">/WEB-INF/template/help/{1}.jsp</result>
+            <result name="openCookie">/WEB-INF/template/help/openCookie.jsp</result>
+            <result name="whatPaigou">/WEB-INF/template/help/whatPaigou.jsp</result>
+            <result name="paigouRule">/WEB-INF/template/help/paigouRule.jsp</result>
+            <result name="paigouFlow">/WEB-INF/template/help/paigouFlow.jsp</result>
+            <result name="questionDetail">/WEB-INF/template/help/questionDetail.jsp</result>
+            <result name="agreement">/WEB-INF/template/help/agreement.jsp</result>
+            <result name="genuinetwo">/WEB-INF/template/help/genuinetwo.jsp</result>
+            <result name="genuine">/WEB-INF/template/help/genuine.jsp</result>
+            <result name="securepayment">/WEB-INF/template/help/securepayment.jsp</result>
+            <result name="ship">/WEB-INF/template/help/ship.jsp</result>
+            <result name="suggestion">/WEB-INF/template/help/suggestion.jsp</result>
+            <result name="deliveryFees">/WEB-INF/template/help/deliveryFees.jsp</result>
+            <result name="prodCheck">/WEB-INF/template/help/prodCheck.jsp</result>
+            <result name="shiptwo">/WEB-INF/template/help/shiptwo.jsp</result>
+            <result name="privacy">/WEB-INF/template/help/privacy.jsp</result>
+            <result name="userExperience">/WEB-INF/template/help/userExperience.jsp</result>
+            <result name="qqgroup">/WEB-INF/template/help/qqgroup.jsp</result>
+        </action>
+    </package>
+
+    <package name="about" namespace="/" extends="struts-default">
+        <action name="about/*" method="{1}" class="com.eypg.action.AboutAction">
+            <result name="index">/WEB-INF/template/about/{1}.jsp</result>
+            <result name="jobs">/WEB-INF/template/about/jobs.jsp</result>
+            <result name="contactus">/WEB-INF/template/about/contactus.jsp</result>
+            <result name="Links">/WEB-INF/template/about/Links.jsp</result>
+        </action>
+    </package>
+
+    <package name="list" namespace="/" extends="struts-default">
+        <action name="list/*" method="{1}" class="com.eypg.action.ListAction">
+            <result name="index">/WEB-INF/template/list/{1}.jsp</result>
+        </action>
+    </package>
+
+    <package name="productList" namespace="/" extends="struts-default">
+        <action name="productList/*" method="{1}" class="com.eypg.action.ProductList">
+            <result name="index">/WEB-INF/template/productList/{1}.jsp</result>
+        </action>
+    </package>
+
+    <package name="lottery" namespace="/" extends="struts-default">
+        <action name="lottery/*" method="{1}" class="com.eypg.action.LotteryAction">
+            <result name="index">/WEB-INF/template/lottery/{1}.jsp</result>
+        </action>
+    </package>
+
+    <package name="lotteryDetail" namespace="/" extends="struts-default">
+        <action name="lotteryDetail/*" method="{1}" class="com.eypg.action.LotteryDetailAction">
+            <result name="index">/WEB-INF/template/lotteryDetail/{1}.jsp</result>
+        </action>
+    </package>
+
+    <package name="share" namespace="/" extends="struts-default">
+        <action name="share/*" method="{1}" class="com.eypg.action.ShareAction">
+            <result name="index">/WEB-INF/template/share/{1}.jsp</result>
+        </action>
+    </package>
+
+    <package name="shareShow" namespace="/" extends="struts-default">
+        <action name="shareShow/*" method="{1}" class="com.eypg.action.ShareShowAction">
+            <result name="index">/WEB-INF/template/share/shareinfo.jsp</result>
+        </action>
+    </package>
+
+    <package name="search" namespace="/" extends="struts-default">
+        <action name="search/*" method="{1}" class="com.eypg.action.SearchAction">
+            <result name="index">/WEB-INF/template/search/{1}.jsp</result>
+        </action>
+    </package>
+
+    <package name="mycart" namespace="/" extends="struts-default">
+        <action name="mycart/*" method="{1}" class="com.eypg.action.MyCartAction">
+            <result name="index">/WEB-INF/template/mycart/{1}.jsp</result>
+            <result name="payment">/WEB-INF/template/mycart/payment.jsp</result>
+            <result name="index_index" type="redirect">/index.html</result>
+            <result name="success">/WEB-INF/template/tenpay/index.jsp</result>
+        </action>
+    </package>
+
+    <package name="cartPay" namespace="/" extends="struts-default">
+        <action name="cartPay/*" method="{1}" class="com.eypg.action.CartPayAction">
+            <result name="index">/WEB-INF/template/cartpay/{1}.jsp</result>
+            <result name="payment">/WEB-INF/template/cartpay/payment.jsp</result>
+            <result name="success">/WEB-INF/template/cartpay/success.jsp</result>
+        </action>
+    </package>
+
+    <package name="upload" namespace="/" extends="struts-default">
+        <action name="fileUpload/*" method="{1}" class="com.eypg.action.FileUploadAction">
+        </action>
+    </package>
+
+    <package name="tenpay" namespace="/" extends="struts-default">
+        <action name="tenpay/*" method="{1}" class="com.eypg.action.TenpayAction">
+            <result name="success">/WEB-INF/template/tenpay/index.jsp</result>
+        </action>
+    </package>
+
+    <package name="alipay" namespace="/" extends="struts-default">
+        <action name="alipay/*" method="{1}" class="com.eypg.action.AlipayAction">
+            <result name="success">/WEB-INF/template/tenpay/index.jsp</result>
+        </action>
+    </package>
+
+    <package name="yeepay" namespace="/" extends="struts-default">
+        <action name="yeepay/*" method="{1}" class="com.eypg.action.YeepayAction">
+            <result name="success">/WEB-INF/template/tenpay/index.jsp</result>
+        </action>
+    </package>
+
+    <package name="yeepayBalance" namespace="/" extends="struts-default">
+        <action name="yeepayBalance/*" method="{1}" class="com.eypg.action.YeepayBalanceAction">
+            <result name="success">/WEB-INF/template/balance/index.jsp</result>
+        </action>
+    </package>
+
+    <package name="balance" namespace="/" extends="struts-default">
+        <action name="balance/*" method="{1}" class="com.eypg.action.BalanceAction">
+            <result name="success">/WEB-INF/template/balance/index.jsp</result>
+        </action>
+    </package>
+
+    <package name="alipayBalance" namespace="/" extends="struts-default">
+        <action name="alipayBalance/*" method="{1}" class="com.eypg.action.AlipayBalanceAction">
+            <result name="success">/WEB-INF/template/balance/index.jsp</result>
+        </action>
+    </package>
+</struts>

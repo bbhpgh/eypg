@@ -1,0 +1,355 @@
+.ygRecord {
+    width: 980px;
+    background: #f6f6f6;
+}
+
+.ygRecord h3 {
+    width: 980px;
+    height: 37px;
+    overflow: hidden;
+    background: #f6f6f6 url(/Images/ygRecord.png) no-repeat 20px -68px;
+}
+
+.ygRecord h3 span {
+    width: 400px;
+    padding: 0 0 0 50px;
+    display: block;
+    float: left;
+    line-height: 38px;
+    _line-height: 40px;
+    line-height: 41px \0;
+    font-size: 14px;
+    color: #f60;
+    font-weight: bold;
+}
+
+.ygRecord h3 p {
+    float: right;
+    line-height: 37px;
+    padding: 0 20px 0 0;
+    color: #4a91d4;
+}
+
+.ygRecord h3 p strong {
+    color: #f60;
+}
+
+.ygRecord h3 a {
+    font-size: 12px;
+    font-weight: normal;
+    color: #4a91d4;
+    font-family: "宋体";
+}
+
+.ygRecord ul.Record_title {
+    width: 978px;
+    height: 33px;
+    background: #f6f6f6 url(/Images/ygRecord.png) 0 -30px;
+    border-left: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+    border-bottom: 1px solid #f1f1f1;
+    border-top: 1px solid #dadada;
+}
+
+.ygRecord ul.Record_content, .ygRecord ul.Record_contents, .ygRecord .Recordnone, .ygRecord .Recordloading, .ygRecord .RecordError {
+    width: 978px;
+    height: 35px;
+    border-left: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.ygRecord .Recordnone {
+    width: 560px;
+    height: 17px;
+    padding: 45px 0 45px 418px;
+}
+
+.ygRecord .Recordnone li {
+    height: 17px;
+    display: block;
+    float: left;
+    background: url(/Images/arrow_button.png) no-repeat -160px -203px;
+    text-indent: 30px;
+}
+
+.ygRecord .Recordloading {
+    padding: 45px 0;
+    background: url(/Images/loading.gif) no-repeat center;
+}
+
+.ygRecord .RecordError {
+    width: 900px;
+    height: 17px;
+    padding: 45px 0 45px 78px;
+}
+
+.ygRecord .RecordError li {
+    height: 17px;
+    display: block;
+    float: left;
+    background: url(/Images/arrow_button.png) no-repeat -160px -203px;
+    text-indent: 30px;
+}
+
+.ygRecord div.RecordOnehundred {
+    width: 976px;
+    border-left: 2px solid #ff9c00;
+    border-right: 2px solid #ff9c00;
+    border-bottom: 2px solid #ff9c00;
+    background: #fffef1;
+    position: relative;
+}
+
+.ygRecord div.RecordOnehundred h4 {
+    width: 976px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    color: #fff;
+    background: #ff9c00;
+}
+
+.ygRecord div.RecordOnehundred div.FloatBox {
+    width: 145px;
+    height: 3598px;
+    position: absolute;
+    top: 23px;
+    left: 86px;
+    border: 1px solid #54B400;
+    background: url(/Images/resultArrow.png) repeat-y 72px 0;
+}
+
+.ygRecord div.RecordOnehundred div.ResultBox {
+    width: 936px;
+    padding: 10px 0 10px 40px;
+    background: #ff9c00;
+    line-height: 20px;
+    color: #FFF;
+}
+
+.ygRecord div.RecordOnehundred div.ResultBox div.ResultMethod {
+    margin: 0;
+    width: 500px;
+    padding-left: 40px;
+    background: #fff;
+    line-height: 20px;
+    color: #666;
+}
+
+.ygRecord div.RecordOnehundred ul {
+    width: 976px;
+    height: 35px;
+    border-bottom: 1px solid #f9e6cc;
+}
+
+.ygRecord ul.Record_contents {
+    background: #fbfbfb;
+}
+
+.ygRecord ul.Record_title li {
+    line-height: 33px;
+    color: #c2c2c2;
+    float: left;
+    padding: 0 0 0 20px;
+}
+
+.ygRecord ul.Record_content li, .ygRecord ul.Record_contents li, .ygRecord div.RecordOnehundred ul li {
+    color: #666;
+    height: 17px;
+    line-height: 17px;
+    float: left;
+    display: block;
+    overflow: hidden;
+    padding: 9px 0 9px 20px;
+}
+
+.ygRecord ul.Record_title li.time, .ygRecord ul.Record_content li.time, .ygRecord ul.Record_contents li.time {
+    width: 220px;
+}
+
+.ygRecord div.RecordOnehundred ul li.time {
+    width: 140px;
+}
+
+.ygRecord div.RecordOnehundred ul li.timeVal {
+    padding-left: 9px;
+    width: 85px;
+    color: #F60;
+}
+
+.ygRecord ul.Record_title li.nem, .ygRecord ul.Record_content li.nem, .ygRecord ul.Record_contents li.nem, .ygRecord div.RecordOnehundred ul li.nem {
+    width: 130px;
+}
+
+.ygRecord div.RecordOnehundred ul li.nem {
+    padding-left: 5px;
+    width: 130px;
+}
+
+.ygRecord ul.Record_title li.name, .ygRecord ul.Record_content li.name, .ygRecord ul.Record_contents li.name, .ygRecord div.RecordOnehundred ul li.name {
+    width: 470px;
+}
+
+.ygRecord ul.Record_title li.much, .ygRecord ul.Record_content li.much, .ygRecord ul.Record_contents li.much {
+    width: 78px;
+}
+
+.ygRecord div.RecordOnehundred ul li.much {
+    width: 77px;
+}
+
+.ygRecord ul.Record_content li.name a, .ygRecord ul.Record_contents li.name a, .ygRecord div.RecordOnehundred ul li.name a {
+    line-height: 17px;
+    color: #4a91d4;
+}
+
+.ygRecord div.endpage {
+    width: 960px;
+    height: 37px;
+    line-height: 37px;
+    color: #4a91d4;
+    text-align: right;
+    background: #f6f6f6;
+    border-top: 1px solid #dadada;
+    padding: 0 20px 0 0;
+}
+
+.ygRecord div.endpage a {
+    font-family: "宋体";
+    color: #4a91d4;
+}
+
+.ygRecord div.endpage strong {
+    color: #f60;
+}
+
+.ygRecord a:hover, .ygRecord div a:hover, .ygRecord ul li.name a:hover, .ygRecord div.RecordOnehundred ul li.name a:hover {
+    color: #f60;
+}
+
+.ygRecord div.border {
+    width: 970px;
+    margin: 0 5px;
+    height: 1px;
+    border-bottom: 1px solid #fff;
+    background: #e6e6e6;
+    line-height: 3px;
+    overflow: hidden;
+}
+
+.RecordSearch {
+    width: 940px;
+    padding: 15px 20px;
+    height: 25px;
+    color: #666;
+}
+
+.RecordSearch div.from, .RecordSearch div.over {
+    width: 330px;
+    float: left;
+    padding: 3px 0 0 0;
+}
+
+.RecordSearch div.from p, .RecordSearch div.from input, .RecordSearch div.from select, .RecordSearch div.over p, .RecordSearch div.over input, .RecordSearch div.over select {
+    float: left;
+    color: #666;
+}
+
+.RecordSearch div.from p, .RecordSearch div.over p {
+    line-height: 20px;
+    *line-height: 24px;
+}
+
+.RecordSearch div.from input, .RecordSearch div.over input {
+    width: 80px;
+    height: 20px;
+    padding: 0 5px 0 5px;
+    line-height: 20px;
+    border: none;
+    border: 1px solid #dcdcdc;
+}
+
+.RecordSearch div.from select, .RecordSearch div.over select {
+    width: 50px;
+    height: 22px;
+    *height: 23px;
+    padding: 1px;
+    display: block;
+    border: none;
+    border: 1px solid #dcdcdc;
+    margin: 0 5px;
+}
+
+.RecordSearch input.Recordcx {
+    width: 63px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #666;
+    display: block;
+    border: none;
+    background: #f6f6f6 url(/Images/ygRecord.png) 0 0;
+    cursor: pointer;
+}
+
+.ygRecord .RecordShow {
+    width: 960px;
+    padding: 0 0 0 20px;
+}
+
+.ygRecord .RecordShow dl {
+    width: 960px;
+    height: 72px;
+    padding: 15px 0;
+}
+
+.ygRecord .RecordShow dl dt {
+    width: 72px;
+    height: 72px;
+    display: block;
+    float: left;
+    padding: 0 18px 0 0;
+}
+
+.ygRecord .RecordShow dl dt a {
+    width: 70px;
+    height: 70px;
+    display: block;
+    border: 1px solid #dadada;
+}
+
+.ygRecord .RecordShow dl dt a:hover {
+    border: 1px solid #f60;
+}
+
+.ygRecord .RecordShow dl dt a img {
+    width: 70px;
+    height: 70px;
+    display: block;
+    overflow: hidden;
+}
+
+.ygRecord .RecordShow dl dd {
+    width: 850px;
+    line-height: 22px;
+    float: left;
+    color: #666;
+}
+
+.ygRecord .RecordShow dl dd a {
+    color: #4a91d4;
+}
+
+.ygRecord .RecordShow dl dd a:hover, .ygRecord .RecordShow dl dd strong {
+    color: #f60;
+}
+
+.ygRecord .RecordShow dl dd span {
+    color: #b9b9b9;
+}
+
+.the-lottery .the-lottery-list .page_nav {
+    width: 980px;
+    overflow: hidden;
+}

@@ -1,0 +1,704 @@
+.login {
+    width: 100%;
+    background: #fafafa;
+    border-bottom: 1px solid #ededed;
+    padding: 15px 0 0 0
+}
+
+.login .login_top {
+    width: 980px;
+    height: 74px;
+    padding: 0 0 5px 0
+}
+
+.login .login_top h1 {
+    width: 117px;
+    height: 74px;
+    float: left;
+    padding: 0 0 0 20px
+}
+
+.login .login_top p {
+    float: right;
+    padding: 55px 15px 0 0
+}
+
+.login .login_top p a {
+    padding: 0 5px;
+    color: #aeaeae
+}
+
+.login .login_top a:hover {
+    color: #f60
+}
+
+.login .login_top p a.back_home {
+    background: url(/Images/header.png) no-repeat scroll right -374px
+}
+
+.login .login_bg {
+    width: 940px;
+    height: 390px;
+    padding: 0 20px
+}
+
+.login .login_bg .login_banner {
+    width: 542px;
+    height: 380px;
+    float: left
+}
+
+login .login_bg .login_banner a, .login .login_bg .login_banner img {
+    width: 542px;
+    height: 360px;
+    float: left
+}
+
+.login .login_bg .login_box {
+    width: 357px;
+    height: 360px;
+    float: right;
+    background: url(/Images/loginbg.jpg) no-repeat left top;
+    padding: 20px 0 0 36px
+}
+
+.login .login_bg .login_box h3 {
+    width: 253px;
+    height: 22px;
+    text-indent: -9999px;
+    background: url(/Images/login.png) 0 0;
+    margin: 0 0 20px 0
+}
+
+.login .login_bg .login_box ul {
+    width: 340px;
+    padding: 0 0 20px 0;
+    float: left
+}
+
+.login .login_bg .login_box ul li {
+    width: 340px;
+    clear: both
+}
+
+.login .login_bg .login_box ul li.ts {
+    width: 340px;
+    text-indent: 36px;
+    padding: 3px 0 5px 0;
+    color: #bfbfbf
+}
+
+.login .login_bg .login_box ul li.ts_wrong {
+    width: 284px;
+    margin: 0 0 0 36px;
+    padding: 3px 0 5px 20px;
+    color: #f60;
+    background: url(/Images/arrow_button.png) no-repeat -170px -74px;
+    *background: url(/Images/arrow_button.png) no-repeat -170px -76px;
+    _background: url(/Images/arrow_button.png) no-repeat -170px -74px
+}
+
+.login .login_bg .login_box ul li.end {
+    width: 304px;
+    padding: 10px 0 0 36px
+}
+
+.login .login_bg .login_box ul li span {
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    float: left
+}
+
+.login .login_bg .login_box ul li input.text_name, .login .login_bg .login_box ul li input.text_password {
+    width: 230px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    font-family: arial;
+    border: 0;
+    border: 1px solid #dbdbdb;
+    text-indent: 8px;
+    float: left;
+    background-color: #fff
+}
+
+.login .login_bg .login_box ul li input.text_name_focus, .login .login_bg .login_box ul li input.text_password_focus {
+    width: 228px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 14px;
+    font-family: arial;
+    border: 0;
+    border: 2px solid #ffa664;
+    background: #fffcf5;
+    text-indent: 7px;
+    float: left
+}
+
+.login .login_bg .login_box ul li span.fog {
+    padding: 0 5px;
+    color: #808080
+}
+
+.login .login_bg .login_box ul li span.fog a {
+    color: #808080
+}
+
+.login .login_bg .login_box ul li span.fog a:hover {
+    color: #f60
+}
+
+.login .login_bg .login_box ul li input.login_init {
+    background: url(/Images/arrow_button.png) no-repeat 0 -112px;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    width: 73px
+}
+
+.login .login_bg .login_box p, .login .login_bg .login_box h4 {
+    width: 314px;
+    padding: 0 0 0 36px;
+    color: #666;
+    float: left
+}
+
+.login .login_bg .login_box h4 a {
+    width: 103px;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    color: #f60;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    background: url(/Images/arrow_button.png) 0 -38px;
+    margin: 10px 0 0 0
+}
+
+.login .login_bg .login_box h4 a:hover {
+    text-decoration: none
+}
+
+.regsiter, .get_password {
+    width: 978px;
+    min-height: 300px;
+    border: 1px solid #e3e3e3;
+    overflow: auto
+}
+
+span a.regsiter {
+    border: 0
+}
+
+a.login {
+    background: 0;
+    border: 0
+}
+
+.regsiter h2 {
+    width: 978px;
+    height: 30px;
+    float: left;
+    margin: 0 0 20px 0;
+    padding: 13px 0 0 0
+}
+
+.regsiter h2 span, .get_password h2 span {
+    width: 163px;
+    height: 30px;
+    display: block;
+    text-indent: -9999px;
+    float: left
+}
+
+.regsiter h2 span {
+    background: url(/Images/login.png) no-repeat 0 -70px
+}
+
+.get_password h2 span {
+    background: url(/Images/login.png) no-repeat -80px -39px
+}
+
+.regsiter h2 p {
+    width: 100px;
+    height: 28px;
+    float: left;
+    line-height: 28px;
+    padding: 0 15px 0 700px;
+    color: #939393;
+    border-bottom: 2px solid #eee
+}
+
+.regsiter h2 p a {
+    color: #f60;
+    font-weight: bold
+}
+
+.regsiter .regsiter_box .tab {
+    width: 978px;
+    height: 120px;
+    padding: 20px 0 0 0;
+    clear: both
+}
+
+.regsiter .regsiter_box dl.regsiter_tel, .get_password .get_password_box dl.password_tel {
+    width: 398px;
+    height: 101px;
+    display: block;
+    float: left;
+    background: url(/Images/regbg.png);
+    margin: 0 0 0 76px;
+    *margin: 0 0 0 76px;
+    _margin: 0 0 0 38px;
+    cursor: pointer
+}
+
+.regsiter .regsiter_box dl.regsiter_tel dt, .get_password .get_password_box dl.password_tel dt {
+    width: 235px;
+    height: 59px;
+    float: left;
+    margin: 10px 20px 0 21px;
+    *margin: 10px 20px 0 21px;
+    _margin: 10px 20px 0 11px;
+    background: url(/Images/login.png) no-repeat 0 -280px;
+    text-indent: -9999px;
+    cursor: pointer
+}
+
+.get_password .get_password_box dl.password_tel dt {
+    background: url(/Images/login.png) no-repeat 0 -390px
+}
+
+.regsiter .regsiter_box dl.regsiter_tel dd, .get_password .get_password_box dl.password_tel dd {
+    width: 398px;
+    height: 30px;
+    float: left;
+    text-indent: 98px;
+    margin-top: -10px;
+    color: #f60
+}
+
+.regsiter .regsiter_box dl.regsiter_email, .get_password .get_password_box dl.password_email {
+    width: 378px;
+    height: 92px;
+    display: block;
+    float: right;
+    background: #f9f9f9;
+    border: 1px solid #e6e5e5;
+    padding-left: 20px;
+    margin: 0 74px 0 0;
+    *margin: 0 74px 0 0;
+    _margin: 0 37px 0 0;
+    cursor: pointer
+}
+
+.regsiter .regsiter_box dl.regsiter_email dt, .get_password .get_password_box dl.password_email dt {
+    width: 235px;
+    height: 54px;
+    float: left;
+    margin: 14px 0 0 0;
+    background: url(/Images/login.png) no-repeat 0 -105px;
+    text-indent: -9999px
+}
+
+.get_password .get_password_box dl.password_email dt {
+    background: url(/Images/login.png) no-repeat 0 -450px
+}
+
+.regsiter .regsiter_box dl.regsiter_email dd, .get_password .get_password_box dl.password_email dd {
+    width: 378px;
+    height: 30px;
+    float: left;
+    text-indent: 70px;
+    margin-top: -15px;
+    color: #a4a4a4
+}
+
+.regsiter .regsiter_box dl.regsiter_tel_click, .get_password .get_password_box dl.password_tel_click {
+    width: 378px;
+    height: 92px;
+    display: block;
+    float: left;
+    background: #f9f9f9;
+    border: 1px solid #e6e5e5;
+    padding-left: 20px;
+    margin: 0 0 0 76px;
+    *margin: 0 0 0 76px;
+    _margin: 0 0 0 38px;
+    cursor: pointer
+}
+
+.regsiter .regsiter_box dl.regsiter_tel_click dt, .get_password .get_password_box dl.password_tel_click dt {
+    width: 235px;
+    height: 59px;
+    float: left;
+    margin: 9px 15px 0 0;
+    background: url(/Images/login.png) no-repeat 0 -215px;
+    text-indent: -9999px
+}
+
+.regsiter .regsiter_box dl.regsiter_tel_click dd, .get_password .get_password_box dl.password_tel_click dd {
+    width: 378px;
+    height: 30px;
+    float: left;
+    text-indent: 77px;
+    margin-top: -10px;
+    color: #a4a4a4
+}
+
+.regsiter .regsiter_box dl.regsiter_email_click, .get_password .get_password_box dl.password_email_click {
+    width: 398px;
+    height: 101px;
+    display: block;
+    float: right;
+    background: url(/Images/regbg.png);
+    margin: 0 75px 0 0;
+    *margin: 0 75px 0 0;
+    _margin: 0 37px 0 0;
+    cursor: pointer
+}
+
+.regsiter .regsiter_box dl.regsiter_email_click dt, .get_password .get_password_box dl.password_email_click dt {
+    width: 235px;
+    height: 54px;
+    float: left;
+    float: left;
+    margin: 15px 20px 0 20px;
+    *margin: 15px 20px 0 20px;
+    _margin: 15px 20px 0 10px;
+    background: url(/Images/login.png) no-repeat 0 -160px;
+    text-indent: -9999px
+}
+
+.regsiter .regsiter_box dl.regsiter_email_click dd, .get_password .get_password_box dl.password_email_click dd {
+    width: 378px;
+    height: 30px;
+    float: left;
+    text-indent: 90px;
+    margin-top: -15px;
+    color: #f60
+}
+
+.regsiter .regsiter_box ul, .get_password .get_password_box ul {
+    width: 900px;
+    padding: 20px 0 0 75px;
+    clear: both
+}
+
+.regsiter .regsiter_box ul li, .get_password .get_password_box ul li {
+    width: 830px;
+    height: 36px;
+    padding: 8px 0;
+    clear: both
+}
+
+.regsiter .regsiter_box ul li.wait {
+    width: 670px;
+    padding: 8px 0 8px 130px
+}
+
+.regsiter .regsiter_box ul li input.tel_text, .regsiter .regsiter_box ul li input.password_text, .regsiter .regsiter_box ul li input.verification, .get_password .get_password_box ul li input.tel_text, .get_password .get_password_box ul li input.verification {
+    width: 230px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    font-family: arial;
+    border: 0;
+    border: 1px solid #c7c7c7;
+    float: left;
+    text-indent: 8px;
+    background-color: #fff
+}
+
+.regsiter .regsiter_box ul li input.verification {
+    width: 127px
+}
+
+.regsiter .regsiter_box ul li input.tel_text_click, .regsiter .regsiter_box ul li input.password_text_click, .regsiter .regsiter_box ul li input.verification_click, .get_password .get_password_box ul li.init input {
+    width: 228px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 14px;
+    font-family: arial;
+    border: 0;
+    border: 2px solid #ffa664;
+    background: #fffcf5;
+    float: left;
+    text-indent: 7px
+}
+
+.regsiter .regsiter_box ul li input.verification_click {
+    width: 125px
+}
+
+.regsiter .regsiter_box ul li.init, .get_password .get_password_box ul li.init {
+    background: #fffbe0
+}
+
+.regsiter .regsiter_box ul li span, .get_password .get_password_box ul li span {
+    width: 85px;
+    line-height: 28px;
+    font-size: 14px;
+    display: block;
+    float: left;
+    text-align: right;
+    padding: 0 5px 0 50px;
+    overflow: hidden
+}
+
+.regsiter .regsiter_box ul li div, .get_password .get_password_box ul li div {
+    width: 400px;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 0 0 20px;
+    color: #939393;
+    float: left;
+    overflow: hidden
+}
+
+.regsiter .regsiter_box ul li div.ok {
+    background: url(/Images/arrow_button.png) no-repeat -170px -115px;
+    text-indent: -9999px
+}
+
+.regsiter .regsiter_box ul li div.wrong {
+    width: 380px;
+    background: url(/Images/arrow_button.png) no-repeat -170px -73px;
+    *background: url(/Images/arrow_button.png) no-repeat -170px -73px;
+    _background: url(/Images/arrow_button.png) no-repeat -170px -73px;
+    color: #f60;
+    padding: 0 0 0 20px
+}
+
+.regsiter .regsiter_box ul li input.get_ver, .get_password .get_password_box ul li input.get_ver {
+    width: 93px;
+    height: 29px;
+    display: block;
+    border: 0;
+    cursor: pointer;
+    margin: 0 0 0 10px;
+    float: left;
+    background: url(/Images/arrow_button.png) no-repeat 0 -80px
+}
+
+.regsiter .regsiter_box ul li.agree, .get_password .get_password_box ul li.next, .regsiter .regsiter_box ul li.wait {
+    padding: 20px 0 20px 140px;
+    width: 698px;
+    float: left
+}
+
+.regsiter .regsiter_box ul li.agree input {
+    width: 171px;
+    height: 35px;
+    float: left;
+    line-height: 35px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    border: 0;
+    cursor: pointer;
+    background: url(/Images/arrow_button.png) no-repeat 0 -150px
+}
+
+.regsiter .regsiter_box ul li.wait p {
+    width: 158px;
+    height: 32px;
+    line-height: 32px;
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    float: left;
+    background: url(/Images/arrow_button.png) no-repeat 0 -190px
+}
+
+.regsiter .regsiter_box ul li.wait p span {
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    display: block;
+    float: left;
+    text-indent: 9999px;
+    background: url(/Images/loding.gif) no-repeat;
+    margin: 8px 3px 0 10px;
+    padding: 0
+}
+
+.login .login_box ul li.wait p {
+    width: 123px;
+    height: 32px;
+    line-height: 32px;
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    float: left;
+    background: url(/Images/arrow_button.png) no-repeat 0 -190px
+}
+
+.login .login_box ul li.wait p span {
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    display: block;
+    float: left;
+    text-indent: 9999px;
+    background: url(/Images/loding.gif) no-repeat;
+    margin: 8px 3px 0 -8px;
+    padding: 0
+}
+
+.get_password .get_password_box ul li.next input {
+    width: 73px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    background: url(/Images/arrow_button.png) no-repeat 0 -112px
+}
+
+.regsiter_complete {
+    width: 778px;
+    min-height: 150px;
+    border: 1px solid #e3e3e3;
+    background: #fffadc;
+    padding: 0 100px 50px 100px;
+    color: #4d4d4d;
+    overflow: auto
+}
+
+.regsiter_complete h2 {
+    width: 252px;
+    height: 40px;
+    background: url(/Images/login.png) no-repeat 0 -350px;
+    margin: 50px auto 20px auto;
+    text-indent: -9999px
+}
+
+.regsiter_complete ul {
+    width: 778px;
+    padding: 20px 0;
+    border-top: 1px solid #f3e9af
+}
+
+.regsiter_complete ul li {
+    width: 778px;
+    float: left;
+    padding: 0 0 10px 0;
+    text-indent: 150px
+}
+
+.regsiter_complete ul li a, .regsiter_complete ul li span {
+    color: #f60;
+    font-size: 14px;
+    font-weight: bold
+}
+
+.regsiter_complete .tel_verification {
+    width: 628px;
+    min-height: 200px;
+    padding: 0 0 0 150px;
+    clear: both
+}
+
+.regsiter_complete .tel_verification dl {
+    width: 480px;
+    border: 2px solid #f4df64;
+    background: #fff;
+    padding: 15px 0 30px 20px
+}
+
+.regsiter_complete .tel_verification dl span {
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    float: left
+}
+
+.regsiter_complete .tel_verification dl dt, .regsiter_complete .tel_verification dl dd {
+    width: 480px;
+    display: block;
+    line-height: 30px;
+    padding: 0 0 10px 0;
+    overflow: hidden
+}
+
+.regsiter_complete .tel_verification dl dt {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold
+}
+
+.regsiter_complete .tel_verification dl dd input.tel_init, .regsiter_complete .tel_verification dl dd input.num_init {
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    border: 0;
+    border: 1px solid #cacaca;
+    margin: 0 5px 0 0;
+    float: left
+}
+
+.regsiter_complete .tel_verification dl dd input.get_num {
+    background: url(/Images/arrow_button.png) no-repeat scroll 0 -80px transparent;
+    border: 0;
+    cursor: pointer;
+    width: 93px;
+    height: 29px;
+    margin: 0 10px 0 0;
+    float: left
+}
+
+.regsiter_complete .tel_verification dl dd div.wrong {
+    width: 300px;
+    height: 28px;
+    line-height: 28px;
+    color: #f60;
+    padding: 0 0 0 20px;
+    background: url(/Images/arrow_button.png) no-repeat -170px -72px transparent;
+    float: left;
+    margin: 0 0 0 80px;
+    *margin: 0 0 0 80px;
+    _margin: 0 0 0 42px
+}
+
+.regsiter_complete .tel_verification dl dd.end {
+    width: 416px;
+    padding: 0 0 0 84px
+}
+
+.regsiter_complete .tel_verification dl dd.end input.login_init {
+    width: 73px;
+    height: 35px;
+    background: url(/Images/arrow_button.png) no-repeat 0 -112px;
+    border: 0;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 10px 0 0
+}
+
+.regsiter_complete .tel_verification dl dd.end input.skip {
+    width: 72px;
+    height: 35px;
+    background: url(/Images/arrow_button.png) no-repeat -74px -112px;
+    border: 0;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: #a4a4a4
+}

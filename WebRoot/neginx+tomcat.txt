@@ -1,0 +1,537 @@
+http://www.cnblogs.com/wubaiqing/archive/2011/11/08/2241195.html
+
+PHP
+
+
+环境：
+操作系统均为：CentOS6 64bit
+安装make
+
+#依赖库和开发工具
+yum -y install gcc gcc-c++ autoconf libjpeg libjpeg-devel libpng libpng-devel freetype freetype-devel libxml2 libxml2-devel zlib zlib-devel glibc glibc-devel glib2 glib2-devel bzip2 bzip2-devel ncurses ncurses-devel curl curl-devel e2fsprogs e2fsprogs-devel krb5 krb5-devel libidn libidn-devel openssl openssl-devel openldap openldap-devel nss_ldap openldap-clients openldap-servers 
+
+yum -y install gcc gcc-c++ autoconf automake
+
+yum -y install vim-enhanced
+
+yum install -y unzip zip
+
+yum -y install zlib zlib-devel openssl openssl-devel pcre pcre-devel 
+
+#添加WWW用户
+/usr/sbin/groupadd www && /usr/sbin/useradd -g www www
+mkdir -p /var/log/nginx && chmod +w /var/log/nginx &&chown -R www:www /var/log/nginx
+mkdir -p /data/www && chmod +w /data/www && chown -R www:www /data/www
+
+首先上传安装pcre-8.30.zip
+unzip pcre-8.30.zip
+wget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.30.tar.gz
+解压后cp 或mv 到/usr/local/下
+
+安装nginx 
+上传nginx-1.2.4.tar.gz
+
+tar zxvf nginx-1.2.4.tar.gz
+cd nginx-1.2.4
+./configure --user=www --group=www --prefix=/usr/local/nginx --with-openssl=/usr/include --with-pcre=/usr/local/pcre/ --with-http_stub_status_module --with-http_memcached_module --with-http_rewrite_module 
+make
+make install
+
+默认安装的路径是/usr/local/nginx
+
+更多的安装配置
+./configure --prefix=/usr/local/nginx
+--with-openssl=/usr/include (启用ssl)
+--with-pcre=/usr/include/pcre/ (启用正规表达式)
+--with-http_stub_status_module (安装可以查看nginx状态的程序)
+--with-http_memcached_module (启用memcache缓存)
+--with-http_rewrite_module (启用支持url重写)
+
+查看防火墙信息：
+/etc/init.d/iptables status
+关闭防火墙服务：
+/etc/init.d/iptables stop
+
+vim /etc/sysconfig/iptables
+-A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
+然后保存：
+/etc/rc.d/init.d/iptables save
+重启防火墙使配置生效
+/etc/init.d/iptables restart  
+
+/sbin/iptables -I INPUT -p tcp --dport 80 -j ACCEPT
+/sbin/iptables -I INPUT -p tcp --dport 22 -j ACCEPT
+
+CentOS系统防止别人ping的方法：
+iptables -A INPUT -p icmp -j DROP
+/etc/rc.d/init.d/iptables save
+/etc/init.d/iptables restart 
+
+session 共享问题
+http://blog.csdn.net/a673341766/article/details/7466420
+多域名JSESSIONID 共享问题
+http://blog.seanchang.me/tomcat-to-achieve-the-main-domain-name-session-sharing-between-subdomains.html
+快速解决方案：修改 Tomcat 的 server.xml 文件，内容为：
+<Context docBase="/www/ROOT" path="/" reloadable="true" useHttpOnly="true" sessionCookiePath="/" sessionCookieDomain=".1ypg.com" />
+
+C3P0连接池详细配置
+http://msq.iteye.com/blog/154690
+
+第一步：查看Linux自带的JDK是否已安装 （卸载centOS已安装的1.4）
+安装好的CentOS会自带OpenJdk,用命令 java -version ，会有下面的信息：
+java version "1.6.0"
+OpenJDK Runtime Environment (build 1.6.0-b09)
+OpenJDK 64-Bit Server VM (build 1.6.0-b09, mixed mode)
+最好还是先卸载掉openjdk,在安装sun公司的jdk.
+先查看 rpm -qa | grep java
+显示如下信息：
+java-1.4.2-gcj-compat-1.4.2.0-40jpp.115
+java-1.6.0-openjdk-1.6.0.0-1.7.b09.el5
+卸载：
+rpm -e --nodeps java-1.4.2-gcj-compat-1.4.2.0-40jpp.115
+rpm -e --nodeps java-1.6.0-openjdk-1.6.0.0-1.7.b09.el5
+还有一些其他的命令
+rpm -qa | grep gcj
+rpm -qa | grep jdk
+如果出现找不到openjdk source的话，那么还可以这样卸载
+yum -y remove java java-1.4.2-gcj-compat-1.4.2.0-40jpp.115
+yum -y remove java java-1.6.0-openjdk-1.6.0.0-1.7.b09.el5
+
+<1># rpm -qa|grep jdk ← 查看jdk的信息或直接执行
+或
+# rpm -q jdk
+或
+# java -version
+<2># rpm -qa | grep gcj ← 确认gcj的版本号
+<3># yum -y remove java-1.4.2-gcj-compat ← 卸载gcj 
+
+安装JDK  jdk-7-linux-x64.tar.gz
+上传到home目录
+上传完毕后执行安装
+cd /home
+
+tar -zxvf jdk-7-linux-x64.tar.gz
+
+mv jdk1.7.0 /usr/local/
+
+配置多个tomcat 
+
+/etc/profile 里
+
+JAVA_HOME=/usr/java/jdk1.7.0
+CLASSPATH=.:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar
+PATH=$JAVA_HOME/bin:$PATH
+export JAVA_HOME CLASSPATH PATH
+CATALINA_BASE=/usr/local/tomcat1
+CATALINA_HOME=/usr/local/tomcat1
+export CATALINA_HOME CATALINA_BASE
+CATALINA_BASE2=/usr/local/tomcat2
+CATALINA_HOME2=/usr/local/tomcat2
+export CATALINA_HOME2 CATALINA_HOME2
+
+执行如下命令使环境变量生效：
+source /etc/profile
+
+tomcat2/bin/catalina.sh里 加入
+
+export CATALINA_BASE=$CATALINA_BASE2
+export CATALINA_HOME=$CATALINA_HOME2
+
+设置内存
+JAVA_OPTS='-Xms512m -Xmx1024m'
+
+JAVA_OPTS='-Xms512m -Xmx1024m -XX:PermSize=256M -XX:MaxPermSize=512m'
+
+安装neginx + tomcat 
+上传nginx-release-rhel-5-0.el5.ngx.noarch.rpm  和 tomcat 文件
+安装rpm文件 : rpm -ivh nginx-release-rhel-5-0.el5.ngx.noarch.rpm
+配置\nginx\conf\nginx.conf  文件
+
+Mysql 安装
+上传MySQL-client-5.5.25-1.rhel5.i386.rpm  和 MySQL-server-5.5.25-1.rhel5.i386.rpm
+安装rpm文件 : rpm -ivh MySQL-client-5.5.25-1.rhel5.i386.rpm 和 MySQL-server-5.5.25-1.rhel5.i386.rpm
+linux MySQL
+启动mysql /etc/init.d/mysql start
+停止 /usr/bin/mysqladmin -u root -p shutdown
+
+3、自动启动
+
+1)察看mysql是否在自动启动列表中
+
+[root@test1 local]#　/sbin/chkconfig –-list
+
+2)把MySQL添加到你系统的启动服务组里面去
+
+[root@test1 local]#　/sbin/chkconfig　–-add　mysql
+
+3)把MySQL从启动服务组里面删除。
+
+[root@test1 local]#　/sbin/chkconfig　–-del　mysql
+
+查看3306商品是否开启
+netstat -nat
+
+修改密码
+/usr/bin/mysqladmin -u root password 'new-password'
+/usr/bin/mysqladmin -uroot -p'old-password' password 'new-password'
+登录Mysql 
+>mysql
+mysql -u root -p password
+
+mysql 不区分大小写
+用root帐号登录后，在/etc/my.cnf 中的[mysqld]后添加添加lower_case_table_names=1，重启MYSQL服务，这时已设置成功：
+
+1、数据库目录
+/var/lib/mysql/
+2、配置文件
+/usr/share/mysql（mysql.server命令及配置文件）
+3、相关命令
+/usr/bin(mysqladmin mysqldump等命令)
+4、启动脚本
+/etc/rc.d/init.d/（启动脚本文件mysql的目录）
+
+4、找到my.cnf配置文件
+如果/etc/目录下没有my.cnf配置文件，请到/usr/share/mysql/下找到*.cnf文件，拷贝其中一个到/etc/并改名为my.cnf)中。命令如下：
+[root@test1 mysql]# cp /usr/share/mysql/my-medium.cnf　/etc/my.cnf
+
+开启远程访问
+GRANT ALL PRIVILEGES ON *.* TO root@"% " IDENTIFIED BY 'password' WITH GRANT OPTION;
+
+flush privileges;
+
+Mysql默认的字符集是Latin1,一般我们都会改为GBK或者UTF8
+更改方法很简单,修改my.ini 或my.cnf就可以了
+[mysqld]
+character-set-server=utf8
+[client]
+default-character-set=utf8
+ 
+登陆Mysql后，输入show variables like 'char%';
+显示下面内容即修改成功
+
+yum install mysql-server
+设置MySQL服务随系统启动自启动 
+chkconfig mysqld on
+确认MySQL自启动
+chkconfig --list mysqld
+启动mysql
+/etc/rc.d/init.d/mysqld start
+修改密码为空的密码
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('secret_password');
+
+
+1、数据库目录
+/var/lib/mysql/
+2、配置文件
+/usr/share/mysql(mysql.server命令及配置文件)
+3、相关命令
+/usr/bin(mysqladmin mysqldump等命令)
+4、启动脚本
+/etc/rc.d/init.d/(启动脚本文件mysql的目录)
+
+ linux下导入、导出mysql数据库命令
+
+一、导出数据库用mysqldump命令（注意mysql的安装路径，即此命令的路径）：
+1、导出数据和表结构：
+mysqldump -u用户名 -p密码 数据库名 > 数据库名.sql
+#/usr/local/mysql/bin/mysqldump -uroot -p abc > abc.sql
+敲回车后会提示输入密码
+
+2、只导出表结构
+mysqldump -u用户名 -p密码 -d 数据库名 > 数据库名.sql
+#/usr/local/mysql/bin/mysqldump -uroot -p -d abc > abc.sql
+
+
+二、导入数据库
+1、首先建空数据库
+mysql>create database abc;
+
+2、导入数据库
+方法一：
+（1）选择数据库
+mysql>use abc;
+（2）设置数据库编码
+mysql>set names utf8;
+（3）导入数据（注意sql文件的路径）
+mysql>source /home/abc/abc.sql;
+方法二：
+mysql -u用户名 -p密码 数据库名 < 数据库名.sql
+#mysql -uabc_f -p abc < abc.sql
+
+注意：有命令行模式，有sql命令
+
+查看mysql 后台执行语句
+show processlist; 
+﻿
+
+安装实时流量看查
+先安装 yum install ncurses-devel
+wget http://www.roland-riegel.de/nload/nload-0.7.2.tar.gz
+tar zxvf nload-0.7.2.tar.gz
+cd nload-0.7.2
+./configure
+make
+make install
+
+这样就安装好了，直接输入nload回车即可看到动态流量信息。
+也可以指定网卡，如nload eth1
+还可以指定是以K或M来显示流量，如nload -u M显示的流量是以MB为单位的。
+也可以按F2实时更改这些设置。
+退出 可按q键，或者Ctrl + C 退出nload工具。
+
+查看每个IP的连接数
+netstat -ntu | awk '{print $5}' | cut -d: -f1 | sort | uniq -c | sort -n
+netstat -ntu | awk '{print $5}' | egrep -o "[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}" | sort | uniq -c | sort -nr | more
+
+这两台服务器有个服务端口随机，不可能每次都在iptables中开放随机的端口，所以想让linux不限制内网网卡的通讯，能不能实现？
+iptables  -I  INPUT  -i     eth0  -j  ACCEPT
+
+内网登录SSH
+#ssh -l root 10.71.84.145
+退出#login
+
+机房内网机器文件传输
+
+安装scp
+yum install openssh-clients
+
+实例：
+scp /home/linux/soft/scp.zip root@www.mydomain.com:/home/linux/others/soft
+scp /home/linux/soft/scp.zip root@www.mydomain.com:/home/linux/others/soft/scp2.zip
+scp /home/linux/soft/scp.zip www.mydomain.com:/home/linux/others/soft
+scp /home/linux/soft/scp.zip www.mydomain.com:/home/linux/others/soft/scp2.zip
+(2) 复制目录：
+命令格式：
+scp -r local_folder remote_username@remote_ip:remote_folder
+或者
+scp -r local_folder remote_ip:remote_folder
+第1个指定了用户名，命令执行后需要输入用户密码；
+第2个没有指定用户名，命令执行后需要输入用户名和密码；
+例子：
+scp -r /home/linux/soft/ root@www.mydomain.com:/home/linux/others/
+scp -r /home/linux/soft/ www.mydomain.com:/home/linux/others/
+上面 命令 将 本地 soft 目录 复制 到 远程 others 目录下，即复制后远程服务器上会有/home/linux/others/soft/ 目录
+2>从远程服务器复制到本地服务器
+从远程复制到本地的scp命令与上面的命令雷同，只要将从本地复制到远程的命令后面2个参数互换顺序就行了。
+例如：
+scp root@www.mydomain.com:/home/linux/soft/scp.zip /home/linux/others/scp.zip
+scp www.mydomain.com:/home/linux/soft/ -r /home/linux/others/
+linux系统下scp命令中很多参数都和 ssh1 有关 , 还需要看到更原汁原味的参数信息,可以运行man scp 看到更细致的英文说明. 
+
+linux shell 程序、获取tomcat进程号 kill掉然后重起
+kill -9 `ps -ef |grep tomcatdiplay |awk '{print $2}'`
+rm -fr /usr/java/tomcatdiplay/logs/*
+/usr/java/tomcatdiplay/bin/startup.sh
+
+linux 分辨率修改
+/boot/grub/grub.conf  在 quiet 后面加 ro vga=795
+linux 关闭屏保
+[linuxzgf@linuxzgf ~]$ setterm -blank 0 关闭屏保，
+[linuxzgf@linuxzgf ~]$ setterm -blank 1 设置屏保为1分钟，
+[linuxzgf@linuxzgf ~]$ setterm -cursor on|off  关闭、打开光标
+
+安装memcached 
+yum search memcached
+显示有memcached.x86_64 : High Performance, Distributed Memory Object Cache的话
+yum install memcached.x86_64
+查看是否安装成功
+memcached -h
+配置memcached 
+vim  /etc/sysconfig/memcached
+
+PORT="11211"   #配置memcached使用的端口
+USER="nobody"  #配置它启动使用的用户
+MAXCONN="2048" #最大并发连接
+CACHESIZE="64"  #最大使用内存，这里是指64M
+OPTIONS=""  #其它的配置参数
+
+配置开机启动
+ chkconfig --add memcached
+ 查看是否配置成功！ 2-5为no 为成功！
+ chkconfig --list memcached
+ 有些机器用
+ chkconfig memcached on
+启动memcached
+ memcached -d -u root -m 64 -c 2048
+查看11211端口是否开启
+ netstat -nat
+
+远程备份mysql 数据库
+windows 下
+进 mysql/bin 目录下
+mysqldump.exe -u root -p -h 103.6.220.44 joe > joe.sql
+定时备份数据库
+编写sh
+mysqldump -uroot -pepgwyc11 joe > /home/joe.sql 存放在/home/backupMysql.sh
+配置定时任务
+vim /etc/crontab
+零晨1点执行
+0 1 * * * /home/backupMysql.sh
+
+挂载硬盘后Mysql数据库表损坏，
+异常如下
+Incorrect key file for table './joe/spellbuyproduct.MYI'; try to repair it
+进如mysql命令模式
+检查表
+check table spellbuyproduct;
+有错误信息修复表
+repair table spellbuyproduct;
+
+Linux增大系统打开文件的数量linux同时最大打开文件数量为1024个
+ulimit -a 查看系统上受限资源的设置
+修改同时打开文件的最大数 
+临时修改，用户退出后还原
+ulimit -n 4096
+ulimit -HSn 4096  
+永久修改
+修改/etc/security/limits.conf 在后面加上
+修改成软32768，硬65536
+* soft nofile 32768
+* hard nofile 65536
+或
+* soft nofile 65536
+* hard nofile 65536
+
+查看日志
+cat access.log |grep 10/Jul |grep -v getAllBuyCount   | grep  -v spider |grep -v 138.90  |grep -v jpg |grep -v google  |grep -v robo   | grep -v php | grep -v 504 |grep -v 502 |grep -v 400  | grep  1ypg  |grep -v png |grep -v gif  |grep -v bott |grep -v 138.90  | grep  -v 360 | grep -v Linux | grep -v css |grep -v jquery |grep -v index.js | grep -v /js/ | awk '{print $1}' |sort |uniq -c |wc -l
+
+压力测试
+yum search ctags
+yum -y install ctags.x86_64
+webbench -c 300 -t 60 http://www.1ypg.com/
+
+编写sh快捷重启tomcat 
+kill -9 `ps -ef |grep /usr/local/tomcat1 |grep -v grep|awk '{print $2}'`
+rm -rf /usr/local/tomcat1/logs/*.*
+/usr/local/tomcat1/bin/startup.sh
+tail -f /usr/local/tomcat1/logs/catalina.out
+
+centos 时间更新同步
+ntpdate  cn.pool.ntp.org
+hwclock  --systohc
+hwclock  -w
+
+安装ntpdate
+yum search ntpdate
+yum install -y ntpdate.x86_64
+
+如果你发现php-cgi不明原因有时候down掉，可以使用下面的脚本临时解决这个问题，添加到cronjob。
+
+if ps aux | grep 'php5-cgi' | grep -v grep  > /dev/null ; then
+        echo "PHP-cgi is runnning !"     
+else
+        echo "PHP-cgi is down. Starting over..."
+        /etc/init.d/php-fcgi start
+fi
+
+centos 查找大文件
+du -h --max-depth=1du
+参数
+m：以M为单位展示查询结果
+-h：以K、M、G为单位展示查询结果，提高信息可读性
+--max-depth=1：其中，数字“1”是指查询结果中最多显示的目录层数，这里指最多显示一层目录。
+
+加入定时计划任务，每隔10分钟同步CentOS 时间
+crontab -e
+0-59/10 * * * * /usr/sbin/ntpdate us.pool.ntp.org | logger -t NTP
+每隔1小时同步CentOS 时间
+0 0-23/1 * * * * /usr/sbin/ntpdate us.pool.ntp.org | logger -t NTP
+
+centos 释放内存
+echo 3 > /proc/sys/vm/drop_caches
+cat /proc/sys/vm/drop_caches
+
+java.net.UnknownHostException 解决办法 添加IP主机名
+vim /etc/hosts
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4 MyVPS1145
+103.6.220.44 MyVPS1145
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6 MyVPS1145
+
+监测tomcat 状态 编写monitorStatus
+status=`wget -S --spider www.1ypg.com 2>&1 >/dev/null|grep -F HTTP |grep 200`
+if [ -z "$status" ];then
+ye //重启sh
+fi
+
+加入定时计划任务
+crontab -e
+* * * * * /home/monitorStatus
+
+从根目录开始查找所有扩展名为.log的文本文件，并找出包含”ERROR”的行
+find / -type f -name "*.log" | xargs grep "ERROR"
+例子：从当前目录开始查找所有扩展名为.in的文本文件，并找出包含”thermcontact”的行
+find . -name "*.in" | xargs grep "thermcontact"
+
+ linux下批量替换文件内容
+1、网络上现成的资料
+
+　　格式: sed -i "s/查找字段/替换字段/g" `grep 查找字段 -rl 路径`
+
+　　linux sed 批量替换多个文件中的字符串
+
+　　sed -i "s/oldstring/newstring/g" `grep oldstring -rl yourdir`
+
+　　例如：替换/home下所有文件中的www.admin99.net为admin99.net
+
+　　sed -i "s/www.admin99.net/admin99.net/g" `grep www.admin99.net -rl /home`
+
+　　exp:sed -i "s/shabi/$/g" `grep shabi -rl ./`
+
+2、自己额外附加
+
+　　2.1 将文件1.txt内的文字“garden”替换成“mirGarden”
+
+　　# sed -i "s/garden/mirGarden/g" 1.txt   //sed -i 很简单
+
+　　2.2 将当前目录下的所有文件内的“garden”替换成“mirGarden”
+
+　　## sed -i "s/garden/mirGarden/g" `ls` //其实也就是ls出多个文件名而已
+
+
+修改的用户都以root为列。
+一、拥有原来的myql的root的密码；
+
+
+方法一：
+在mysql系统外，使用mysqladmin
+# mysqladmin -u root -p password "test123"
+Enter password: 【输入原来的密码】
+
+方法二：
+通过登录mysql系统，
+# mysql -uroot -p
+Enter password: 【输入原来的密码】
+mysql>use mysql;
+mysql> update user set password=passworD("test") where user='root';
+mysql> flush privileges;
+mysql> exit;      
+
+
+
+二、忘记原来的myql的root的密码；
+
+首先，你必须要有操作系统的root权限了。要是连系统的root权限都没有的话，先考虑root系统再走下面的步骤。
+类似于安全模式登录系统，有人建议说是pkill mysql，但是我不建议哈。因为当你执行了这个命令后，会导致这样的状况：
+/etc/init.d/mysqld status
+mysqld dead but subsys locked
+这样即使你是在安全模式下启动mysql都未必会有用的，所以一般是这样/etc/init.d/mysqld stop，如果你不幸先用了pkill，那么就start一下再stop咯。
+# mysqld_safe --skip-grant-tables &
+&，表示在后台运行，不再后台运行的话，就再打开一个终端咯。
+# mysql
+mysql> use mysql;
+mysql> UPDATE user SET password=password("test123") WHERE user='root';   
+mysql> flush privileges;
+mysql> exit;                         
+##本来mysql是不分大小写的，但是这个是修改的mysql中的mysql数据库的具体的值，要注意到。
+
+设置tomcat 启动中文配置
+JAVA_OPTS='-Dfile.encoding=UTF-8 -Dsun.jnu.encoding=UTF-8'
+
+
+
+
+
+
+
+
+

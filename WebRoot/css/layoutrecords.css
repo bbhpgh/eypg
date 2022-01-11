@@ -1,0 +1,353 @@
+@charset "utf-8";
+
+.get-tips {
+    border: 1px solid #FEDD98;
+    padding: 7px 0 6px 12px;
+    background: #FFFBE3;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.get-tips a {
+    margin-right: 15px;
+}
+
+.goods_show {
+    width: 780px;
+    border-top: 1px solid #ebebeb;
+}
+
+.goods_show .goods_list {
+    width: 780px;
+    padding: 23px 0 15px 0;
+    border-bottom: 1px solid #ebebeb;
+    float: left;
+}
+
+.goods_show .gtitle {
+    height: 28px;
+    margin: 1px 0 0 0;
+    line-height: 28px;
+    background: #F9F9F9;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.goods_show .gtitle li {
+    text-indent: 1em;
+}
+
+.goods_show .gtitle li.joinInfo, .goods_show .gtitle li.do {
+    text-indent: 0;
+    text-align: center;
+}
+
+.goods_show .gtitle li.gname, .goods_show .gtitle li.yg_status {
+    text-indent: 0;
+    text-align: left;
+}
+
+.goods_show li {
+    width: 92px;
+    color: #7d7d7d;
+    float: left;
+}
+
+.goods_show .gname {
+    width: 270px;
+    padding-right: 20px;
+}
+
+.goods_show .yg_status {
+    width: 160px;
+}
+
+.goods_show .joinInfo {
+    width: 90px;
+    text-align: center;
+}
+
+.goods_show .do {
+    float: right;
+    text-align: center;
+    width: 70px;
+}
+
+.joinInfo p {
+    height: 20px;
+}
+
+.goods_show .goods_list .yg_status {
+    padding-top: 0;
+}
+
+.goods_show .pic {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #f1f1f1;
+    display: block;
+}
+
+.goods_show .pic:hover {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #ddd;
+    display: block;
+}
+
+.goods_show .pic img {
+    width: 70px;
+    height: 70px;
+    display: block;
+    overflow: hidden;
+}
+
+.goods_show .Progress-bar {
+    width: 206px !important;
+    margin: 0;
+}
+
+.grhead-join {
+    width: 75px;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 4px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    border: 1px solid #DDD;
+    background: #F9F9F9;
+    border-radius: 3px;
+    text-align: left;
+    margin: 0 auto;
+    z-index: -1;
+    cursor: pointer;
+}
+
+.joinInfo-Pop {
+    position: relative;
+    z-index: 0;
+}
+
+.grhead-joinC {
+    width: 250px;
+    height: 60px;
+    position: absolute;
+    left: -80px;
+    _left: -125px;
+    top: 0;
+    z-index: 99;
+}
+
+.grhead-joinClist {
+    width: 250px;
+    height: 60px;
+    border: 1px solid #D0D0D0;
+    background: #fff;
+    overflow: hidden;
+}
+
+.grhead-joinClist ul {
+    width: 250px;
+    padding: 7px 10px 0 10px;
+    float: left;
+}
+
+.grhead-joinClist li {
+    width: 70px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    display: inline;
+}
+
+.grhead-joinCT {
+    width: 75px;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 4px;
+    position: relative;
+    border: 1px solid #DDD;
+    border-bottom: none;
+    background: #FFF;
+    border-radius: 3px 3px 0 0;
+    text-align: left;
+    margin: 0 auto -1px auto;
+    cursor: pointer;
+}
+
+.grhead-join b, .grhead-joinCT b {
+    position: absolute;
+    right: 3px;
+    top: 8px;
+    top: 7px \9;
+    _top: 8px;
+    width: 7px;
+    height: 4px;
+    font-size: 0;
+    display: inline-block;
+    margin-left: 2px;
+}
+
+.grhead-join b {
+    background-position: -19px -41px;
+}
+
+.grhead-joinCT b {
+    background-position: -27px -41px;
+}
+
+.grhead-joinClist a {
+    color: #2af;
+}
+
+.grhead-joinClist a:hover {
+    text-decoration: underline;
+}
+
+.add {
+    margin-top: 6px;
+}
+
+.add dd {
+    float: left;
+    margin-right: 1px;
+}
+
+.add dd input.amount {
+    width: 42px;
+    height: 26px;
+    _height: 27px;
+    padding: 0 3px 0 5px;
+    line-height: 25px \9;
+    *line-height: 25px;
+    background: #fdf2d9;
+    border: #d8d8d8 1px solid;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    *margin-top: -1px;
+}
+
+.add dd input.btn29 {
+    padding: 6px 19px 5px;
+    *padding: 5px 19px 4px;
+    _padding: 7px 19px 3px;
+}
+
+.add dd a.jia, .add dd a.jian {
+    display: block;
+    width: 13px;
+}
+
+.add dd a.jia {
+    background: url(/Images/add.png) 0 0;
+    height: 14px;
+}
+
+.add dd a.jian {
+    background: url(/Images/add.png) 0 13px;
+    _background: url(/Images/add.png) 0 14px;
+    height: 13px !important;
+    margin-top: 1px;
+}
+
+.add dd input.btn {
+    background: url(/Images/arrow_button.png) 0 672px;
+    width: 67px;
+    height: 29px;
+    line-height: 29px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 1px;
+    cursor: pointer;
+    border: 0 none;
+}
+
+.yg_record_goods {
+    height: 72px;
+    margin-top: 15px;
+}
+
+.yg_record_goods .fl-img img {
+    width: 70px;
+    height: 70px;
+}
+
+.yg_record_goods a.fl-img img {
+    border: 1px solid #E7E7E7;
+}
+
+.yg_record_goods a.fl-img:hover img {
+    border: 1px solid #f60;
+}
+
+.yg_record_goods .yg_record_r {
+    margin-left: 90px;
+    _display: inline;
+}
+
+.yg_record_goods .yg_record_r li {
+    height: 23px;
+    text-align: left;
+}
+
+.yg_record_goods .yg_record_r li.additional {
+    margin-top: 10px;
+}
+
+.goods-tit {
+    height: 25px;
+    margin-top: 6px;
+}
+
+.goods-tit .blue {
+    font-family: 宋体;
+}
+
+.goodsList {
+    color: #666;
+}
+
+.goodsList ul {
+    border-bottom: #eee 1px solid;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.goodsList ul li {
+    padding: 8px 10px;
+    text-align: center;
+    width: 120px;
+    line-height: 22px;
+}
+
+.goodsList ul li.Code {
+    width: 460px;
+    text-align: left;
+    padding-right: 0;
+}
+
+.goodsList ul li.Code span {
+    float: left;
+    margin-right: 18px;
+}
+
+.goodsList ul.listTitle {
+    border-top: #e3e3e3 1px solid;
+    border-bottom: #e3e3e3 1px solid;
+}
+
+.goodsList ul.listTitle li {
+    padding: 0 10px;
+    line-height: 28px;
+}
+
+.goodsList ul li.leftTitle {
+    text-align: left;
+    width: 150px;
+}
+
+.goodsList ul li .lotter {
+    color: #f60;
+    font-weight: bold;
+}

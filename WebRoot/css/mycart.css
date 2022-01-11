@@ -1,0 +1,1171 @@
+@charset "utf-8";
+
+.logo {
+    width: 980px;
+    height: 62px;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+
+.logo .float span.tel {
+    float: right;
+    display: block;
+    padding-right: 20px;
+    padding-top: 46px;
+}
+
+.logo .float span.logo_pic {
+    width: 105px;
+    height: 62px;
+    background: url(/Images/new-logo.png) no-repeat;
+    float: left;
+    display: block;
+}
+
+.logo .float span.logo_pic .a {
+    width: 105px;
+    height: 61px;
+    display: inline-block;
+}
+
+.logo .float a.a {
+    float: left;
+}
+
+.logo .float span.text {
+    width: 284px;
+    float: left;
+    font-weight: bold;
+    display: block;
+    margin: 41px 0 0 40px;
+}
+
+.logo .float span.help {
+    width: 284px;
+    text-align: right;
+    float: right;
+    display: block;
+    margin: 41px 0 0 40px;
+}
+
+.logo .float span.help a {
+    padding: 0 10px;
+    color: #666;
+}
+
+.logo .float span.help a.help_center {
+    border-left: 1px solid #ccc;
+    padding: 0 0 0 10px;
+}
+
+.shop_payment .answer {
+    width: 980px;
+    float: left;
+    margin: 40px auto 0 auto;
+    border-top: 1px solid #e5e5e5;
+    clear: both;
+}
+
+.shop_payment .answer h6 {
+    width: 970px;
+    padding: 10px 0 10px 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.shop_payment .answer h6 span {
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: left;
+    background: url(/Images/shop_process.png) -175px -300px;
+}
+
+.shop_payment .answer ul.answer_list {
+    width: 955px;
+    padding: 0 0 0 25px;
+}
+
+.shop_payment .answer ul.answer_list li {
+    width: 955px;
+    padding: 0 0 5px 0;
+}
+
+.shop_payment .answer ul.answer_list li.problem {
+    font-weight: bold;
+}
+
+.shop_payment .answer ul.answer_list li.more {
+    padding: 10px 0;
+}
+
+.shop_payment .answer ul.answer_list li.more, li.more a {
+    color: #0386d9;
+}
+
+.shop_payment {
+    width: 980px;
+    height: auto;
+    color: #666;
+    position: relative;
+    margin: 0 auto;
+}
+
+.shop_payment ul.payment {
+    width: 980px;
+    height: 31px;
+    background: #d8e8f9;
+    margin: 20px 0;
+}
+
+.shop_payment ul.payment li {
+    text-align: center;
+    float: left;
+    line-height: 31px;
+    font-size: 12px;
+}
+
+.shop_payment ul.payment li.first_step {
+    width: 165px;
+}
+
+.shop_payment ul.payment li.secend_step {
+    width: 165px;
+}
+
+.shop_payment ul.payment li.fourth_step {
+    width: 165px;
+}
+
+.shop_payment ul.payment li.fifth_step {
+    width: 165px;
+}
+
+.shop_payment ul.payment li.third_step {
+    width: 202px;
+}
+
+.shop_payment ul.payment li.orange_Tech {
+    color: #fff;
+    background: #ff7c21;
+    font-weight: bold;
+}
+
+.shop_payment ul.payment li.arrow_1, .shop_payment ul.payment li.arrow_2, .shop_payment ul.payment li.arrow_3 {
+    width: 27px;
+    height: 31px;
+}
+
+.shop_payment ul.payment li.arrow_1 {
+    background: url(/Images/shop_process.png) no-repeat -205px -35px;
+}
+
+.shop_payment ul.payment li.arrow_2 {
+    background: url(/Images/shop_process.png) -240px -0px;
+}
+
+.shop_payment ul.payment li.arrow_3 {
+    background: url(/Images/shop_process.png) -240px -35px;
+}
+
+.payment_Con {
+    width: 978px;
+    min-height: 40px;
+    border: 1px solid #dfdfdf;
+    clear: both;
+}
+
+.order_list {
+    width: 978px;
+    position: relative;
+    clear: both;
+}
+
+.payment_Con li.top {
+    width: 978px;
+    height: 35px;
+    overflow: hidden;
+    line-height: 35px;
+    color: #555;
+    background: url(/Images/payment_bg.png) 0 0 repeat-x;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.order_list li.top .moneys, .order_list li.top .money, .order_list li.top .num {
+    width: 155px;
+    line-height: 35px !important;
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+.payment_Con li.top span.name {
+    width: 358px;
+    height: 30px;
+    display: block;
+    float: left;
+    text-align: left;
+    text-indent: 35px;
+}
+
+.payment_Con li.end {
+    height: 40px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.payment_Con li.end span.name {
+    width: 318px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    float: left;
+    overflow: hidden;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+    text-indent: 15px;
+}
+
+.order_list li .moneys, .order_list li .money, .order_list li .num {
+    width: 155px;
+    line-height: 40px;
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+.order_list li .all {
+    line-height: 40px;
+    width: 148px;
+    text-align: center;
+    float: right;
+}
+
+.order_list li .subtotal {
+    line-height: 40px;
+    width: 100px;
+    padding-right: 35px;
+    text-align: right;
+    float: right;
+}
+
+.order_list li.payment_Total {
+    width: 978px;
+    clear: both;
+    vertical-align: bottom;
+}
+
+.order_list li.point_out, .order_list li.point_in {
+    width: 978px;
+    border-top: 1px solid #eee;
+    clear: both;
+    vertical-align: bottom;
+}
+
+.payment_Total {
+    height: 48px;
+    overflow: hidden;
+}
+
+.payment_Total .payment_List_Lc {
+    padding-top: 11px;
+}
+
+.payment_List_Lc {
+    float: left;
+    padding-left: 35px;
+    margin-left: 0;
+}
+
+.payment_List_Lc .input_choice, .payment_List_Lc .pay_input_text {
+    vertical-align: -2px;
+    *+vertical-align: -3px;
+    vertical-align: -2px \0;
+    _vertical-align: -3px;
+    margin-right: 3px;
+    *+margin-right: 0;
+    margin-left: 0;
+    *+margin-left: -4px;
+}
+
+.payment_List_Lc .pay_input_text_gray {
+    width: 60px;
+    height: 18px;
+    border: 1px solid #CAC8BB;
+    background: #ECE9D8;
+}
+
+.payment_List_Lc .pay_input_text {
+    border: 1px solid #BBB;
+    width: 60px;
+    height: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #666;
+}
+
+.payment_List_Lc .pay_input_text {
+    vertical-align: middle;
+}
+
+.payment_List_Lc .gray01 {
+    text-decoration: underline;
+}
+
+.payment_List_Rc {
+    float: right;
+    padding-right: 35px;
+    line-height: 40px;
+    padding-top: 3px;
+}
+
+.payment_List_Rc span {
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+.payment_List_Rc .F20 {
+    font-size: 20px;
+    font-family: Arial;
+}
+
+.payment_List_Lc .F18 {
+    font-size: 18px;
+    font-family: Arial;
+}
+
+.point_out, .point_in {
+    height: 55px;
+    overflow: hidden;
+}
+
+.point_out .payment_List_Lc {
+    padding-top: 16px;
+    float: left;
+}
+
+.point_in .payment_List_Lc {
+    padding-top: 11px;
+    float: left;
+}
+
+.form_ReturnBut {
+    display: inline-block;
+    border-radius: 2px;
+    text-align: center;
+    padding: 0 10px;
+    *overflow: visible;
+    cursor: pointer;
+}
+
+a.form_ReturnBut {
+    height: 25px;
+    line-height: 25px;
+    line-height: 28px \9;
+    _line-height: 24px;
+}
+
+.form_ReturnBut {
+    background: #F8F8F8;
+    border: 1px solid #D6D6D6;
+    color: #797777;
+    font-size: 12px;
+    padding: 0 15px;
+    margin-right: 5px;
+}
+
+.form_ReturnBut:hover {
+    background: #F8F8F8;
+    color: #797777;
+}
+
+.pay_Value {
+    padding: 2px 8px;
+    float: left;
+    margin-top: 15px;
+    margin-top: 15px \9;
+    _margin-top: 15px;
+    border: 1px solid #FFD99E;
+    background: #FFFDF6;
+    color: #FF6F06;
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.pay_Value span {
+    position: absolute;
+    left: -6px;
+    color: #FFD99E;
+    top: 2px;
+}
+
+.pay_Value em {
+    position: absolute;
+    left: -5px;
+    color: #FFFDF6;
+    top: 2px;
+}
+
+.payment_but {
+    text-align: right;
+    clear: both;
+}
+
+.pay_but_txt {
+    color: #bbb;
+    padding: 11px 0 5px 0;
+}
+
+.pay_but_txt b {
+    color: #999;
+    font-family: Arial;
+    padding: 0 2px;
+}
+
+.payment_but .shop_pay_but {
+    width: 201px;
+    height: 43px;
+    border: none;
+    cursor: pointer;
+    background: url(/Images/payment_bg.png) 0 -44px no-repeat;
+}
+
+.point_bank {
+    height: 50px;
+}
+
+.point_gray {
+    background: #F4F4F4;
+    color: #BCBCBC;
+}
+
+.point_gray .input_gray {
+    border: 1px solid #CAC8BB;
+    width: 11px;
+    height: 11px;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    float: left;
+    margin-top: 3px;
+    *+margin-top: 6px;
+    margin-top: 2px \0;
+    _margin-top: 7px;
+    margin-right: 3px;
+    _margin-right: 0;
+}
+
+.point_in .input_gray {
+    margin-top: 9px;
+    *+margin-top: 9px;
+    _margin-top: 9px;
+}
+
+.point_gray .orange {
+    color: #BCBCBC;
+}
+
+.point_gray .green {
+    color: #BCBCBC;
+}
+
+.pay_bankC:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.pay_bankC {
+    border: 2px solid #B2C1C9;
+    zoom: 1;
+    margin-top: -1px;
+    position: relative;
+    padding-bottom: 7px;
+}
+
+.pay_bankC .bank_arrow span, .pay_bankC .bank_arrow em {
+    font-size: 16px;
+    font-weight: bold;
+    color: #B2C1C9;
+    top: -14px;
+    *+top: -13px;
+    top: -13px \0;
+    left: 60px;
+    position: absolute;
+}
+
+.pay_bankC .bank_arrow em {
+    top: -11px;
+    *+top: -10px;
+    top: -10px \0;
+    color: #FFF;
+}
+
+.pay_bankC h2 {
+    width: 936px;
+    margin-top: 10px;
+    float: left;
+    color: #999;
+    padding-left: 20px;
+}
+
+.pay_bankC div span {
+    color: Red;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.pay_bankC ul {
+    clear: both;
+    float: left;
+    width: 928px;
+    padding: 5px 0 10px 27px;
+}
+
+.pay_bankC li {
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px 0;
+    _margin: 0 10px 0 11px;
+}
+
+.pay_bankC li input {
+    float: left;
+    margin: 12px 5px 0 0;
+    *margin: 10px 1px 0 0;
+    display: block;
+}
+
+.pay_bankC li span {
+    display: block;
+    width: 134px;
+    height: 36px;
+    float: left;
+    border: #ddd 1px solid;
+    cursor: pointer;
+}
+
+.pay_bankC li span.zfb {
+    background: url(/Images/bank_logo.png) 8px -613px;
+}
+
+.pay_bankC li span.cft {
+    background: url(/Images/bank_logo.png) 8px -500px;
+}
+
+.pay_bankC li span.yl {
+    background: url(/Images/bank_logo.png) 8px -550px;
+}
+
+.pay_bankC li span.kq {
+    background: url(/Images/bank_logo.png) 12px -575px;
+}
+
+.pay_bankC li span.wy {
+    background: url(/Images/bank_logo.png) 8px -539px;
+}
+
+.pay_bankC li span.online {
+    background: url(/Images/bank_logo.png) 8px -650px;
+}
+
+.pay_bankC h3 {
+    width: 930px;
+    border-top: #CCC 1px dotted;
+    padding-top: 20px;
+    left: 20px;
+    position: relative;
+    padding-left: 0;
+    clear: both;
+}
+
+.bank_logo li span.gh_bank, .bank_logo li span.zh_bank, .bank_logo li span.jh_bank, .bank_logo li span.nh_bank, .bank_logo li span.pf_bank, .bank_logo li span.sf_bank, .bank_logo li span.xy_bank, .bank_logo li span.bj_bank, .bank_logo li span.gd_bank, .bank_logo li span.ms_bank, .bank_logo li span.zx_bank, .bank_logo li span.gf_bank, .bank_logo li span.pa_bank, .bank_logo li span.zg_bank, .bank_logo li span.jt_bank {
+    background: url(/Images/bank_logo.png);
+}
+
+.bank_logo li span.gh_bank {
+    background-position: 8px 0;
+}
+
+.bank_logo li span.zh_bank {
+    background-position: 8px -32px;
+}
+
+.bank_logo li span.jh_bank {
+    background-position: 8px -67px;
+}
+
+.bank_logo li span.nh_bank {
+    background-position: 8px -99px;
+}
+
+.bank_logo li span.pf_bank {
+    background-position: 8px -132px;
+}
+
+.bank_logo li span.sf_bank {
+    background-position: 8px -165px;
+}
+
+.bank_logo li span.xy_bank {
+    background-position: 8px -199px;
+}
+
+.bank_logo li span.bj_bank {
+    background-position: 8px -232px;
+}
+
+.bank_logo li span.gd_bank {
+    background-position: 8px -264px;
+}
+
+.bank_logo li span.ms_bank {
+    background-position: 8px -297px;
+}
+
+.bank_logo li span.zx_bank {
+    background-position: 8px -329px;
+}
+
+.bank_logo li span.gf_bank {
+    background-position: 8px -362px;
+}
+
+.bank_logo li span.pa_bank {
+    background-position: 8px -397px;
+}
+
+.bank_logo li span.zg_bank {
+    background-position: 8px -429px;
+}
+
+.bank_logo li span.jt_bank {
+    background-position: 8px -462px;
+}
+
+.wait_list:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.wait_list {
+    border: 1px solid #E6E7E8;
+    zoom: 1;
+}
+
+.wait_list_tips:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.wait_list_tips {
+    zoom: 1;
+    padding: 26px 0 10px 0;
+}
+
+.wait_list_tips dl {
+    margin-left: 260px;
+}
+
+.wait_list_tips dt, .wait_list_tips dd {
+    float: left;
+}
+
+.wait_list_tips dd {
+    padding: 20px 0 0 23px;
+}
+
+.wait_list_tips dd h2 {
+    font-size: 14px;
+    height: 34px;
+    padding-top: 10px;
+    font-family: Arial, "宋体";
+}
+
+.wait_list_tips dd p {
+    font-size: 14px;
+    height: 35px;
+    color: #666;
+}
+
+.wait_listCon {
+    width: 750px;
+    border: 1px solid #D9D9D9;
+    border-bottom: none;
+    margin-bottom: 48px;
+}
+
+.wait_listCon li {
+    vertical-align: bottom;
+}
+
+.wait_listCon li.wait_Ltit {
+    background: #F9F9F9;
+    color: #A9A9A9;
+    height: 31px;
+    border-bottom: 1px solid #D9D9D9;
+    line-height: 31px;
+}
+
+.wait_listCon li.wait_Lodity:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.wait_listCon li.wait_Lodity {
+    border-bottom: 1px solid #D9D9D9;
+    padding: 11px 0 8px 0;
+    zoom: 1;
+    color: #666;
+}
+
+.wait_listCon li.wait_Lodity b {
+    font-weight: normal;
+    width: 74px;
+    display: inline-block;
+    color: #666;
+}
+
+.wait_listCon li span {
+    display: inline-block;
+    float: left;
+}
+
+.wait_listCon li .wait_Cw01 {
+    width: 160px;
+    text-align: center;
+}
+
+.wait_listCon li .wait_Cw02 {
+    width: 380px;
+    padding-left: 10px;
+}
+
+.wait_listCon li .wait_Cw03 {
+    width: 80px;
+    text-align: center;
+}
+
+.wait_listCon li .wait_Cw04 {
+    width: 100px;
+    padding-left: 10px;
+}
+
+.wait_list .waitLoad {
+    width: 220px;
+    text-align: center;
+    margin: 60px auto;
+    line-height: 30px;
+}
+
+.wait_list .waitLoad img {
+    display: block;
+    text-align: center;
+}
+
+.wait_listCon ul.buyFail li {
+    border-bottom: 1px solid #D9D9D9;
+    background: #fbfbfb;
+    height: 35px;
+    line-height: 35px;
+}
+
+.wait_listCon ul.buyFail li.co6 {
+    color: #666;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.wait_listCon ul.buyFail li a {
+    color: #999;
+    margin-left: 15px;
+}
+
+.wait_listCon ul.buyFail li a:hover {
+    color: #f60;
+}
+
+.fast .fast_list li.look_buy {
+    width: 111px;
+    height: 33px;
+}
+
+.fast .fast_list li.look_buy a {
+    width: 126px;
+    height: 30px;
+    line-height: 28px;
+    text-indent: 30px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    background: url(/Images/payment_bg.png) 0 -92px no-repeat;
+}
+
+.fast {
+    width: 976px;
+    height: 200px;
+    border: 1px solid #ebebeb;
+    padding: 1px 1px 0 1px;
+    clear: both;
+    margin: 10px auto 10px auto;
+}
+
+.fast h3 {
+    width: 966px;
+    height: 30px;
+    background: #f4f4f4;
+    padding-left: 10px;
+}
+
+.fast h3 span {
+    width: 300px;
+    height: 17px;
+    display: block;
+    margin-top: 5px;
+    float: left;
+    color: #fe8500;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.fast .fast_list {
+    width: 307px;
+    height: 152px;
+    padding: 10px 8px;
+    float: left;
+}
+
+.fast .fast_list h4 {
+    width: 142px;
+    height: 152px;
+    float: left;
+}
+
+.fast .fast_list h4 a {
+    width: 140px;
+    height: 150px;
+    display: block;
+    border: 1px solid #ebebeb;
+}
+
+.fast .fast_list h4 a:hover {
+    border: 1px solid #fb8c00;
+}
+
+.fast .fast_list h4 a img {
+    width: 140px;
+    height: 150px;
+    display: block;
+}
+
+.fast .fast_list ul {
+    width: 140px;
+    height: 140px;
+    padding: 6px 5px;
+    float: left;
+    overflow: hidden;
+}
+
+.fast .fast_list ul li {
+    width: 140px;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.fast .fast_list li.title {
+    width: 140px;
+    height: 30px;
+    line-height: 15px;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.fast .fast_list li.title a, .fast .fast_list li.title a:hover {
+    color: #0082f0;
+}
+
+.payment_ts {
+    margin: 5px 0 0 22px;
+    padding: 0;
+}
+
+.payment_ts h3 {
+    font-size: 14px;
+    color: #f60;
+    font-weight: bold;
+}
+
+.payment_ts h3 s {
+    width: 17px;
+    height: 17px;
+    vertical-align: -4px;
+    margin-right: 4px;
+    display: inline-block;
+    background: url(/Images/payment_bg.png) -185px -92px no-repeat;
+}
+
+.payment_ts ul {
+    padding: 0 0 0 23px;
+}
+
+.payment_ts .payment_ts_con {
+    width: 300px;
+    line-height: 20px;
+    color: #666;
+}
+
+.payment_ts_links {
+    padding: 0;
+    color: #999;
+}
+
+.payment_ts_but {
+    margin-top: 15px;
+}
+
+.pay_tipsbut {
+    display: inline-block;
+    border-radius: 2px;
+    text-align: center;
+    padding: 0 10px;
+    *overflow: visible;
+    cursor: pointer;
+}
+
+a.pay_tipsbut {
+    height: 25px;
+    line-height: 25px;
+    line-height: 28px \9;
+    _line-height: 24px;
+}
+
+.pay_tipsbut {
+    background: #f60;
+    color: #fff;
+    font-size: 12px;
+    padding: 0 15px;
+    margin-right: 5px;
+}
+
+.pay_tipsbut:hover {
+    background: #F60;
+    color: #fff;
+}
+
+.login_qqcon:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.login_qqcon {
+    zoom: 1;
+    margin-top: 38px;
+    margin-left: 20px;
+}
+
+.login-tips-img {
+    float: left;
+    display: inline;
+    margin-top: 0;
+}
+
+.login-qq-img {
+    float: left;
+    display: inline;
+    margin-right: 10px;
+}
+
+.login-qq-img img {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid #E3E3E3;
+}
+
+.login_qqcon .login_qqConInput {
+    margin-left: 138px;
+}
+
+.login_qqcon .login_qqConInput dl {
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.login_qqcon .login_qqConInput dl a {
+    line-height: 37px;
+}
+
+.login_qqcon .login_qqConInput dt {
+    height: 37px;
+}
+
+.login_qqcon .login_qqConInput dd {
+    padding-left: 65px;
+}
+
+.login_qqConInput .login_qqinput_text {
+    width: 243px;
+    height: 33px;
+    line-height: 33px \9;
+    padding-left: 3px;
+    _padding-left: 5px;
+    border: 1px solid #BBB;
+    font-family: Arial;
+    font-size: 14px;
+    margin: 1px;
+    margin-right: 8px;
+    float: left;
+}
+
+.login_qqConInput .login_qqinput_textCur {
+    width: 241px;
+    height: 33px;
+    line-height: 33px \9;
+    padding-left: 3px;
+    _padding-left: 5px;
+    border: 2px solid #F60;
+    font-family: Arial;
+    font-size: 14px;
+    background: #FFFAF6;
+    margin: 0;
+    margin-right: 9px;
+    float: left;
+}
+
+.login_qqConInput b {
+    width: 65px;
+    font-size: 14px;
+    line-height: 35px;
+    color: #8F8F8F;
+    display: inline-block;
+    float: left;
+    font-weight: normal;
+}
+
+.login_qqConInput dl dd .tips_txt {
+    color: #ABABAB;
+    padding: 0 0 0 3px;
+    height: 35px;
+    line-height: 35px;
+    line-height: 38px \9;
+    _line-height: 34px;
+}
+
+.login_qqConInput dl dd .tips_txt_yes s {
+    margin-left: 5px;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 12px;
+    _margin-top: 13px;
+}
+
+.login_qqConInput dl dd .tips_txt_yes s {
+    background-position: -1px -19px;
+}
+
+.login_qqConInput dl dd .tips_txt_Wrong {
+    color: #d00;
+    overflow: hidden;
+    margin-left: 5px;
+    margin-top: 9px;
+    *+margin-top: 10px;
+    margin-top: 11px \0;
+    _margin-top: 11px;
+}
+
+.login_qqConInput dl dd .tips_txt_Wrong s {
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    display: inline-block;
+    background-position: -17px -19px;
+    margin-right: 3px;
+    vertical-align: -4px;
+    *+vertical-align: -2px;
+    vertical-align: -4px \0;
+    _vertical-align: -2px;
+}
+
+.Mem_qq_orangebut, .Mem_qq_graybut {
+    background: url(/Images/qqlogin_btn.png) no-repeat;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 43px;
+    color: #f60;
+    text-indent: 50px;
+}
+
+.Mem_qq_orangebut:hover {
+    color: #f60;
+}
+
+.Mem_qq_orangebut {
+    width: 140px;
+    height: 43px;
+    background-position: 0 0;
+    margin-right: 22px;
+}
+
+.Mem_qq_graybut {
+    width: 140px;
+    height: 43px;
+    background-position: -160px 0;
+    color: #2AF;
+}
+
+.Mem_qq_graybut:hover {
+    color: #2AF;
+}
+
+.login_qq_tips_txt {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+}
+
+div.pageDialogMain .login_qq_tips_txt h2 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #f60;
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: arial, 宋体;
+    padding: 0;
+    background: none;
+}
+
+div.pageDialogMain .login_qq_tips_txt p {
+    width: 310px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.fast .fast_list li.buy a {
+    width: 105px;
+    height: 28px;
+    line-height: 28px;
+    text-indent: 30px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    background: url(/Images/shop_process.png) no-repeat -150px -465px
+}

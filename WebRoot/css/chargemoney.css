@@ -1,0 +1,377 @@
+@charset "utf-8";
+
+.text_charge_money {
+    width: 764px;
+    padding: 20px 20px;
+    float: left
+}
+
+.text_charge_money h5 {
+    width: 700px;
+    height: 35px;
+    line-height: 35px;
+    text-indent: 10px;
+    float: left;
+    background: #fafafa;
+    border: 1px solid #ededed;
+    color: #ea6900;
+    font-size: 14px
+}
+
+.text_charge_money h5 span {
+    padding: 0 5px 0 0;
+    font-size: 18px;
+    font-weight: bold
+}
+
+.text_charge_money .charge_money_list {
+    width: 690px;
+    float: left;
+    padding-left: 10px
+}
+
+.text_charge_money .charge_money_list p.title {
+    width: 680px;
+    float: left;
+    padding: 20px 0 8px 0;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #e6e7e8
+}
+
+.text_charge_money .charge_money_list ul.payment {
+    clear: both;
+    width: 660px;
+    padding: 0 10px;
+    float: left;
+    border-bottom: 1px solid #e6e7e8
+}
+
+.text_charge_money .charge_money_list ul.sel {
+    clear: both;
+    width: 680px;
+    padding: 10px 0;
+    float: left;
+    border-bottom: 1px solid #e6e7e8
+}
+
+.text_charge_money .charge_money_list ul.sel li {
+    float: left
+}
+
+.text_charge_money .charge_money_list ul.sel li.end {
+    padding: 0
+}
+
+.text_charge_money .charge_money_list ul.sel li.frist input.money {
+    margin: 2px 0 0 0;
+    *margin: -2px 0 0 0
+}
+
+.text_charge_money .charge_money_list ul.sel li input.money {
+    display: block;
+    float: left;
+    margin: 3px 0 0 25px;
+    *margin: -2px 0 0 25px;
+    _margin: 0 0 0 25px
+}
+
+.text_charge_money .charge_money_list ul.sel li input.text {
+    width: 60px;
+    height: 20px
+}
+
+.text_charge_money .charge_money_list ul.payment li {
+    float: left
+}
+
+.text_charge_money .charge_money_list ul.payment li.top {
+    padding-bottom: 20px
+}
+
+.text_charge_money .charge_money_list ul.payment li input {
+    display: block;
+    float: left;
+    margin: 12px 5px 0 0;
+    *margin: 10px 1px 0 0
+}
+
+.text_charge_money .charge_money_list ul.payment span {
+    width: 130px;
+    height: 36px;
+    border: #ddd 1px solid;
+    text-indent: -9999px;
+    margin: 0 15px 0 0;
+    *margin: 0 12px 0 0;
+    _margin: 0 9px 0 0;
+    display: block;
+    float: left
+}
+
+.text_charge_money .charge_money_list li span.zfb {
+    background: url(/Images/bank_logo.png) 8px -613px
+}
+
+.text_charge_money .charge_money_list li span.cft {
+    background: url(/Images/bank_logo.png) 8px -500px
+}
+
+.text_charge_money .charge_money_list li span.yl {
+    background: url(/Images/bank_logo.png) 8px -550px
+}
+
+.text_charge_money .charge_money_list li span.kq {
+    background: url(/Images/bank_logo.png) 8px -577px
+}
+
+.text_charge_money .charge_money_list li span.wy {
+    background: url(/Images/bank_logo.png) 8px -540px
+}
+
+p.leix {
+    clear: both;
+    float: left;
+    margin: 10px 0;
+    display: block;
+    width: 150px
+}
+
+.text_charge_money .charge_money_list li span.gh_bank {
+    background: url(/Images/bank_logo.png) 8px 0
+}
+
+.text_charge_money .charge_money_list li span.zh_bank {
+    background: url(/Images/bank_logo.png) 8px -32px
+}
+
+.text_charge_money .charge_money_list li span.jh_bank {
+    background: url(/Images/bank_logo.png) 8px -67px
+}
+
+.text_charge_money .charge_money_list li span.nh_bank {
+    background: url(/Images/bank_logo.png) 8px -99px
+}
+
+.text_charge_money .charge_money_list li span.pf_bank {
+    background: url(/Images/bank_logo.png) 8px -132px
+}
+
+.text_charge_money .charge_money_list li span.sf_bank {
+    background: url(/Images/bank_logo.png) 8px -165px
+}
+
+.text_charge_money .charge_money_list li span.xy_bank {
+    background: url(/Images/bank_logo.png) 8px -199px
+}
+
+.text_charge_money .charge_money_list li span.bj_bank {
+    background: url(/Images/bank_logo.png) 8px -232px
+}
+
+.text_charge_money .charge_money_list li span.gd_bank {
+    background: url(/Images/bank_logo.png) 8px -264px
+}
+
+.text_charge_money .charge_money_list li span.ms_bank {
+    background: url(/Images/bank_logo.png) 8px -297px
+}
+
+.text_charge_money .charge_money_list li span.zx_bank {
+    background: url(/Images/bank_logo.png) 8px -329px
+}
+
+.text_charge_money .charge_money_list li span.gf_bank {
+    background: url(/Images/bank_logo.png) 8px -362px
+}
+
+.text_charge_money .charge_money_list li span.pa_bank {
+    background: url(/Images/bank_logo.png) 8px -397px
+}
+
+.text_charge_money .charge_money_list li span.zg_bank {
+    background: url(/Images/bank_logo.png) 8px -429px
+}
+
+.text_charge_money .charge_money_list li span.jt_bank {
+    background: url(/Images/bank_logo.png) 8px -462px
+}
+
+.text_charge_money .charge_money_list p.much {
+    width: 680px;
+    float: left;
+    border-bottom: 1px solid #e6e7e8;
+    padding: 10px 0
+}
+
+.text_charge_money .charge_money_list p.much span {
+    font-size: 12px;
+    color: #f60;
+    font-weight: bold
+}
+
+.text_charge_money .charge_money_list h6 input {
+    width: 85px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border: 0;
+    background: url(/Images/arrow_button.png) 0 -380px;
+    margin: 20px 0 0 80px;
+    float: left
+}
+
+.prompt_box {
+    width: 470px;
+    height: 180px
+}
+
+.prompt_box p.pic {
+    width: 420px;
+    margin: 20px 0 0 30px;
+    *margin: 20px 0 0 30px;
+    _margin: 10px 0 0 15px;
+    padding: 0 0 0 20px;
+    float: left;
+    color: #fe7800;
+    background: url(/Images/arrow_button.png) no-repeat -170px -204px
+}
+
+.prompt_box p.ts {
+    width: 350px;
+    margin: 10px 0 0 30px;
+    *margin: 10px 0 0 30px;
+    _margin: 5px 0 0 15px;
+    padding: 0 70px 0 20px;
+    float: left;
+    color: #999
+}
+
+.prompt_box p a {
+    color: #1070c4
+}
+
+.prompt_box p a:hover {
+    color: #f60
+}
+
+.prompt_box ul {
+    width: 420px;
+    padding: 10px 0 0 50px;
+    float: left
+}
+
+.prompt_box ul li {
+    float: left;
+    padding-right: 20px
+}
+
+.prompt_box ul li a.look {
+    width: 110px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    display: block;
+    color: #666;
+    background: url(/Images/arrow_button.png) no-repeat 0 -410px
+}
+
+.prompt_box ul li a.back {
+    width: 94px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    display: block;
+    color: #666;
+    background: url(/Images/arrow_button.png) no-repeat 0 -440px
+}
+
+.payment_ts {
+    width: 395px;
+    height: 151px;
+    margin: 0;
+    padding: 0
+}
+
+.payment_ts h3 {
+    width: 385px;
+    height: 20px;
+    padding: 0 0 5px 10px;
+    border-bottom: 1px solid #eee
+}
+
+.payment_ts h3 span {
+    width: 300px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff7200;
+    display: block;
+    float: left
+}
+
+.payment_ts h3 a {
+    width: 48px;
+    display: block;
+    float: right;
+    color: #8c8c8c
+}
+
+.payment_ts h3 a div {
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin: 1px 5px 0 0;
+    background: url(/Images/shop_process.png) -140px -300px
+}
+
+.payment_ts p {
+    width: 385px;
+    padding: 0 0 0 10px;
+    margin-top: 10px;
+    color: #8c8c8c
+}
+
+.payment_ts p.bottom {
+    text-indent: 20px
+}
+
+.payment_ts p span {
+    width: 15px;
+    height: 15px;
+    display: block;
+    float: left;
+    background: url(/Images/shop_process.png) -160px -300px;
+    margin-right: 5px
+}
+
+.payment_ts ul {
+    width: 373px;
+    height: 29px;
+    border: 1px solid #e9e9e9;
+    background: #f4f4f4;
+    margin-top: 15px;
+    padding: 10px 0 10px 20px;
+    float: left
+}
+
+.payment_ts ul li {
+    line-height: 29px;
+    float: left
+}
+
+.payment_ts ul li.title {
+    padding-left: 10px
+}
+
+.payment_ts ul li a {
+    width: 110px;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    color: #0087dc;
+    font-weight: bold;
+    display: block;
+    background: url(/Images/shop_process.png) -120px -320px
+}

@@ -1,0 +1,658 @@
+@charset "utf-8";
+
+.help-crumbs {
+    width: 980px;
+    margin: 0 auto 10px auto;
+    height: 20px;
+    line-height: 20px;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+.help-crumbs li {
+    background: url(/Images/help.png) transparent left -45px no-repeat;
+    display: block;
+    float: left;
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+.help-crumbs .help-nobackground {
+    background: none;
+    padding-left: 0;
+}
+
+.help-crumbs span {
+    float: right;
+}
+
+.help-main:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.help-main {
+    width: 980px;
+    margin: 0 auto;
+    zoom: 1;
+}
+
+.help-right-part {
+    width: 100%;
+    float: right;
+    margin-left: -200px;
+}
+
+.help-in-rihgt-part {
+    margin-left: 200px;
+    padding-left: 15px;
+}
+
+.help-left-part {
+    float: left;
+    width: 200px;
+}
+
+.help-nav {
+    border: 1px solid #e8e8e8;
+    padding-bottom: 10px;
+    *padding-bottom: 30px;
+    _padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: inline-table;
+}
+
+.help-nav ul {
+    width: 198px;
+}
+
+.help-nav h3 {
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 15px;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    margin: 1px 1px 0 1px;
+    background-color: #3f3f3f;
+}
+
+.help-nav h4 {
+    background: url(/Images/help.png) transparent 15px -77px no-repeat;
+    font-size: 12px;
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 25px;
+    color: #333;
+    margin: 10px 0 0 0;
+    clear: both;
+}
+
+.help-nav li {
+    padding-left: 25px;
+    width: 173px;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+}
+
+.help-contact {
+    width: 198px;
+    border: 1px solid #e8e8e8;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.help-contact h3 {
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 15px;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    background-color: #3f3f3f;
+    margin: 1px 1px 0 1px;
+}
+
+.help-contact p {
+    padding: 10px 15px;
+}
+
+.help-contact li {
+    padding-left: 15px;
+}
+
+.help-contact span {
+    color: #c00;
+    font-weight: bold;
+}
+
+.help-content {
+    min-height: 670px;
+}
+
+.help-step-nav {
+    height: 58px;
+    padding-left: 70px;
+}
+
+.help-step-nav li {
+    width: 140px;
+    float: left;
+    list-style-type: none;
+    height: 58px;
+    margin-right: 25px;
+}
+
+.help-step-nav li span {
+    display: none;
+}
+
+.help-step-nav li.help-s1, .help-step-nav li.help-s2, .help-step-nav li.help-s3, .help-step-nav li.help-s4 {
+    background: url(/Images/help.png) transparent no-repeat;
+}
+
+.help-step-nav li.help-s1 {
+    background-position: 0 -120px;
+}
+
+.help-step-nav li.help-s2 {
+    background-position: 0 -180px;
+}
+
+.help-step-nav li.help-s3 {
+    background-position: 0 -240px;
+}
+
+.help-step-nav li.help-s4 {
+    background-position: 0 -300px;
+}
+
+.help-content h2 {
+    font-size: 20px;
+    border-bottom: 1px solid #e8e8e8;
+    height: 32px;
+    line-height: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.help-content h3 {
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 15px;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px 0;
+}
+
+.help-content h4 {
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 15px;
+    height: 24px;
+    line-height: 24px;
+    margin: 10px 0;
+}
+
+.help-content p {
+    padding: 0 15px 0 15px;
+    text-indent: 28px;
+    line-height: 22px;
+    font-size: 12px;
+}
+
+.help-content p.bottom-space16px {
+    margin-bottom: 16px;
+}
+
+.help-suggestion {
+    margin: 20px 50px;
+    width: 600px;
+    float: left;
+    display: inline;
+}
+
+.help-suggestion dl {
+    width: 600px;
+    padding-bottom: 6px;
+    float: left;
+}
+
+.help-suggestion dt {
+    width: 90px;
+    float: left;
+    text-align: right;
+    padding-right: 6px;
+    margin-top: 5px;
+}
+
+.help-suggestion dl span {
+    padding-left: 10px;
+}
+
+.help-suggestion dd {
+    width: 504px;
+    display: block;
+    float: left;
+}
+
+.help-suggestion dl div {
+    width: 295px;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    color: #666;
+    float: left;
+    margin: 0 0 0 5px;
+}
+
+.help-suggestion dl dd p {
+    width: 454px;
+    float: left;
+    padding: 0;
+    text-indent: 0;
+}
+
+.help-suggestion dl div.ok {
+    background: url(/Images/arrow_button.png) no-repeat -170px -115px;
+}
+
+.help-suggestion dl div.wrong {
+    color: #f60;
+    background: url(/Images/arrow_button.png) no-repeat -170px -74px;
+    padding: 0 0 0 20px;
+    width: 275px;
+}
+
+.help-suggestion input, select, textarea {
+    font-size: 12px;
+    color: #666;
+    float: left;
+}
+
+.help-suggestion input {
+    height: 20px;
+    line-height: 20px;
+    width: 200px;
+}
+
+.help-suggestion .help-action {
+    padding-left: 96px;
+    margin-top: 20px;
+}
+
+.help-suggestion .help-btn {
+    width: 66px;
+    height: 29px;
+    line-height: 29px;
+    font-weight: bold;
+    display: block;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 12px;
+    background: url(/Images/arrow_button.png) 0 -612px;
+}
+
+.liucheng_pic {
+    background: url(/Images/shop_list.png) no-repeat left top;
+    width: 740px;
+    height: 58px;
+    margin-left: 10px;
+}
+
+.liucheng_pic ul.yg-flow {
+    width: 740px;
+    height: 58px;
+    background: url(/Images/shop_list.png) no-repeat;
+}
+
+.liucheng_pic ul.yg-flow li {
+    float: left;
+    color: #777;
+}
+
+.liucheng_pic ul.yg-flow li.select {
+    padding: 26px 0 0 30px;
+}
+
+.liucheng_pic ul.yg-flow li.pay {
+    padding: 26px 0 0 58px;
+}
+
+.liucheng_pic ul.yg-flow li.lottery {
+    padding: 26px 0 0 52px;
+}
+
+.liucheng_pic ul.yg-flow li.share {
+    padding: 26px 0 0 55px;
+}
+
+.help_class_tab, .help_Experience_tab {
+    padding-left: 30px;
+}
+
+.help_class_tab h3, .help_Experience_tab h3 {
+    padding-left: 0;
+}
+
+.help_class_tab table {
+    border-top: 1px solid #BBB;
+    border-left: 1px solid #BBB;
+    color: #666;
+}
+
+.help_class_tab th {
+    border-right: 1px solid #BBB;
+    border-bottom: 1px solid #BBB;
+    background: #F3F3F3;
+    height: 30px;
+    line-height: 30px;
+}
+
+.help_class_tab td {
+    border-right: 1px solid #BBB;
+    border-bottom: 1px solid #BBB;
+    text-align: center;
+    line-height: 35px;
+}
+
+.help_class_tab b {
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+}
+
+.help_class_tab .class01 b img {
+    margin-left: -1px;
+}
+
+.help_class_tab .class02 b img {
+    margin-left: -18px;
+}
+
+.help_class_tab .class03 b img {
+    margin-left: -35px;
+}
+
+.help_class_tab .class04 b img {
+    margin-left: -52px;
+}
+
+.help_class_tab .class05 b img {
+    margin-left: -69px;
+}
+
+.help_class_tab .class06 b img {
+    margin-left: -86px;
+}
+
+.help_Experience_tab table {
+    border-top: 1px solid #BBB;
+    border-left: 1px solid #BBB;
+    color: #666;
+}
+
+.help_Experience_tab th {
+    border-right: 1px solid #BBB;
+    border-bottom: 1px solid #BBB;
+    background: #F3F3F3;
+    height: 30px;
+    line-height: 30px;
+}
+
+.help_Experience_tab td {
+    border-right: 1px solid #BBB;
+    border-bottom: 1px solid #BBB;
+    text-align: left;
+    line-height: 35px;
+    text-indent: 5px;
+}
+
+.help_Experience_tab td strong {
+    color: #f60;
+}
+
+.help-main .qqGroup {
+    width: 980px;
+    border: 1px solid #E9E9E9;
+    box-shadow: 0 0 4px 0 rgba(233, 233, 233, .9);
+    background: #fff;
+}
+
+.help-main .qqTitle {
+    font-size: 12px;
+    color: #999;
+    font-family: "宋体";
+    background: #fbfbfb;
+    border-bottom: #dfdfdf 1px solid;
+    height: 60px;
+    line-height: 20px;
+    text-align: left;
+    padding-top: 15px;
+}
+
+.help-main .qqTitle span {
+    float: left;
+    margin-left: 10px;
+    display: inline;
+}
+
+.help-main .qqTitle span.groupt {
+    font-size: 22px;
+    font-family: "微软雅黑";
+    color: #555;
+    padding-left: 18px;
+    padding-top: 3px;
+}
+
+.help-main .qqTitle span.groupt b {
+    font-family: Arial;
+    font-weight: normal;
+}
+
+.help-main .qsearch {
+    width: 925px;
+    margin: 30px auto 13px;
+}
+
+.help-main .qsearch:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.help-main .qsearch span {
+    color: #555;
+    font-family: "微软雅黑";
+    font-size: 18px;
+    padding-left: 5px;
+    position: relative;
+    top: 2px;
+}
+
+.help-main .qsearch ul {
+    float: right;
+    display: inline-block;
+    color: #999;
+    line-height: 30px;
+}
+
+.help-main .qsearch ul li {
+    float: left;
+    margin-left: 10px;
+    position: relative;
+}
+
+.help-main .qsearch .sel {
+    clear: both;
+    float: left;
+    width: 143px;
+    height: 112px;
+    white-space: nowrap;
+    border: #e1e1e1 1px solid;
+    line-height: 22px;
+    border-top: 0 none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    left: 0;
+    top: 28px;
+    z-index: 10;
+    background: #fff;
+    display: block;
+    *margin-top: -1px;
+    *margin-left: -1px;
+    display: none;
+}
+
+.help-main .qsearch .sel2 {
+    height: 220px;
+}
+
+.help-main .qsearch .sel a {
+    display: block;
+    color: #666;
+    padding-left: 5px;
+}
+
+.help-main .qsearch .sel a:hover {
+    display: block;
+    background: #f6f6f6;
+}
+
+.help-main .qsearch dd span {
+    color: #666;
+    font-size: 12px;
+}
+
+.help-main .qsearch dd {
+    float: left;
+    display: inline;
+    cursor: pointer;
+}
+
+.help-main .qsearch dd, .help-main .qsearch input {
+    font-size: 12px;
+    height: 26px;
+    line-height: 24px;
+    border: #e1e1e1 1px solid;
+    color: #666;
+}
+
+.help-main .qsearch dd {
+    width: 138px;
+    padding-left: 5px;
+    position: relative;
+}
+
+.help-main .qsearch ul li b {
+    display: inline-block;
+    background: url(/Images/select.gif) no-repeat;
+    width: 25px;
+    height: 24px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+}
+
+.help-main .qqList {
+    border-top: #f0f0f0 1px solid;
+    padding: 20px 0;
+    display: inline-block;
+    width: 980px;
+}
+
+.help-main .qqList p {
+    font-size: 18px;
+    color: #f60;
+    font-family: "微软雅黑";
+    padding-left: 29px;
+}
+
+.help-main .qqList ul {
+    clear: both;
+    margin: 3px 0 0 29px;
+}
+
+.help-main .qqList li {
+    float: left;
+    width: 190px;
+    height: 49px;
+    color: #999;
+    padding: 11px;
+    border: #dfdfdf 1px solid;
+    -moz-box-shadow: 1px 2px 2px #efefef;
+    -webkit-box-shadow: 1px 2px 2px #efefef;
+    box-shadow: 1px 2px 2px #efefef;
+    margin: 10px 22px 10px 0;
+    display: inline;
+    position: relative;
+}
+
+.help-main .qqList dt img {
+    border: #f3f3f3 1px solid;
+    margin-right: 9px;
+}
+
+.help-main .qqList li dt {
+    float: left;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.help-main .qqList li dd {
+    color: #2af;
+    font-size: 14px;
+    font-family: Arial;
+    margin-top: 26px;
+    *width: 110px;
+    *margin-top: 5px;
+}
+
+.help-main .qqList li dt em {
+    color: #fff;
+    font-style: normal;
+    background: #f00;
+    position: absolute;
+    top: 14px;
+    right: 12px;
+    padding: 0 2px;
+    height: 15px;
+    line-height: 15px;
+    line-height: 18px \9;
+    _line-height: 15px;
+}
+
+.help-main .loadImg {
+    background: url(/Images/goods_loading.gif) left no-repeat;
+    padding-left: 25px;
+    text-align: center;
+    width: 95px;
+    line-height: 24px;
+    margin: 20px auto;
+    font-size: 18px;
+    color: #666;
+}
+
+.help-main .nothing {
+    margin: 20px auto;
+    line-height: 24px;
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
+
+.help-main .nothing em {
+    font-family: Arial;
+    font-style: normal;
+}

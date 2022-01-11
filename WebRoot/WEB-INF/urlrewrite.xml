@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.2//EN"
+        "http://tuckey.org/res/dtds/urlrewrite3.2.dtd">
+<urlrewrite>
+    <rule>
+        <from>/search/([a-zA-Z0-9]+)/(.*)/p_([0-9]+).html</from>
+        <to type="forward">/search/index.action?id=$1&amp;keyword=$2&amp;pages=p_$3</to>
+    </rule>
+    <rule>
+        <from>/search/([a-zA-Z0-9]+)/(.*).html</from>
+        <to type="forward">/search/index.action?id=$1&amp;keyword=$2</to>
+    </rule>
+    <rule>
+        <from>/([a-z]+).html</from>
+        <to type="forward">/$1.action</to>
+    </rule>
+    <rule>
+        <from>/u/([0-9]+).html</from>
+        <to type="forward">/u/index.action?id=$1</to>
+    </rule>
+    <rule>
+        <from>/([0-9]+)-([a-zA-Z]+).html</from>
+        <to type="forward">/u/$2.action?id=$1</to>
+    </rule>
+    <rule>
+        <from>/([a-z]+)/([a-z]+).html</from>
+        <to type="forward">/$1/$2.action</to>
+    </rule>
+    <rule>
+        <from>/([a-z]+)/([\u4e00-\u9fa5a-zA-Z0-9]+).html</from>
+        <to type="forward">/$1/index.action?id=$2</to>
+    </rule>
+    <rule>
+        <from>/([a-z]+)/([\u4e00-\u9fa5a-zA-Z0-9]+)/([\u4e00-\u9fa5a-zA-Z0-9]+).html</from>
+        <to type="forward">/$1/index.action?id=$2&amp;typeId=$3</to>
+    </rule>
+    <rule>
+        <from>/([a-z]+)/([\u4e00-\u9fa5a-zA-Z0-9]+)/p_([0-9]+).html</from>
+        <to type="forward">/$1/index.action?id=$2&amp;pages=p_$3</to>
+    </rule>
+    <rule>
+        <from>/([a-z]+)/([\u4e00-\u9fa5a-zA-Z0-9]+)/([\u4e00-\u9fa5a-zA-Z0-9]+)/p_([0-9]+).html</from>
+        <to type="forward">/$1/index.action?id=$2&amp;typeId=$3&amp;pages=p_$4</to>
+    </rule>
+    <rule>
+        <from>/([a-z/_]+)/([a-zA-Z0-9]+)/p_([0-9]+).html</from>
+        <to type="forward">/$1/$2.action?pages=p_$3</to>
+    </rule>
+    <rule>
+        <from>/user/UserBuyDetail-([0-9]+).html</from>
+        <to type="forward">/user/UserBuyDetail.action?id=$1</to>
+    </rule>
+    <rule>
+        <from>/user/OrderDetail-([0-9]+).html</from>
+        <to type="forward">/user/OrderDetail.action?id=$1</to>
+    </rule>
+    <rule>
+        <from>/user/PostSingleAdd-([0-9]+).html</from>
+        <to type="forward">/user/PostSingleAdd.action?id=$1</to>
+    </rule>
+</urlrewrite>

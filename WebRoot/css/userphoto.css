@@ -1,0 +1,964 @@
+@charset "utf-8";
+
+.info {
+    clear: both;
+    margin: 30px 0 0 45px;
+}
+
+.info table {
+    text-align: left;
+    color: #bbb;
+}
+
+.info table td {
+    padding: 2px 0;
+}
+
+.info table td font {
+    color: #fe0002;
+    position: relative;
+    top: 1px;
+    *top: 2px;
+    *font-size: 12px;
+}
+
+.info table td label {
+    color: #666;
+    font-size: 14px;
+    text-align: right;
+}
+
+.info table td b {
+    color: #666;
+    font-weight: bold;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.info table td a {
+    color: #44b4fc;
+    margin: 0 10px;
+}
+
+.info table td input.txt, .info table td input.orangeBor {
+    width: 181px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 3px;
+    font-size: 14px;
+    float: left;
+    margin-right: 5px;
+}
+
+.info table td input.txt {
+    border: #ccc 1px solid;
+}
+
+.info table td input.orangeBor {
+    border: #f60 1px solid;
+}
+
+.info table td input.rdo {
+    margin-right: 3px;
+}
+
+.info table td label.gender {
+    margin-right: 10px;
+}
+
+.info table td em {
+    color: #666;
+    font-size: 14px;
+    margin: 0 8px 0 2px;
+}
+
+.info table td span.red {
+    color: red;
+}
+
+.info table td span {
+    color: #989898;
+}
+
+.info table td span.orange {
+    color: #d00;
+    float: left;
+}
+
+.info span s {
+    margin: 2px 3px 0 0;
+}
+
+.info table td select {
+    margin-right: 6px;
+    font-size: 12px;
+}
+
+.info table td select.sltyear {
+    width: 55px;
+}
+
+.info table td select.sltday {
+    width: 40px;
+}
+
+.info table td select.star {
+    width: 83px;
+}
+
+.info table td select.provincial {
+    width: 124px;
+    float: left;
+}
+
+.info table td select.city {
+    width: 80px;
+    float: left;
+}
+
+.info table td textarea.info_txtarea {
+    border: #ccc 1px solid;
+    width: 517px;
+    height: 51px;
+    overflow: auto;
+    padding: 3px;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif, "宋体";
+}
+
+.info table td input.test {
+    width: 45px;
+    border: #cfcfcf 1px solid;
+    background: #f3f3f3;
+    margin-left: 13px;
+    position: relative;
+    top: -3px \9;
+}
+
+.info table td.sex label {
+    font-size: 12px;
+}
+
+.info table td.sex input {
+    position: relative;
+    top: 1px;
+}
+
+.uploadCon {
+    margin: 50px 0 0 43px;
+}
+
+.upLeft, .upRight {
+    float: left;
+}
+
+.upLeft {
+    width: 330px;
+}
+
+.localBtn {
+    position: relative;
+    z-index: 100;
+    width: 94px;
+    height: 27px;
+    line-height: 27px;
+    overflow: hidden;
+    float: left;
+}
+
+.localBtn .btn {
+    position: absolute;
+    top: 0;
+    width: 94px;
+    float: right;
+    z-index: 10;
+    background: url(/Images/upload.gif) 0 -28px no-repeat;
+    height: 27px;
+}
+
+.localBtn .btnhov {
+    position: absolute;
+    top: 0;
+    width: 94px;
+    float: right;
+    z-index: 10;
+    background: url(/Images/upload.gif) 0 0 no-repeat;
+    height: 27px;
+}
+
+.localBtn .btnFile {
+    width: 220px;
+    height: 16px;
+    position: absolute;
+    left: -190px;
+    top: -7px;
+    z-index: 100;
+    float: right;
+    cursor: pointer;
+}
+
+.upLeft .upImgLoading {
+    width: 76px;
+    border-radius: 2px;
+    height: 17px;
+    line-height: 17px;
+    text-indent: 23px;
+    padding: 4px 5px;
+    border: 1px solid #ddd;
+    background: #F4F4F4 url(/Images/uploading.gif) 5px 5px no-repeat;
+    color: #5E5E5E;
+    margin: 0;
+    color: #999;
+}
+
+.localBtn .btnFile input.file {
+    position: relative;
+    text-align: right;
+    cursor: hand;
+    width: 220px;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+
+.upLeft .upload {
+    height: 26px;
+    line-height: 26px;
+}
+
+.upLeft .upload dd {
+    float: left;
+    margin-left: 13px;
+    display: inline;
+}
+
+.frameCut {
+    float: left;
+    margin-top: 25px;
+    clear: both;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    background: #f4f4f4;
+    border: #ccc 1px solid;
+    text-align: center;
+    position: relative;
+}
+
+.zhix {
+    background: url(/Images/select.png) no-repeat;
+    width: 152px;
+    height: 182px;
+    position: absolute;
+    left: 74px;
+    top: 47px;
+    z-index: 0;
+}
+
+.text {
+    color: #3d3b3b;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    line-height: 300px;
+    position: relative;
+    z-index: 2;
+}
+
+span.tishi {
+    clear: both;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+}
+
+.savePhoto input {
+    display: block;
+    width: 84px;
+    background: #49b8ff;
+    border: #1ba3fa 1px solid;
+    color: #fff;
+    margin-top: 30px;
+    float: left;
+}
+
+.pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+}
+
+.upRight {
+    width: 400px;
+    margin: 55px 0 0 2px;
+    display: inline;
+}
+
+.upRight p {
+    padding-left: 6px;
+}
+
+.photo {
+    margin-top: 20px;
+}
+
+.photo li {
+    text-align: center;
+    float: left;
+    margin-right: 32px;
+    _margin-right: 20px;
+    display: inline;
+    line-height: 22px;
+}
+
+.w160, .w80, .w30 {
+    padding: 5px;
+    border: #ddd 1px solid;
+}
+
+#w160, #w80, #w30 {
+    overflow: hidden;
+}
+
+.li160, #w160, .w160 {
+    width: 160px;
+    height: 160px;
+}
+
+.li80, #w80, .w80 {
+    width: 80px;
+    height: 80px;
+}
+
+.li30, #w30, .w30 {
+    width: 30px;
+    height: 30px;
+}
+
+.detailAddress ul {
+    border-bottom: #e3e3e3 1px solid;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.detailAddress ul li {
+    padding: 13px 10px;
+    zoom: 1;
+    text-align: center;
+}
+
+.detailAddress ul.listTitle li {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.detailAddress ul.liBg {
+    display: block;
+    background: #fff7da;
+}
+
+.detailAddress ul li.pad {
+    width: 260px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.detailAddress ul li.wid55 {
+    width: 55px;
+}
+
+.detailAddress ul li.wid110 {
+    width: 110px;
+}
+
+.detailAddress ul li.wid70 {
+    width: 70px;
+}
+
+.detailAddress ul li.wid80 {
+    width: 80px;
+}
+
+.detailAddress ul li.wid70 a {
+    color: #43b6ff;
+    margin-right: 5px;
+    display: inline;
+}
+
+.add input {
+    margin-top: 10px;
+}
+
+.addAddress {
+    clear: both;
+    margin-top: 12px;
+    background: #f9f9f9;
+    border: #ddd 1px solid;
+    width: 778px;
+    padding-bottom: 32px;
+}
+
+.addAddress dl {
+    padding: 16px 0 0 15px;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.addAddress table {
+    margin: 29px 0 0 35px;
+}
+
+.addAddress table td {
+    padding: 2px 0;
+    *padding: 1px 0;
+}
+
+.addAddress table td label {
+    float: right;
+    color: #666;
+}
+
+.addAddress td select, .addAddress input.street, .addAddress input.inputTxt, .addAddress td em, .addAddress td font {
+    height: 24px;
+    line-height: 24px;
+}
+
+.addAddress td select {
+    width: 77px;
+    margin-right: 2px;
+    float: left;
+    color: #333;
+}
+
+.addAddress td select.szxq {
+    width: 115px;
+}
+
+.addAddress td input.street {
+    width: 353px;
+}
+
+.addAddress input.street, .addAddress input.inputTxt {
+    width: 147px;
+    border: #ddd 1px solid;
+    padding: 0 3px;
+    float: left;
+    color: #333;
+}
+
+.addAddress input.orangebut, .addAddress input.cancelBtn {
+    margin-top: 10px;
+}
+
+.addAddress table td em {
+    position: relative;
+    *top: -2px;
+    float: left;
+    margin: 0 3px 0 5px;
+    line-height: 24px;
+}
+
+.addAddress em s {
+    position: relative;
+    top: 5px;
+    margin-right: 2px;
+}
+
+.addAddress table td span, .addAddress table td font {
+    position: relative;
+    *top: -5px;
+    line-height: 24px;
+}
+
+.addAddress table td font {
+    color: #333;
+    padding-left: 3px;
+    font-size: 12px;
+}
+
+.pwdCon {
+    margin: 56px 0 0 140px;
+}
+
+.pwdCon table {
+    float: left;
+}
+
+.pwdCon table tr.safety td {
+    padding: 0;
+}
+
+.pwdCon table td {
+    padding: 7px 0;
+    color: #888;
+}
+
+.pwdCon table td label {
+    color: #666;
+    font-size: 14px;
+}
+
+.pwdCon table td input.pwd {
+    width: 177px;
+    padding: 0 3px;
+    border-top: #d4d4d4 1px solid;
+    border-right: #efefef 1px solid;
+    border-bottom: #efefef 1px solid;
+    border-left: #d4d4d4 1px solid;
+    margin-right: 5px;
+    height: 29px;
+    line-height: 29px;
+}
+
+.pwdCon table td.wrong s, .pwdCon table td.ok s {
+    float: left;
+    margin-right: 3px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+}
+
+.pwdCon table td.wrong s {
+    background-position: -56px -120px;
+    color: #F60;
+    position: relative;
+    top: 2px;
+}
+
+.pwdCon table td.wrong {
+    color: #d00;
+}
+
+.pwdCon table td.ok s {
+    background-position: -120px -106px;
+}
+
+.pwdCon table td span, .pwdCon ul {
+    float: left;
+}
+
+.pwdCon ul {
+    margin: 7px 0 0 2px;
+    *margin-top: 5px;
+    _margin-top: 7px;
+}
+
+.pwdCon ul li {
+    float: left;
+    height: 4px;
+    width: 45px;
+    overflow: hidden;
+}
+
+.pwdCon ul li.red {
+    background: #f00;
+}
+
+.pwdCon ul li.yellow {
+    background: #ffd800;
+}
+
+.pwdCon ul li.green {
+    background: #3b0;
+}
+
+.pwdCon ul li.gray04 {
+    background: #ddd;
+    width: 135px;
+}
+
+.pwdCon ul li.gray45 {
+    background: #ddd;
+    width: 45px;
+}
+
+.pwdCon ul span {
+    float: left;
+    margin-left: 5px;
+    margin-top: -8px;
+    margin-top: -6px \9;
+    position: relative;
+    z-index: 10;
+}
+
+.privacyCon p {
+    padding: 17px 0 0 2px;
+}
+
+.privacy {
+    margin: 30px auto 70px;
+}
+
+.privacy ul {
+    clear: both;
+    display: inline-block;
+    width: 710px;
+    padding: 11px 0 10px 70px;
+    border-bottom: #eee 1px solid;
+}
+
+.privacy ul.letter {
+    width: 608px;
+    padding: 11px 0 10px 172px;
+}
+
+.privacy ul.location {
+    width: 636px;
+    padding-left: 144px;
+}
+
+.privacy ul.single {
+    width: 669px;
+    padding-left: 111px;
+    border-bottom: 0 none;
+}
+
+.privacy li {
+    float: left;
+    margin-right: 15px;
+    display: inline;
+    line-height: 25px;
+}
+
+.privacy li, .privacy li dt {
+    color: #666;
+    font-size: 14px;
+}
+
+.privacy li dt.marRight {
+    margin-left: 18px;
+    display: none;
+    font-size: 12px;
+}
+
+.privacy li dt.marRight label {
+    line-height: 25px;
+}
+
+.privacy li dt.marRight input {
+    margin-right: 3px;
+    position: relative;
+    top: 2px;
+    *top: 1px;
+}
+
+.privacy li dt {
+    width: 400px;
+    height: 25px;
+    line-height: 25px;
+    position: relative;
+}
+
+.privacy li dt label {
+    outline: none;
+}
+
+dt.marRight span {
+    font-size: 12px;
+    color: #f60;
+    position: absolute;
+    left: 187px;
+    *left: 193px;
+}
+
+dt.marRight s {
+    position: relative;
+    top: 5px;
+    top: 3px \9;
+    *top: 5px;
+    margin-right: 1px;
+}
+
+.privacy li input {
+    margin-right: 7px;
+}
+
+.privacy li input.showNum {
+    border: #ccc 1px solid;
+    width: 100px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 3px;
+    font-size: 12px;
+    margin-left: 5px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: -1px !important;
+    top: 1px \9 !important;
+    *top: 1px !important;
+}
+
+.privacy li em {
+    color: #999;
+    font-size: 12px;
+}
+
+.privacy input.bluebut {
+    margin-top: 45px;
+}
+
+.tel_verification .text_tel, .tel_verification .verification_code, .email_verification .text_email {
+    width: 600px;
+    padding: 30px 0 0 104px;
+    float: left;
+}
+
+.tel_verification .text_tel span, .tel_verification .verification_code span.text, .email_verification .text_email span {
+    width: 150px;
+    text-align: right;
+    height: 27px;
+    line-height: 27px;
+    display: block;
+    float: left;
+    color: #666;
+    font-size: 14px;
+}
+
+.tel_verification .verification_code span.text {
+    width: 100px;
+    text-align: left;
+}
+
+.tel_verification .text_tel input.tel, .tel_verification .verification_code .text_verification_code input.tel, .email_verification .text_email input.email {
+    width: 180px;
+    height: 25px;
+    line-height: 25px;
+    display: block;
+    border: none;
+    border-left: 1px solid #c2c2c2;
+    border-top: 1px solid #c2c2c2;
+    border-bottom: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    float: left;
+    padding-left: 3px;
+}
+
+.text_email {
+    color: #666;
+}
+
+.text_tel input.orangebut, .text_email input.orangebut {
+    margin-left: 10px;
+}
+
+.text_verification_code div.wrong {
+    background: url(/Images/arrow_button.png) no-repeat -165px -75px;
+    padding: 0 0 0 20px;
+    line-height: 25px;
+    width: 200px;
+    color: #f60;
+    float: left;
+}
+
+.tel_verification .text_tel input.tel_value, .email_verification .text_email input.email_value {
+    width: 117px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    border: none;
+    float: left;
+    background: #fffae0 url(/Images/arrow_button.png) no-repeat 0 -584px;
+    margin-left: 5px;
+}
+
+.tel_verification .text_tel div, .email_verification .text_email div {
+    width: 450px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    margin: 0 0 0 150px;
+    *margin: 0 0 0 150px;
+    _margin: 0 0 0 75px;
+}
+
+.tel_verification .text_tel div.ok, .email_verification .text_email div.ok {
+    background: url(/Images/arrow_button.png) no-repeat -170px -115px;
+    text-indent: -9999px;
+}
+
+.tel_verification .verification_code h4 {
+    background: url(/Images/arrow_button.png) no-repeat -170px -119px;
+    padding: 0 0 0 20px;
+    width: 480px;
+    color: #666;
+    height: 30px;
+}
+
+.tel_verification .verification_code h4 a, .tel_verification_ok ul li a, .email_verification_ok ul li a {
+    color: #0d78bc;
+}
+
+.tel_verification .verification_code h4 a:hover, .tel_verification_ok ul li a:hover, .email_verification_ok ul li a:hover {
+    color: #f60;
+}
+
+.tel_verification .verification_code .text_verification_code {
+    width: 600px;
+    float: left;
+}
+
+.tel_verification .verification_code .text_verification_code .back {
+    width: 418px;
+    height: 29px;
+    border: 1px solid #eee;
+    background: #fafafa;
+    float: left;
+    margin: 10px 0;
+    color: #999;
+    padding: 8px 0;
+}
+
+.tel_verification .verification_code .text_verification_code .back p {
+    float: left;
+    line-height: 29px;
+    padding: 0 9px;
+}
+
+.tel_verification .verification_code .text_verification_code .back input {
+    width: 93px;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    display: block;
+    float: left;
+    border: none;
+    background: url(/Images/arrow_button.png) no-repeat 0 -80px;
+    cursor: pointer;
+}
+
+.tel_verification .verification_code .text_verification_code .back span {
+    width: 93px;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    display: block;
+    float: left;
+    background: url(/Images/arrow_button.png) no-repeat 0 -500px;
+}
+
+.tel_verification .verification_code .text_verification_code div.value {
+    width: 200px;
+    padding: 0 84px;
+    float: left;
+}
+
+.tel_verification .verification_code .text_verification_code div.value div.ing {
+    width: 83px;
+    height: 29px;
+    line-height: 29px;
+    margin: 0 0 0 10px;
+    background: url(/Images/arrow_button.png) 0 -500px;
+    float: left;
+    padding: 0 0 0 10px;
+}
+
+.tel_verification .verification_code .text_verification_code div.value div.ing p {
+    text-indent: 18px;
+    color: #666;
+    font-weight: bold;
+    background: url(/Images/loading.gif) no-repeat left center;
+}
+
+.tel_verification .verification_code .text_verification_code div.value input.save {
+    width: 82px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    border: none;
+    background: url(/Images/arrow_button.png) 0 -470px;
+    cursor: pointer;
+    float: left;
+}
+
+.text_tel .wrong, .text_email .wrong {
+    color: #f40;
+}
+
+.text_tel .wrong s, .text_email .wrong s {
+    position: relative;
+    top: 8px;
+    margin-right: 2px;
+}
+
+.tel_verification_ok, .email_verification_ok {
+    width: 750px;
+    margin: 26px 26px;
+    *margin: 26px 26px;
+    _margin: 26px 13px;
+    float: left;
+    border: 1px solid #ffdeb8;
+    background: #fffae0;
+    padding: 20px 0;
+}
+
+.tel_verification_ok h4, .email_verification_ok h4 {
+    width: 98px;
+    height: 126px;
+    float: left;
+    background: url(/Images/newtips_1.png) no-repeat;
+    margin: 0 0 0 20px;
+    *margin: 0 0 0 20px;
+    _margin: 0 0 0 45px;
+    text-indent: -9999px;
+}
+
+.tel_verification_ok ul, .email_verification_ok ul {
+    width: 610px;
+    float: right;
+}
+
+.tel_verification_ok ul li, .email_verification_ok ul li {
+    width: 570px;
+    float: left;
+    line-height: 27px;
+    color: #898989;
+}
+
+.tel_verification_ok ul li span, .email_verification_ok ul li span {
+    color: #f60;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.tel_verification_ok ul li a, .email_verification_ok ul li a {
+    font-weight: bold;
+}
+
+.email_verification_ok p {
+    width: 610px;
+    float: right;
+    line-height: 27px;
+    color: #999;
+}
+
+.email_verification_ok p.not {
+    font-weight: bold;
+    color: #666;
+}
+
+.email_verification_ok p input {
+    width: 117px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}

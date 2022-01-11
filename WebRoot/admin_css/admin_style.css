@@ -1,0 +1,490 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+a {
+    color: #09c;
+}
+
+a:hover {
+}
+
+.lr3 {
+    margin: 0 3px;
+}
+
+.tb3 {
+    margin: 3 0px;
+}
+
+.lr10 {
+    margin: 0 10px;
+}
+
+.tb10 {
+    margin: 10 0px;
+}
+
+.lr5 {
+    margin: 0 5px;
+}
+
+.tb5 {
+    margin: 5 0px;
+}
+
+.lr8 {
+    margin: 0 8px;
+}
+
+.tb8 {
+    margin: 8 0px;
+}
+
+.lr15 {
+    margin: 0 15px;
+}
+
+.tb15 {
+    margin: 15 0px;
+}
+
+.lr20 {
+    margin: 0 20px;
+}
+
+.tb20 {
+    margin: 20 0px;
+}
+
+.span_fenge {
+    display: inline-block;
+    color: #666
+}
+
+.nav_icon {
+    background: url(../image/adminskin.png) no-repeat 0 10px;
+    text-indent: 30px;
+}
+
+.header {
+    height: 40px;
+    overflow: hidden;
+    background-color: #eef3f7;
+    border: 1px solid #d5dfe8;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.header h3 {
+    line-height: 40px;
+    display: inline-block;
+    float: left;
+    font-size: 15px;
+}
+
+.header a {
+    display: inline-block;
+    line-height: 40px;
+}
+
+.header-title {
+    line-height: 40px;
+    margin-top: 10px;
+    background-color: #eef3f7;
+    border: 1px solid #d5dfe8;
+    text-indent: 30px;
+    font-size: 12px;
+    color: #666
+}
+
+.header-data {
+    border: 1px solid #FFBE7A;
+    zoom: 1;
+    background: #FFFCED;
+    padding: 8px 10px;
+    line-height: 20px;
+}
+
+a {
+    color: #444
+}
+
+table {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 2px;
+    border-color: gray;
+    font: 12px/1.5 tahoma, arial, 宋体b8b\4f53, sans-serif;
+
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    background-color: #ccc;
+    line-height: 30px;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.table-list thead th {
+    height: 30px;
+    background: #eef3f7;
+    border-bottom: 1px solid #d5dfe8;
+    font-weight: normal;
+    color: #444;
+}
+
+.table-list tr td {
+    border: 1px solid #eee;
+}
+
+.calendar table tr {
+    line-height: 20px;
+}
+
+.table-list tr {
+    text-align:;
+    height: 30px;
+    line-height: 30px;
+}
+
+.table-list tbody td, .table-list .btn {
+    border-bottom: #eee 1px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    color: #444;
+}
+
+.table-list tr:hover, .table-list table tbody tr:hover {
+    background: #fbffe4;
+}
+
+.table_form tbody td, .table-list .btn {
+    border-bottom: #eee 1px solid;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #444;
+}
+
+.table_form tr:hover, .table-list table tbody tr:hover {
+    background: #fbffe4;
+}
+
+.table-button {
+    background: #f6f6f6;
+    padding: 5px 50px;
+    padding-left: 210px;
+}
+
+/*input*/
+
+.input-text-c {
+    border-top: 1px solid #989898;
+    border-left: 1px solid #989898;
+    border-bottom: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    font-size: 14px;
+    padding: 3px;
+    width: 25px;
+    text-align: center;
+}
+
+input, label, img, th {
+    vertical-align: middle;
+}
+
+.input-text, .measure-input, textarea, input.date, input.endDate, .input-focus {
+
+    height: 18px;
+    margin: 0 5px 0 0;
+    padding: 2px 0 2px 5px;
+
+    border-top: 1px solid #989898;
+    border-left: 1px solid #989898;
+    border-bottom: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+
+    font-family: Verdana, Geneva, sans-serif, "宋体";
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.input-error {
+    border: 1px solid #f60
+}
+
+input.button {
+    background: #ddd;
+    border: 0px;
+    height: 24px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 1px solid #666;
+    border-right: 1px solid #666;
+    display: block;
+    padding: 0px 6px;
+    font-size: 12px;
+    line-height: 25px;
+    display: inline-block;
+}
+
+input.button:hover {
+    background: #ccc;
+}
+
+select {
+    vertical-align: middle;
+    background: none repeat scroll 0 0 #F9F9F9;
+    border-color: #666666 #CCCCCC #CCCCCC #666666;
+    border-style: solid;
+    border-width: 1px;
+    color: #333;
+    padding: 2px;
+}
+
+.btn_paixu {
+    background: #f6f6f6;
+    padding: 6px 12px 0 12px;
+    height: 30px;
+    line-height: 30px;
+}
+
+/* span */
+
+.table-list span {
+
+}
+
+#pages {
+    height: 25px;
+    line-height: 25px;
+    margin: 20px 0px;
+    font: 12px/1.5 tahoma, arial, 宋体b8b\4f53, sans-serif;
+}
+
+#pages ul {
+    float: right
+}
+
+#pages ul li {
+    float: left;
+    display: block;
+    line-height: 25px;
+    padding: 0px 10px;
+    background-color: #eef3f7;
+    margin-left: 1px;
+}
+
+#pages ul li a {
+}
+
+/* 上传 iframe*/
+.uploadframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 9999;
+}
+
+.uploadpicarr {
+    width: 650px;
+    min-height: 100px;
+    padding: 0 12px 8px;
+    margin-bottom: 7px;
+    border: 1px solid #ccc;
+    _height: auto !important;
+    _height: 100px;
+    background-color: #fff;
+}
+
+.uploadpicarr legend {
+    color: #666;
+    padding: 3px 8px;
+    font-weight: bold;
+}
+
+.uploadpicarr .picarr-title {
+    padding-left: 22px;
+    line-height: 40px;
+    padding-bottom: 10px;
+    color: #666;
+    margin: 0 auto;
+}
+
+.picarr-title strong {
+    color: #ff0000;
+    padding: 0px 5px;
+}
+
+.upload-img-list {
+    float: left
+
+}
+
+.upload-img-list li {
+    float: left;
+    width: 311px;
+    padding: 0 0 8px 10px;
+}
+
+.upload-img-list li input {
+    width: 260px;
+}
+
+.upload-img-list li a {
+    color: #09c;
+}
+
+.pages {
+    overflow: hidden;
+    height: 60px;
+    clear: both;
+    border-top: 1px solid #E4E4E4;
+}
+
+.pages ul.pageULEx {
+    float: right;
+    padding: 20px 0 0 0;
+    margin-right: 0;
+    display: inline;
+}
+
+.pages ul.pageULEx li {
+    line-height: 32px;
+}
+
+.pages ul.pageULEx li.curr_page {
+    padding: 4px 0 3px 0;
+    font-size: 14px;
+    font-family: Arial;
+    line-height: 22px;
+}
+
+.pages ul.pageULEx li a {
+    padding: 3px 0 4px 0;
+    font-size: 14px;
+    font-family: Arial;
+    line-height: 22px;
+}
+
+.pages ul.pageULEx li.prev_page a, .pages ul.pageULEx li.next_page a {
+    padding: 4px 0 3px 0;
+    padding: 5px 0 2px 0 \9;
+    _padding: 5px 0 2px 0;
+    line-height: 22px;
+}
+
+.pages ul.pageULEx li.prev_page i, .pages ul.pageULEx li.next_page i {
+    font-family: 宋体;
+    font-weight: bold;
+}
+
+.pages ul.pageULEx li.prev_page i {
+    padding-right: 5px;
+}
+
+.pages ul.pageULEx li.next_page i {
+    padding-left: 5px;
+}
+
+.pages ul.pageULEx li {
+    float: left;
+    list-style: none;
+    margin: 0 0 0 5px;
+    text-align: center;
+}
+
+.pages ul.pageULEx li {
+    float: left;
+    text-align: center;
+    color: #666;
+    font-family: Arial;
+}
+
+.pages ul.pageULEx li.curr_page {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #F60;
+    border: 1px solid #F60;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pages ul.pageULEx li a {
+    border: 1px solid #DEDEDE;
+    display: inline-block;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    color: #999;
+}
+
+.pages ul.pageULEx li a, .pages li a:hover {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.pages ul.pageULEx li a:hover {
+    color: #f60;
+    text-decoration: none;
+}
+
+.pages ul.pageULEx li.prev_page a {
+    border: 1px solid #DEDEDE;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    width: 65px;
+    border-radius: 5px;
+    color: #999;
+}
+
+.pages ul.pageULEx li.next_page a {
+    white-space: nowrap;
+    width: 65px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.pages ul.pageULEx li.prev_page a:hover, .pages li.next_page a:hover {
+    color: #f60;
+    overflow: hidden;
+}
+
+.pages ul.pageULEx li.page_curgray a, .pages ul.pageULEx li.page_curgray a:hover {
+    cursor: default;
+    display: inline-block;
+    background: #F4F4F4;
+    border: 1px solid #E4E4E4;
+    color: #CCC;
+}

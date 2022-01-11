@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+.member_center .member_right .member_right_main {
+    position: relative;
+    z-index: 1
+}
+
+.shipping_address {
+    width: 784px;
+    padding: 10px;
+    float: left
+}
+
+.shipping_address ul, .shipping_address h4 {
+    width: 764px;
+    float: left;
+    margin: 0 0 0 10px
+}
+
+.shipping_address ul.title {
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 1px solid #efefef;
+    color: #c0c0c0
+}
+
+.shipping_address ul.content, .shipping_address ul.content_click {
+    border-bottom: 1px solid #efefef;
+    color: #666;
+    padding: 15px 0
+}
+
+.shipping_address ul.content_click {
+    background: #fffae0
+}
+
+.shipping_address ul li {
+    float: left;
+    padding: 0 0 0 10px
+}
+
+.shipping_address ul li.name, .shipping_address ul li.zip_code, .shipping_address ul li.do, .shipping_address ul li.tel {
+    width: 90px
+}
+
+.shipping_address ul li.address {
+    width: 260px
+}
+
+.shipping_address ul li.default {
+    width: 84px
+}
+
+.shipping_address ul.title li.default {
+    text-indent: -9999px
+}
+
+.shipping_address ul li.do {
+    padding: 0 0 0 30px;
+    width: 60px
+}
+
+.shipping_address ul li a {
+    color: #0383c2
+}
+
+.shipping_address ul li a:hover {
+    color: #f60
+}
+
+.shipping_address ul.content li.default, .shipping_address ul.content_click li.default {
+    color: #f60
+}
+
+.shipping_address h4 {
+    display: none
+}
+
+.shipping_address h4 a {
+    background: url(/Images/arrow_button.png) no-repeat scroll 0 0;
+    border: medium none;
+    color: #FFF;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-weight: bold;
+    height: 30px;
+    line-height: 27px;
+    margin-left: 5px;
+    text-align: center;
+    width: 117px;
+    margin: 20px 0 0 0
+}
+
+.shipping_address h4 a:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+.HackBox {
+    CLEAR: both;
+    BORDER-TOP: transparent 1px none
+}
+
+#div_ajax_canvas {
+    position: absolute;
+    left: 10px;
+    top: 35px;
+    width: 760px;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    DISPLAY: none
+}
+
+.consignee {
+    padding: 0
+}
+
+.consignee h4 {
+    margin: 0 0 30px 0;
+    padding: 0;
+    color: #666;
+    font-size: 12px;
+    font-weight: bold
+}
+
+.consignee .change_h3_h {
+    HEIGHT: 33px
+}
+
+.consignee H3 .look {
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 12px
+}
+
+.consignee .m_list {
+    PADDING-LEFT: 5px;
+    PADDING-BOTTOM: 5px;
+    HEIGHT: 25px
+}
+
+.consignee .m_list_btn {
+    padding: 10px 0 20px 85px
+}
+
+.consignee .m_list .text {
+    FLOAT: left;
+    width: 80px;
+    line-height: 25px;
+    text-align: right;
+    color: #666
+}
+
+.consignee select {
+    font-size: 12px;
+    FLOAT: left;
+    MARGIN-RIGHT: 6px
+}
+
+.consignee .m_list .prompt {
+    float: left;
+    color: red;
+    PADDING-TOP: 4px
+}
+
+.consignee .m_list .promptMsg {
+    float: left;
+    color: red;
+    padding-left: 3px;
+    PADDING-TOP: 4px
+}
+
+.consignee .m_list .promptAlt {
+    float: left;
+    color: #999;
+    padding-left: 3px;
+    PADDING-TOP: 4px
+}
+
+.consignee .select_w {
+    HEIGHT: 24px
+}
+
+.consignee .textbox_1 {
+    WIDTH: 350px;
+    HEIGHT: 24px;
+    margin: 0;
+    MARGIN-RIGHT: 5px;
+    PADDING: 0 0 0 3px;
+    BORDER: #ddd 1px solid;
+    FLOAT: left;
+    line-height: 24px
+}
+
+.consignee .textbox_2 {
+    FLOAT: left;
+    BORDER: #909292 1px solid;
+    margin: 0;
+    MARGIN-RIGHT: 6px;
+    PADDING: 3px 0 0 3px;
+    WIDTH: 197px;
+    HEIGHT: 15px
+}
+
+.consignee .textbox_3 {
+    FLOAT: left;
+    BORDER: #909292 1px solid;
+    margin: 0;
+    MARGIN-RIGHT: 5px;
+    PADDING: 3px 0 0 3px;
+    WIDTH: 127px;
+    HEIGHT: 15px
+}
+
+.consignee .textbox_4 {
+    WIDTH: 150px;
+    HEIGHT: 24px;
+    margin: 0;
+    MARGIN-RIGHT: 5px;
+    PADDING: 0 0 0 3px;
+    BORDER: #ddd 1px solid;
+    FLOAT: left;
+    line-height: 24px
+}
+
+.y_btn {
+    width: 68px;
+    height: 27px;
+    margin-right: 20px;
+    padding: 0;
+    border: 0;
+    background: url(/Images/arrow_button.png) left -230px no-repeat;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 27px;
+    text-align: center;
+    color: #fff
+}
+
+.n_btn {
+    width: 52px;
+    height: 25px;
+    padding: 0;
+    border: 0;
+    background: url(/Images/arrow_button.png) #093 -74px -230px no-repeat;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    color: #999;
+    cursor: pointer
+}

@@ -1,0 +1,318 @@
+@charset "utf-8";
+
+div.pageDialogBG {
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: #999;
+    display: none
+}
+
+div.pageDialogBorder {
+    margin: 0;
+    padding: 0;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: #000;
+    display: none;
+    width: 500px;
+    height: 400px
+}
+
+div.pageDialog {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 1002;
+    overflow: hidden;
+    border: 1px;
+    background-color: #fff;
+    display: none
+}
+
+div.pageDialog div.pageDialogClose {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: url(/Images/message.png) transparent -80px -70px no-repeat;
+    display: block;
+    cursor: pointer
+}
+
+div.pageDialogMain {
+    width: 700px;
+    height: 470px;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    text-align: left;
+    overflow: hidden;
+    font-size: 12px;
+    background: #fff
+}
+
+div.pageDialogMain div.title {
+    height: 30px;
+    padding-top: 3px;
+    padding-left: 10px;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    line-height: 30px
+}
+
+div.pageDialogMain div.content {
+    padding: 5px
+}
+
+div.pageDialogMain div.content dl.sAltOK {
+    margin: 8px 0 8px 10px;
+    _margin-left: 5px;
+    padding-left: 30px;
+    height: 24px;
+    background: url(/Images/message.png) -150px -30px no-repeat;
+    float: left
+}
+
+div.pageDialogMain div.content dl.sAltOK dd {
+    height: 24px;
+    padding-top: 4px;
+    overflow: hidden;
+    background-color: #FFF;
+    line-height: 20px;
+    color: #070
+}
+
+div.pageDialogMain div.content dl.sAltFail {
+    margin: 8px 0 8px 10px;
+    _margin-left: 5px;
+    padding-left: 30px;
+    height: 24px;
+    background: url(/Images/message.png) -180px -30px no-repeat;
+    float: left
+}
+
+div.pageDialogMain div.content dl.sAltFail dd {
+    height: 24px;
+    padding-top: 4px;
+    overflow: hidden;
+    background-color: #FFF;
+    line-height: 20px;
+    color: #ff6000
+}
+
+div.pageDialogMain h1 {
+    margin: 0;
+    padding: 9px 40px 0 15px;
+    border-bottom: 1px solid #F60;
+    background-color: #eee;
+    color: #F60;
+    height: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    font-size: 12px
+}
+
+div.pageDialogMain p {
+    margin: 0;
+    padding: 5px 10px;
+    line-height: 22px
+}
+
+div.pageDialogMain h2 {
+    margin: 30px 0 0 20px;
+    padding: 2px 10px 5px 35px;
+    background: url(/Images/Cart.png) no-repeat 10px -569px;
+    font-size: 13px;
+    _font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    text-align: left
+}
+
+div.pageDialogMain h2.error {
+    background-position: 10px -416px
+}
+
+div.pageDialogMain h2.alt {
+    background-position: 10px -516px
+}
+
+div.pageDialogMain div.div_contentsBox {
+    MARGIN: 3px 0 3px 0;
+    padding: 0;
+    width: 780px;
+    height: 340px;
+    scrollbar-face-color: #ffe1b0;
+    scrollbar-shadow-color: #f09808;
+    scrollbar-3dlight-color: #f09808;
+    srcollbar-arrow-color: #f09808;
+    scrollbar-track-color: #fffcf3;
+    scrollbar-darkshadow-color: #ffe1b0;
+    scrollbar-base-color: #ffe1b0;
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+div.pageDialogMain div.div_contentsBox div.div_contents {
+    MARGIN: 0;
+    padding: 0;
+    width: 760px;
+    color: #333;
+    line-height: 22px
+}
+
+div.pageDialogMain div.message {
+    height: 130px;
+    margin: 0 auto;
+    padding: 0 0 0 20px
+}
+
+div.pageDialogMain div.message h3 {
+    width: 95px;
+    height: 130px;
+    float: left
+}
+
+div.pageDialogMain div.message h3 span.right_big {
+    width: 74px;
+    height: 65px;
+    display: block;
+    background: url(/Images/message.png) no-repeat 0 0;
+    margin: 20px 0 0 1px
+}
+
+div.pageDialogMain div.message h3 span.wrong_big {
+    width: 51px;
+    height: 56px;
+    display: block;
+    margin: 20px 0 0 24px;
+    background: url(/Images/message.png) no-repeat -80px 0
+}
+
+div.pageDialogMain div.message h3 span.right_s {
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: 20px 0 0 51px;
+    background: url(/Images/message.png) no-repeat -150px -30px
+}
+
+div.pageDialogMain div.message h3 span.wrong_s {
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: 20px 0 0 51px;
+    background: url(/Images/message.png) no-repeat -180px -30px
+}
+
+div.pageDialogMain div.message ul {
+    height: 110px;
+    display: block;
+    float: left;
+    padding: 20px 0 0 0;
+    margin: 0;
+    list-style-type: none
+}
+
+div.pageDialogMain div.message ul li {
+    height: 25px;
+    line-height: 25px;
+    text-align: left
+}
+
+div.pageDialogMain div.message ul li.title {
+    color: #0d9800;
+    font-weight: bold;
+    font-size: 14px
+}
+
+div.pageDialogMain div.message ul li em {
+    margin: 0 3px;
+    color: #f00;
+    font-weight: bold
+}
+
+div.pageDialogMain div.message ul li a {
+    color: #666
+}
+
+div.pageDialogMain div.message ul li input.button_1 {
+    width: 80px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    color: #888;
+    background: url(/Images/message.png) no-repeat -135px 0;
+    float: left
+}
+
+div.pageDialogMain div.message ul li input.button_2 {
+    width: 80px;
+    height: 27px;
+    line-height: 27px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    background: url(/Images/message.png) no-repeat 0 -70px;
+    float: left
+}
+
+div.pageDialogMain div.message ul li input.button_3 {
+    width: 66px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    color: #888;
+    background: url(/Images/message.png) no-repeat -135px -70px;
+    margin-left: 15px;
+    float: left
+}
+
+div.pageDialogMain div.content .mAltOK s, div.pageDialogMain div.content .mAltFail s {
+    background: url(/Images/message.png);
+}
+
+div.pageDialogMain div.content .mAltOK s, div.pageDialogMain div.content .mAltFail s {
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+div.pageDialogMain div.content .mAltOK s {
+    background-position: -151px -33px;
+    vertical-align: middle;
+}
+
+div.pageDialogMain div.content .mAltFail s {
+    background-position: -181px -33px;
+    vertical-align: middle;
+}
+
+div.pageDialogMain div.content .mAltOK, div.pageDialogMain div.content .mAltFail {
+    text-align: center;
+    margin-top: 15px;
+    color: #999;
+    font-size: 14px;
+}

@@ -1,0 +1,264 @@
+@charset "utf-8";
+
+﻿ html, body {
+    font-size: 12px;
+    color: #333;
+    height: 100%
+}
+
+.Uploader {
+    font: 12px Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border: #99bbe8 1px solid;
+    background: #f0f4f9;
+    padding: 1px
+}
+
+.Uploader .total_bg {
+    width: 100%;
+    height: 100%;
+    background-color: #cadaee;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px
+}
+
+.Uploader .oper {
+    height: 20px;
+    margin: 0 auto;
+    padding-top: 5px;
+    overflow: hidden
+}
+
+.Uploader .oper .upload_btn {
+    float: left;
+    height: 20px;
+    width: 68px;
+    cursor: pointer;
+    position: relative
+}
+
+.Uploader .oper .upload_btn object {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.Uploader .oper .upload_btn div {
+    background: url(/Images/bg_upload_btn.gif) repeat-x 0 -20px;
+    height: 20px;
+    width: 60px;
+    float: left
+}
+
+.Uploader .oper .upload_btn .left {
+    background: url(/Images/bg_upload_btn.gif) repeat-x 0 0;
+    width: 4px
+}
+
+.Uploader .oper .upload_btn .right {
+    background: url(/Images/bg_upload_btn.gif) repeat-x 0 -40px;
+    width: 4px;
+    float: right
+}
+
+.Uploader .oper .upload_btn div b {
+    display: block;
+    font-weight: normal;
+    text-align: center;
+    text-indent: 16px;
+    clear: both;
+    line-height: 20px;
+    @ line-height: 21px;
+    height: 20px;
+    width: 100%;
+    overflow: hidden
+}
+
+.Uploader .oper .add {
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 3px
+}
+
+.Uploader .oper .upload {
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 -18px
+}
+
+.Uploader .oper .clean {
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 -36px
+}
+
+.Uploader .oper .cancel {
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 -159px
+}
+
+.Uploader .content {
+    color: #666;
+    border: #99bbe8 1px solid;
+    background-color: #fff;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin: 4px auto
+}
+
+.Uploader .content li {
+    list-style: none;
+    list-style-position: outside;
+    display: block;
+    border-bottom: #999 1px dashed;
+    height: 30px;
+    overflow: hidden
+}
+
+.Uploader .content li b {
+    display: block;
+    width: 16px;
+    height: 24px;
+    margin: 3px;
+    float: left
+}
+
+.Uploader .content li .book {
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 -336px
+}
+
+.Uploader .content li .zip {
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 -446px
+}
+
+.Uploader .content li .swf {
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 -248px
+}
+
+.Uploader .content li .dvd {
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 -313px
+}
+
+.Uploader .content li .doc {
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 -424px
+}
+
+.Uploader .content li .ppt {
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 -402px
+}
+
+.Uploader .content li .xls {
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 -291px
+}
+
+.Uploader .content li .exe {
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 -380px
+}
+
+.Uploader .content li .scr {
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 -182px
+}
+
+.Uploader .content li .img {
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 -204px
+}
+
+.Uploader .content li .htm {
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 -270px
+}
+
+.Uploader .content li .txt {
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 -226px
+}
+
+.Uploader .content li .mp3 {
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 -359px
+}
+
+.Uploader .content li .oth {
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 -469px
+}
+
+.Uploader .content li .cfg {
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 -492px
+}
+
+.Uploader .content li .labe {
+    float: left;
+    width: 142px
+}
+
+.Uploader .content li .bar {
+    width: 140px;
+    height: 6px;
+    overflow: hidden;
+    background: url(/Images/bg_upload_btn.gif) repeat-x 0 -61px;
+    float: left;
+    border: #a8a8b0 1px solid
+}
+
+.Uploader .content li .bar div {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    float: right
+}
+
+.Uploader .content li .unbar {
+    width: 142px;
+    height: 8px;
+    background-color: #fff
+}
+
+.Uploader .content li .file {
+    height: 14px;
+    line-height: 14px;
+    margin: 2px 0;
+    float: left;
+    overflow: hidden
+}
+
+.Uploader .content li span {
+    display: block;
+    color: #999;
+    float: left;
+    height: 14px;
+    margin-top: 14px
+}
+
+.Uploader .content li .op_up {
+    float: right;
+    margin: 3px 1px;
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 -93px;
+    cursor: pointer;
+    display: none
+}
+
+.Uploader .content li .op_del {
+    float: right;
+    margin: 3px 1px;
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 -73px;
+    cursor: pointer;
+    display: none
+}
+
+.Uploader .content li .op_ok {
+    float: right;
+    margin: 3px 1px;
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 -113px;
+    cursor: pointer;
+    display: none
+}
+
+.Uploader .content li .op_no {
+    float: right;
+    margin: 3px 1px;
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 -134px;
+    cursor: pointer;
+    display: none
+}
+
+.Uploader .content li .op_fail {
+    float: right;
+    margin: 3px 1px;
+    background: url(/Images/icon_upload_btn.gif) no-repeat 0 -55px;
+    cursor: pointer;
+    display: none
+}

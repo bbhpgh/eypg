@@ -1,0 +1,196 @@
+MYSQL管理之主从同步管理
+
+MYSQL主从同步架构是目前使用最多的数据库架构之一，尤其是负载比较大的网站，因此对于主从同步的管理也就显得非常重要，新手往往在出现主从同步错误的时候不知道如何入手，这篇文章就是根据自己的经验来详细叙述mysql主从的管理。
+
+MYSQL主从同步的作用
+
+(1) 数据分布
+(2) 负载平衡(load balancing)
+(3) 备份
+(4) 高可用性(high availability)和容错
+
+MYSQL主从同步的原理
+
+关于MYSQL的主从同步，最主要的是要了解MYSQL的主从同步是如何工作的也即主从同步的原理，通过下图能很明白的指导其工作的过程：
+
+大致描述一下过程：从服务器的IO线程从主服务器获取二进制日志，并在本地保存为中继日志，然后通过SQL线程来在从上执行中继日志中的内容，从而使从库和主库保持一致。主从同步的详细过程如下：
+
+1. 主服务器验证连接。
+
+2. 主服务器为从服务器开启一个线程。
+
+3. 从服务器将主服务器日志的偏移位告诉主服务器。
+
+4. 主服务器检查该值是否小于当前二进制日志偏移位。
+
+5.  如果小于，则通知从服务器来取数据。
+
+6.  从服务器持续从主服务器取数据，直至取完，这时，从服务器线程进入睡眠，主服务器线程同时进入睡眠。
+
+7. 当主服务器有更新时，主服务器线程被激活，并将二进制日志推送给从服务器，并通知从服务器线程进入工作状态。
+
+8. 从服务器SQL线程执行二进制日志，随后进入睡眠状态。
+
+ 
+
+MYSQL主从同步的搭建实战
+
+主从同步的搭建是一项比较细的技术活，前期做好了一些事情会让你在以后的工作中减少很多工作，搭建的时候需要注意一些问题，一会搭建的时候会一边搭建一边介绍需要注意的问题，让初学者能在刚开始的时候就有效的规避掉一些潜在的问题(MYSQL安装这里不做介绍)：
+
+1.  主从同步环境介绍
+
+操作系统环境：Centos 5.5 64 bit
+
+MYSQL版本：MYSQL 5.1.50
+
+主服务器的IP：10.1.1.75
+
+从服务器的IP：10.1.1.76
+
+2.   在主服务器上建立同步帐号
+
+GRANT REPLICATION SLAVE,FILE ON *.* TO 'replication'@'10.1.1.%' IDENTIFIED BY '123456';
+
+FLUSH PRIVILEGES;
+
+注意：大家在设置权限的时候不要将密码设置过于简单！
+
+3.   从服务器配置文件的更改
+
+server-id = 2
+
+replicate-wild-ignore-table=mysql.%
+
+log-slave-updates  #这个有需要可以开启
+
+注意：
+
+1)  server-id这一项需要认真检查，一定不能和主服务器冲突了，不然到时候会出现莫民其妙的问题，因为同步的时候会会根据server-id做判断，如果server-id一样就不进行同步了，不然可能会导致死循环(主主同步或者环状同步的时候)。
+
+2)   有的人会感觉奇怪我这里为什么要使用replicate-wild-ignore-table参数，而不是用replicate-do-db或者replicate-ignore-db来过滤需要同步的数据库和不需要同步的数据库。这里有几个原因：
+
+A. replicate-wild-ignore-table参数能同步所有跨数据库的更新，比如replicate-do-db或者replicate-ignore-db不会同步类似
+
+use mysql;
+
+UPDATE test.aaa SET amount=amount+10;
+
+B. replicate-wild-ignore-table=mysql.%在以后需要添加同步数据库的时候能方便添加而不需要重新启动从服务器的数据库。因为以后很可能需要同步其他的数据库。
+
+3) auto_increment_increment和auto_increment_offset参数，这 两个参数一般用在主主同步中，用来错开自增值, 防止键值冲突。
+
+4)  --slave-skip-errors参数，不要胡乱使用这些跳过错误的参数，除非你非常确定你在做什么。当你使用这些参数时候，MYSQL会忽略那些错误，这样会导致你的主从服务器数据不一致。
+
+4.  从主服务器得到一个快照版本
+
+如果你的是MYISAM或者既有MYISAM又有INNODB的话就在主服务器上使用如下命令导出服务器的一个快照：
+
+mysqldump -uroot -p --lock-tables --events --triggers --routines --flush-logs --master-data=2 --databases test > db.sql
+
+试过只有INNODB的话就是用如下命令：
+
+mysqldump -uroot -p --single-transaction --events --triggers --routines --flush-logs --master-data=2 --databases test > db.sql
+
+这里需要注意几个参数的使用：
+
+--single-transaction 这个参数只对innodb适用。
+
+--databases 后面跟除mysql以后的其他所有数据库的库名，我这里只有一个test库。
+
+--master-data 参数会记录导出快照时候的mysql二进制日志位置，一会会用到。
+
+5.  将快照版本还原到从服务器上
+
+mysqldump -uroot -p -h 10.1.1.76 test < db.sql
+
+将快照版本还原到从服务器上以后，此时从服务器上的数据和主服务器的数据是一致的。
+
+6.  在从服务器上使用change master从主服务器上同步
+
+使用grep命令查找到二进制日志的名称以及位置
+
+[root@ns1 ~]# grep -i "change master" db.sql
+
+-- CHANGE MASTER TO MASTER_LOG_FILE='mysql-bin.000006', MASTER_LOG_POS=106;
+
+生成CHANGE MASTER语句，然后在从上执行
+
+STOP SLAVE; 
+
+CHANGE MASTER TO MASTER_HOST='10.1.1.75',MASTER_USER='replication',MASTER_PASSWORD='123456',MASTER_LOG_FILE='mysql-bin.000006', MASTER_LOG_POS=106;
+
+START SLAVE;
+
+这样就完成了主从同步的搭建，最后使用SHOW SLAVE STATUSG;查看Slave_IO_Running和Slave_SQL_Running的状态，如果都为Yes，就大功告成了。
+
+注意:不要将同步的信息写入配置文件中，不方便管理，尤其是有变动需要重启。
+
+ 
+
+MYSQL主从同步的管理
+
+这里介绍一些管理MYSQL主从同步的命令：
+
+1.  停止MYSQL同步
+
+STOP SLAVE IO_THREAD;    #停止IO进程
+
+STOP SLAVE SQL_THREAD;    #停止SQL进程
+
+STOP SLAVE;                               #停止IO和SQL进程
+
+2.  启动MYSQL同步
+
+START SLAVE IO_THREAD;    #启动IO进程
+
+START SLAVE SQL_THREAD;  #启动SQL进程
+
+START SLAVE;                             #启动IO和SQL进程
+
+3.   重置MYSQL同步
+
+RESET SLAVE;
+
+用于让从属服务器忘记其在主服务器的二进制日志中的复制位置, 它会删除master.info和relay-log.info文件，以及所有的中继日志，并启动一个新的中继日志,当你不需要主从的时候可以在从上执行这个操作。不然以后还会同步，可能会覆盖掉你的数据库，我以前就遇到过这样傻叉的事情。哈哈！
+
+4.   查看MYSQL同步状态
+
+SHOW SLAVE STATUS;
+
+这个命令主要查看Slave_IO_Running、Slave_SQL_Running、Seconds_Behind_Master、Last_IO_Error、Last_SQL_Error这些值来把握复制的状态。
+
+5.  临时跳过MYSQL同步错误
+
+经常会朋友mysql主从同步遇到错误的时候，比如一个主键冲突等，那么我就需要在确保那一行数据一致的情况下临时的跳过这个错误，那就需要使用SQL_SLAVE_SKIP_COUNTER = n命令了，n是表示跳过后面的n个事件,比如我跳过一个事件的操作如下：
+
+STOP SLAVE;
+
+SET GLOBAL SQL_SLAVE_SKIP_COUNTER=1;
+
+START SLAVE;
+
+6.  从指定位置重新同步
+
+有的时候主从同步有问题了以后，需要从log位置的下一个位置进行同步，相当于跳过那个错误，这时候也可以使用CHANGE MASTER命令来处理，只要找到对应的LOG位置就可以,比如：
+
+CHANGE MASTER TO MASTER_HOST='10.1.1.75',MASTER_USER='replication',MASTER_PASSWORD='123456',MASTER_LOG_FILE='mysql-bin.000006', MASTER_LOG_POS=106;
+
+START SLAVE;
+
+MYSQL主从同步的管理经验介绍
+
+1.   不要乱使用SQL_SLAVE_SKIP_COUNTER命令。
+
+这个命令跳过之后很可能会导致你的主从数据不一致，一定要先将指定的错误记录下来，然后再去检查数据是否一致，尤其是核心的业务数据。
+
+2.   结合percona-toolkit工具pt-table-checksum定期查看数据是否一致。
+
+这个是DBA必须要定期做的事情，呵呵，有合适的工具何乐而不为呢？另外percona-toolkit还提供了对数据库不一致的解决方案，可以采用pt-table-sync，这个工具不会更改主的数据。还可以使用pt-heartbeat来查看从服务器的复制落后情况。具体的请查看：http://blog.chinaunix.net/uid-20639775-id-3229211.html。
+
+3.   使用replicate-wild-ignore-table选项而不要使用replicate-do-db或者replicate-ignore-db。
+
+原因已经在上面做了说明。
+
+4.   将主服务器的日志模式调整成mixed。
+
+5.   每个表都加上主键，主键对数据库的同步会有影响尤其是居于ROW复制模式。

@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+.member_center .member_right .member_content {
+    min-height: 530px;
+    width: 804px;
+    padding: 0 0 20px 0;
+    _height: 549px;
+    clear: both;
+    _border-bottom: 1px solid #60a5d6;
+    float: left
+}
+
+.member_center .member_right .member_message {
+    width: 779px;
+    padding: 15px 0 15px 25px;
+    background: url(/Images/member_right_linebg.png) repeat-x left top;
+    float: left
+}
+
+.chanel {
+    height: 104px;
+    margin-bottom: 10px
+}
+
+.chanelL, .chanelR {
+    float: left;
+    margin-right: 15px;
+    display: inline
+}
+
+.chanelL {
+    position: relative;
+    width: 104px;
+    height: 104px
+}
+
+.chanelL img {
+    width: 100px;
+    height: 100px;
+    border: #e0e0e0 1px solid;
+    padding: 4px
+}
+
+.chanelL .hov {
+    display: block;
+    width: 108px;
+    height: 20px;
+    line-height: 20px;
+    *line-height: 22px;
+    color: #FFF;
+    background: #333;
+    display: block;
+    text-align: center;
+    filter: alpha(opacity=70);
+    -moz-opacity: .7;
+    -khtml-opacity: .7;
+    opacity: .7;
+    position: absolute;
+    left: 1px;
+    top: 89px;
+    _top: 87px
+}
+
+.chanelL .hov a {
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    width: 108px
+}
+
+.chanelR p {
+    line-height: 30px
+}
+
+.chanelR p a {
+    text-decoration: none
+}
+
+.chanelR p a:hover {
+    color: #f60;
+    text-decoration: underline
+}
+
+.chanelR p b {
+    font-size: 14px;
+    color: #000
+}
+
+.chanelR p b strong {
+    color: #f60
+}
+
+.chanelR p span {
+    color: #999
+}
+
+.chanelR p a {
+    color: #0d78bc;
+    margin-right: 10px
+}
+
+.chanelR p a.ljcz {
+    clear: #0d78bc;
+    font-weight: bold
+}
+
+.member_center .member_right .member_message .prompt {
+    width: 733px;
+    background: #fffae0;
+    border: 1px solid #ffdeb8;
+    float: left;
+    height: 22px;
+    padding: 7px 10px;
+    margin: 0 0 10px 0;
+    overflow: hidden
+}
+
+.member_center .member_right .member_message .prompt p {
+    text-indent: 20px;
+    color: #f60;
+    height: 22px;
+    line-height: 22px;
+    _line-height: 25px;
+    float: left;
+    width: 720px;
+    overflow: hidden
+}
+
+.member_center .member_right .member_message .prompt p.tel {
+    background: url(/Images/member.png) no-repeat -160px -1px
+}
+
+.member_center .member_right .member_message .prompt p.address {
+    background: url(/Images/member.png) no-repeat -152px -70px;
+    text-indent: 25px
+}
+
+.member_center .member_right .member_message .prompt p.share {
+    background: url(/Images/arrow_button.png) no-repeat -170px -202px
+}
+
+.member_center .member_right .member_message .prompt p.email {
+    background: url(/Images/arrow_button.png) no-repeat -165px -277px
+}
+
+.member_center .member_right .member_message .prompt a.close {
+    width: 13px;
+    height: 10px;
+    display: block;
+    float: right;
+    background: url(/Images/arrow_button.png) no-repeat -173px -176px;
+    margin: 7px 0 0 0;
+    overflow: hidden;
+    text-indent: -9999px;
+    cursor: pointer
+}
+
+.member_center .member_right .member_message .prompt p a {
+    color: #0c71c4
+}
+
+.member_center .member_right .member_message .prompt p a:hover {
+    color: #f60
+}
+
+.member_center .member_right .hot_goods, .member_center .member_right .new_goods {
+    width: 784px;
+    padding: 0 10px 10px 10px;
+    float: left
+}
+
+.member_center .member_right .hot_goods h3, .member_center .member_right .new_goods h3 {
+    width: 784px;
+    height: 30px;
+    line-height: 30px;
+    background: #f3faff;
+    text-indent: 17px;
+    color: #0d78bc;
+    font-weight: bold;
+    font-size: 14px
+}
+
+.member_center .member_right .hot_goods dl, .member_center .member_right .new_goods dl {
+    width: 122px;
+    height: 170px;
+    display: block;
+    float: left;
+    padding: 10px 17px 0 17px
+}
+
+.member_center .member_right .hot_goods dl dt, .member_center .member_right .new_goods dt {
+    width: 122px;
+    height: 122px;
+    display: block
+}
+
+.member_center .member_right .hot_goods dl dt a, .member_center .member_right .hot_goods dl dt a img, .member_center .member_right .new_goods dl dt a, .member_center .member_right .new_goods dl dt a img {
+    width: 120px;
+    height: 120px;
+    display: block
+}
+
+.member_center .member_right .hot_goods dl dt a, .member_center .member_right .new_goods dl dt a {
+    border: 1px solid #f2f2f2
+}
+
+.member_center .member_right .hot_goods dl dt a:hover, .member_center .member_right .new_goods dl dt a:hover {
+    border: 1px solid #f60
+}
+
+.member_center .member_right .hot_goods dl dd, .member_center .member_right .new_goods dl dd {
+    width: 122px;
+    height: 40px;
+    line-height: 20px;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    padding: 5px 0 0 0
+}

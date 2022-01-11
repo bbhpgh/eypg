@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="admin" namespace="/" extends="struts-default">
+        <action name="admin_back/*" method="{1}" class="com.eypg.admin.action.AdminIndexAction">
+            <result name="index">/WEB-INF/admin/index/index.jsp</result>
+            <result name="index_index" type="redirect">/index.html</result>
+            <result name="main">/WEB-INF/admin/template/iframe.jsp</result>
+            <result name="sysInfo">/WEB-INF/admin/template/sysInfo.jsp</result>
+            <result name="addProduct">/WEB-INF/admin/template/addProduct.jsp</result>
+            <result name="userList">/WEB-INF/admin/template/userList.jsp</result>
+            <result name="toAddUser">/WEB-INF/admin/template/addUser.jsp</result>
+            <result name="addUserSuccess" type="redirect">/admin_back/userListAll.action</result>
+            <result name="addNews">/WEB-INF/admin/template/addNews.jsp</result>
+            <result name="newsList">/WEB-INF/admin/template/newsList.jsp</result>
+            <result name="addProductTypeSuccess" type="redirect">/admin_back/productTypeList.action</result>
+            <result name="orderInfo">/WEB-INF/admin/template/orderInfo.jsp</result>
+            <result name="orderList">/WEB-INF/admin/template/orderList.jsp</result>
+            <result name="cardList">/WEB-INF/admin/template/cardList.jsp</result>
+            <result name="addCard">/WEB-INF/admin/template/addCard.jsp</result>
+            <result name="successNews" type="redirect">/admin_back/newsList.action</result>
+            <result name="productTypeList">/WEB-INF/admin/template/productTypeList.jsp</result>
+            <result name="productList">//WEB-INF/admin/template/productList.jsp</result>
+            <result name="success" type="redirect">/admin_back/productList.action</result>
+            <result name="addProductType">/WEB-INF/admin/template/addProductType.jsp</result>
+            <result name="latestList">/WEB-INF/admin/template/latestList.jsp</result>
+            <result name="toAddShareImage">/WEB-INF/admin/template/addShareImage.jsp</result>
+            <result name="addShare">/WEB-INF/admin/template/addShare.jsp</result>
+            <result name="shareList">/WEB-INF/admin/template/shareList.jsp</result>
+            <result name="successShare" type="redirect">/admin_back/shareList.action?typeId=new20&amp;id=0</result>
+            <result name="addProductImg">/WEB-INF/admin/template/addProductImg.jsp</result>
+            <result name="spellbuyProductList">/WEB-INF/admin/template/spellbuyProductList.jsp</result>
+            <result name="applymentionList">/WEB-INF/admin/template/applymentionList.jsp</result>
+            <result name="orderdetailaddressList">/WEB-INF/admin/template/orderdetailaddressList.jsp</result>
+            <result name="lineUpdate">/WEB-INF/admin/template/lineUpdate.jsp</result>
+            <result name="qqSetInfo">/WEB-INF/admin/template/qqSetInfo.jsp</result>
+            <result name="updateAdminPwd">/WEB-INF/admin/template/updateAdminPwd.jsp</result>
+            <result name="seoSet">/WEB-INF/admin/template/seoSet.jsp</result>
+            <result name="toBasicSet">/WEB-INF/admin/template/toBasicSet.jsp</result>
+            <result name="toMailSet">/WEB-INF/admin/template/toMailSet.jsp</result>
+            <result name="toMessageSet">/WEB-INF/admin/template/toMessageSet.jsp</result>
+            <result name="toPaySet">/WEB-INF/admin/template/toPaySet.jsp</result>
+            <result name="payInfo">/WEB-INF/admin/template/toPayInfo.jsp</result>
+            <result name="toAddAdmin">/WEB-INF/admin/template/toAddAdmin.jsp</result>
+            <result name="toAdminList">/WEB-INF/admin/template/toAdminList.jsp</result>
+            <result name="addAdminSuccess" type="redirect">/admin_back/toAdminList.action</result>
+            <result name="toSaitMap">/WEB-INF/admin/template/toSaitMap.jsp</result>
+            <result name="toSaitPost">/WEB-INF/admin/template/toSaitPost.jsp</result>
+            <result name="toSaitCount">/WEB-INF/admin/template/toSaitCount.jsp</result>
+            <result name="rechargeAllList">/WEB-INF/admin/template/rechargeAllList.jsp</result>
+            <result name="consumeAllList">/WEB-INF/admin/template/consumeAllList.jsp</result>
+
+
+            <result name="addSpellbuyProduct">/WEB-INF/admin/template/addSpellbuyProduct.jsp</result>
+            <result name="announcedProductList">/WEB-INF/admin/template/announcedProductList.jsp</result>
+            <result name="crawl">/WEB-INF/admin/template/crawl.jsp</result>
+
+            <!--
+                <result name="index">/WEB-INF/admin/index/index.jsp</result>
+                <result name="main">/WEB-INF/admin/main/index.jsp</result>
+                <result name="addProduct">/WEB-INF/admin/main/addProduct.jsp</result>
+                <result name="addProductType">/WEB-INF/admin/main/addProductType.jsp</result>
+                <result name="success" type="redirect">/admin_back/productList.action</result>
+                <result name="productList">//WEB-INF/admin/main/productList.jsp</result>
+                <result name="addProductImg">/WEB-INF/admin/main/addProductImg.jsp</result>
+                <result name="addSpellbuyProduct">/WEB-INF/admin/main/addSpellbuyProduct.jsp</result>
+                <result name="productTypeList">/WEB-INF/admin/main/productTypeList.jsp</result>
+                <result name="spellbuyProductList">/WEB-INF/admin/main/spellbuyProductList.jsp</result>
+                <result name="announcedProductList">/WEB-INF/admin/main/announcedProductList.jsp</result>
+                <result name="crawl">/WEB-INF/admin/main/crawl.jsp</result>
+                <result name="index_index" type="redirect">/index.html</result>
+                <result name="addNews">/WEB-INF/admin/main/addNews.jsp</result>
+                <result name="newsList">/WEB-INF/admin/main/newsList.jsp</result>
+                <result name="successNews" type="redirect">/admin_back/newsList.action</result>
+                <result name="addShare">/WEB-INF/admin/main/addShare.jsp</result>
+                <result name="shareList">/WEB-INF/admin/main/shareList.jsp</result>
+                <result name="successShare" type="redirect">/admin_back/shareList.action?typeId=new20&amp;id=0</result>
+                <result name="latestList">/WEB-INF/admin/main/latestList.jsp</result>
+                <result name="toAddShareImage">/WEB-INF/admin/main/addShareImage.jsp</result>
+                <result name="userList">/WEB-INF/admin/main/userList.jsp</result>
+                <result name="sysInfo">/WEB-INF/admin/main/sysInfo.jsp</result>
+                <result name="orderList">/WEB-INF/admin/main/orderList.jsp</result>
+                <result name="orderInfo">/WEB-INF/admin/main/orderInfo.jsp</result>
+                <result name="cardList">/WEB-INF/admin/main/cardList.jsp</result>
+                <result name="applymentionList">/WEB-INF/admin/main/applymentionList.jsp</result>
+                <result name="orderdetailaddressList">/WEB-INF/admin/main/orderdetailaddressList.jsp</result>
+                <result name="updateAdminPwd">/WEB-INF/admin/main/updateAdminPwd.jsp</result>
+             -->
+        </action>
+    </package>
+
+</struts>

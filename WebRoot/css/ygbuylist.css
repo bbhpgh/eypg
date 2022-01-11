@@ -1,0 +1,435 @@
+@charset "utf-8";
+
+.member_center .member_right .yg_record {
+    width: 784px;
+    padding: 10px;
+    float: left
+}
+
+.member_center .member_right .inquiry {
+    width: 774px;
+    padding: 0 0 0 10px
+}
+
+.member_center .member_right .inquiry div.sel, .member_center .member_right .inquiry div.time {
+    float: left
+}
+
+.member_center .member_right .inquiry div.sel {
+    padding: 6px 10px 0 0;
+    *padding: 4px 10px 0 0;
+    _padding: 6px 10px 0 0
+}
+
+.member_center .member_right .inquiry select {
+    width: 100px;
+    color: #666
+}
+
+.member_center .member_right .inquiry div.time {
+    display: none
+}
+
+.member_center .member_right .inquiry div.time div {
+    float: left
+}
+
+.member_center .member_right .inquiry div.time input.time_small, .member_center .member_right .inquiry div.time input.time_big {
+    width: 90px;
+    height: 23px;
+    line-height: 23px;
+    border: 0;
+    border: 1px solid #ebebeb;
+    padding: 0 3px
+}
+
+.member_center .member_right .inquiry input.ok {
+    width: 52px;
+    height: 25px;
+    line-height: 25px;
+    display: block;
+    border: 0;
+    background: url(/Images/arrow_button.png) -74px -230px;
+    float: left;
+    margin: 0 0 0 5px;
+    cursor: pointer
+}
+
+.member_center .member_right .yg_record .goods_show {
+    width: 784px;
+    float: left;
+    border-top: 1px solid #ebebeb;
+    margin: 10px 0 0 0
+}
+
+.member_center .member_right .yg_record .goods_show ul.gtitle {
+    height: 31px;
+    margin: 1px 0 0 0;
+    background: #fcfcfc;
+    border-bottom: 1px solid #ebebeb
+}
+
+.member_center .member_right .yg_record .goods_show ul.gtitle li {
+    width: 92px;
+    height: 30px;
+    line-height: 30px;
+    color: #7d7d7d;
+    float: left;
+    text-indent: 10px
+}
+
+.member_center .member_right .yg_record .goods_show ul.gtitle li.gname {
+    width: 270px
+}
+
+.member_center .member_right .yg_record .goods_show ul.gtitle li.yg_status {
+    width: 160px
+}
+
+.member_center .member_right .yg_record .goods_show ul.gtitle li.do {
+    float: right;
+    text-align: left;
+    width: 70px
+}
+
+.member_center .member_right .yg_record .goods_show ul.goods_list {
+    height: 72px;
+    padding: 17px 0;
+    border-bottom: 1px solid #f5f5f5
+}
+
+.member_center .member_right .yg_record .goods_show ul.goods_list li {
+    width: 72px;
+    float: left;
+    padding: 0 0 0 10px
+}
+
+.member_center .member_right .yg_record .goods_show ul.goods_list li.gname {
+    width: 260px
+}
+
+.member_center .member_right .yg_record .goods_show ul.goods_list li.yg_status {
+    width: 141px
+}
+
+.member_center .member_right .yg_record .goods_show ul.goods_list li a.pic {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #f1f1f1;
+    display: block
+}
+
+.member_center .member_right .yg_record .goods_show ul.goods_list li a.pic:hover {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #f60;
+    display: block
+}
+
+.member_center .member_right .yg_record .goods_show ul.goods_list li a.pic img {
+    width: 70px;
+    height: 70px;
+    display: block;
+    overflow: hidden
+}
+
+.member_center .member_right .yg_record .goods_show ul.goods_list li a {
+    color: #0e71c2
+}
+
+.member_center .member_right .yg_record .goods_show ul.goods_list li a:hover {
+    color: #f60
+}
+
+.member_center .member_right .yg_record .goods_show ul.goods_list li span.status_ing {
+    color: #5a0
+}
+
+.member_center .member_right .yg_record .goods_show ul.goods_list li span.wait_lotter {
+    color: #9b9b9b
+}
+
+.member_center .member_right .yg_record .goods_show ul.goods_list li span.over {
+    color: #f00
+}
+
+.member_center .member_right .yg_record .goods_show ul.goods_list li dl.joinInfo {
+    width: 80px;
+    height: 28px;
+    position: relative
+}
+
+.member_center .member_right .yg_record .goods_show ul.goods_list li dl.joinInfo dt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 32;
+    height: 27px;
+    padding: 0 15px 0 5px;
+    border: 1px solid #fff;
+    border-bottom: 0;
+    overflow: hidden;
+    line-height: 27px;
+    text-align: center;
+    color: #7d7d7d;
+    display: block;
+    background: #fff url(/Images/arrow_button.png) right -309px no-repeat;
+    cursor: default
+}
+
+.member_center .member_right .yg_record .goods_show ul.goods_list li dl.joinInfo dt.hover {
+    border-color: #d7d7d7;
+    background-position: right -339px
+}
+
+.member_center .member_right .yg_record .goods_show ul.goods_list li dl.joinInfo dd {
+    position: absolute;
+    left: -140px;
+    top: 27px;
+    z-index: 31;
+    width: 340px;
+    height: 60px;
+    padding: 5px 10px;
+    border: 1px solid #d8d8d8;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #fff;
+    color: #7d7d7d;
+    scrollbar-face-color: #ccc;
+    scrollbar-shadow-color: #999;
+    scrollbar-3dlight-color: #999;
+    srcollbar-arrow-color: #999;
+    scrollbar-track-color: #eee;
+    scrollbar-darkshadow-color: #ccc;
+    scrollbar-base-color: #ccc
+}
+
+.member_center .member_right .yg_record .goods_show ul.goods_list li dl.joinInfo dd .loading {
+    width: 340px;
+    text-align: center;
+    padding: 20px 0 0 0;
+    background: url(/Images/loading.gif) no-repeat 35% 90%
+}
+
+.member_center .member_right .yg_record .goods_show ul.goods_list li dl.joinInfo dd .title {
+    height: 20px;
+    text-align: left;
+    line-height: 20px
+}
+
+.member_center .member_right .yg_record .goods_show ul.goods_list li dl.joinInfo dd div.title span {
+    padding: 0 3px;
+    color: #f60;
+    font-weight: bold
+}
+
+.member_center .member_right .yg_record .goods_show ul.goods_list li dl.joinInfo dd ul {
+    width: 360px
+}
+
+.member_center .member_right .yg_record .goods_show ul.goods_list li dl.joinInfo dd ul li {
+    float: left;
+    width: 62px;
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+    padding: 0 5px 0 0
+}
+
+.member_center .member_right .yg_record .goods_show ul.goods_list li.do {
+    float: right;
+    text-align: right;
+    padding: 0 10px 0 0;
+    width: 52px
+}
+
+.member_center .member_right .yg_record_content {
+    width: 784px;
+    padding: 10px;
+    float: left
+}
+
+.member_center .member_right .yg_record_content.yg_record_goods {
+    width: 784px
+}
+
+.member_center .member_right .yg_record_content .yg_record_goods a.pic {
+    width: 70px;
+    height: 70px;
+    display: block;
+    border: 1px solid #e7e7e7;
+    margin: 0 10px;
+    *margin: 0 10px;
+    _margin: 0 5px;
+    float: left
+}
+
+.member_center .member_right .yg_record_content .yg_record_goods a.pic:hover {
+    width: 70px;
+    height: 70px;
+    display: block;
+    border: 1px solid #f60
+}
+
+.member_center .member_right .yg_record_content .yg_record_goods a.pic img {
+    width: 70px;
+    height: 70px;
+    display: block;
+    overflow: hidden
+}
+
+.member_center .member_right .yg_record_content .yg_record_goods ul {
+    width: 670px;
+    float: right
+}
+
+.member_center .member_right .yg_record_content .yg_record_goods ul li {
+    width: 670px;
+    padding: 0 0 8px 0;
+    color: #999
+}
+
+.member_center .member_right .yg_record_content .yg_record_goods ul li span {
+    padding: 0 10px 0 0
+}
+
+.member_center .member_right .yg_record_content .yg_record_goods ul li a {
+    color: #1170c5
+}
+
+.member_center .member_right .yg_record_content .yg_record_goods ul li a span.numth, .member_center .member_right .yg_record_content .yg_record_goods ul li a:hover {
+    color: #f60
+}
+
+.member_center .member_right .yg_record_content .yg_record_goods ul li.gobuy {
+    padding: 0
+}
+
+.member_center .member_right .yg_record_content .yg_record_goods ul li.gobuy a {
+    width: 89px;
+    height: 23px;
+    display: block;
+    line-height: 23px;
+    text-indent: 12px;
+    color: #666;
+    font-weight: bold;
+    background: url(/Images/arrow_button.png) 0 -260px
+}
+
+.member_center .member_right .yg_record_content .yg_record_goods ul li.gobuy a:hover, .member_center .member_right .yg_record_content .yg_record_goods a.back:hover, .member_center .member_right .yg_record_content .num_show p a:hover {
+    text-decoration: none;
+    color: #f60
+}
+
+.member_center .member_right .yg_record_content .yg_record_goods div {
+    width: 769px;
+    clear: both;
+    padding: 10px 5px 0 10px
+}
+
+.member_center .member_right .yg_record_content .yg_record_goods p {
+    line-height: 23px;
+    color: #666;
+    font-weight: bold;
+    float: left
+}
+
+.member_center .member_right .yg_record_content .yg_record_goods a.back, .member_center .member_right .yg_record_content .num_show p a {
+    width: 86px;
+    height: 23px;
+    line-height: 23px;
+    float: right;
+    display: block;
+    color: #666;
+    font-weight: bold;
+    text-indent: 23px;
+    /***
+    background: url(/Images/arrow_button.png) 0 -290px
+    */
+}
+
+.member_center .member_right .yg_record_content .num_show {
+    width: 784px;
+    float: left;
+    border-top: 1px solid #e7e7e7;
+    margin: 5px 0 0 0
+}
+
+.member_center .member_right .yg_record_content .num_show ul.title {
+    width: 784px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #e7e7e7;
+    margin: 1px 0 0 0;
+    background: #fcfcfc;
+    color: #7d7d7d
+}
+
+.member_center .member_right .yg_record_content .num_show ul li {
+    float: left
+}
+
+.member_center .member_right .yg_record_content .num_show ul li.time {
+    width: 150px
+}
+
+.member_center .member_right .yg_record_content .num_show ul li.much {
+    width: 100px
+}
+
+.member_center .member_right .yg_record_content .num_show ul li.num {
+    width: 534px;
+    overflow: hidden
+}
+
+.member_center .member_right .yg_record_content .num_show ul.main {
+    width: 784px;
+    float: left;
+    padding: 15px 0;
+    color: #666;
+    border-bottom: 1px solid #e7e7e7
+}
+
+.member_center .member_right .yg_record_content .num_show ul.main span {
+    padding: 0 5px 0 0;
+    width: 71px;
+    display: block;
+    float: left
+}
+
+.member_center .member_right .yg_record_content .num_show ul.main span.lotter {
+    color: #f00;
+    font-weight: bold
+}
+
+.member_center .member_right .yg_record_content .num_show p {
+    padding: 20px 0 0 0;
+    width: 784px;
+    clear: both
+}
+
+.yg_record_content .yg_record_goods .progress-bar {
+    height: 26px;
+    padding-top: 10px
+}
+
+.yg_record_content .yg_record_goods .progress-bar em {
+    float: left;
+    padding-right: 8px
+}
+
+.yg_record_content .yg_record_goods .progress-bar p {
+    width: 150px;
+    height: 10px;
+    background: url(/Images/product_show.png) no-repeat -20px -150px;
+    float: left;
+    margin-top: 4px;
+    overflow: hidden
+}
+
+.yg_record_content .yg_record_goods .progress-bar span {
+    width: 150px;
+    height: 10px;
+    display: block;
+    background: url(/Images/progress_bar01.gif)
+}

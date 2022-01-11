@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+.member_center .member_right .myshare_list {
+    width: 784px;
+    padding: 10px;
+    float: left
+}
+
+.member_center .member_right .myshare_list .goods_lotter {
+    width: 784px;
+    border-top: 1px solid #ebebeb;
+    float: left;
+    margin: 10px 0 0
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.title {
+    height: 31px;
+    margin: 1px 0 0 0;
+    background: #fcfcfc;
+    border-bottom: 1px solid #ebebeb
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.title li {
+    float: left;
+    line-height: 31px;
+    padding: 0 0 0 10px;
+    color: #7d7d7d
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul li.name {
+    width: 454px
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul li.share_status, .member_center .member_right .myshare_list .goods_lotter ul li.do {
+    width: 200px
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul li.do {
+    width: 100px
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list {
+    height: 72px;
+    padding: 17px 0;
+    border-bottom: 1px solid #ebebeb;
+    overflow: hidden
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list li {
+    float: left;
+    padding: 0 0 0 10px;
+    color: #7d7d7d
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list a.pic {
+    width: 70px;
+    height: 70px;
+    display: block;
+    border: 1px solid #f1f1f1;
+    float: left;
+    margin: 0 10px 0 0
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list a.pic:hover {
+    width: 70px;
+    height: 70px;
+    display: block;
+    border: 1px solid #F60
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list a.pic img {
+    width: 70px;
+    height: 70px;
+    display: block;
+    overflow: hidden
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list a.name, .member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list li.do a {
+    color: #0e71c2
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list a.name:hover, .member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list li.do a:hover {
+    color: #f60
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list li div p {
+    width: 360px;
+    float: left
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list li div p.title {
+    width: 360px;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+    display: block
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list li span.wrong, .member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list li span.ok {
+    color: #f60
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list li span.nothing {
+    color: #7d7d7d
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list li a.address {
+    width: 94px;
+    height: 27px;
+    line-height: 27px;
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    background: url(/Images/arrow_button.png) -74px -612px
+}
+
+.member_center .member_right .myshare_list .goods_lotter ul.goods_lotter_list li a.address:hover {
+    color: #fff;
+    text-decoration: none
+}

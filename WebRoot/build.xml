@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="project" default="dist" basedir=".">
+    <property file="ssh.properties"/>
+    <!-- 初始化 classpath -->
+    <path id="project.classpath">
+        <fileset dir="${lib.dir}">
+            <include name="**/*.jar"/>
+        </fileset>
+        <!--添加tomcat类路径-->
+        <fileset dir="${tomcat.home}/lib">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+    <!-- 删除之前的目录结构 -->
+    <target name="init">
+        <echo message="正在删除旧的部署文件..."/>
+        <delete file="${tomcat.home}/webapps/${project.name}.war"/>
+        <delete dir="${tomcat.home}/webapps/${project.name}"/>
+    </target>
+    <!--编译java文件 -->
+    <target name="compile" depends="init">
+        <echo message="正在编译java文件..."/>
+        <javac srcdir="${src.dir}" destdir="${dis.dir}" debug="on" includeantruntime="on">
+            <compilerarg line="-encoding UTF-8 "/>
+            <classpath refid="project.classpath"/>
+        </javac>
+    </target>
+    <!--复制xml和配置文件到class目录 -->
+    <target name="copyxml" depends="compile">
+        <echo message="正在复制xml和配置文件到class目录..."/>
+        <copy todir="${dis.dir}">
+            <fileset dir="${src.dir}" includes="*.xml"/>
+            <fileset dir="${src.dir}" includes="*.properties"/>
+        </copy>
+    </target>
+    <!-- 打成war包, 名称默认为项目名 -->
+    <target name="dist" depends="copyxml" description="将工程打成war包">
+        <echo message="正在将工程打成war包..."/>
+        <war destfile="${tomcat.home}/webapps/${project.name}.war" basedir="." webxml="WEB-INF/web.xml">
+        </war>
+    </target>
+</project>

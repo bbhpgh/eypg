@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+.successIndex {
+    margin: 0 auto 10px;
+    overflow: hidden;
+    padding-left: 388px;
+    padding-top: 10px
+}
+
+.successIndex ul li a.cartList {
+    background: url(/Images/shop_process.png) transparent scroll 0 -680px repeat-x;
+    height: 95px;
+    width: 178px;
+    display: block;
+    overflow: hidden;
+    float: left;
+    cursor: pointer
+}
+
+.successIndex ul li a.index {
+    background: url(/Images/shop_process.png) transparent scroll 0 -775px repeat-x;
+    height: 95px;
+    width: 178px;
+    display: block;
+    overflow: hidden;
+    float: left;
+    cursor: pointer
+}
+
+.successIndex ul li a.record {
+    background: url(/Images/shop_process.png) transparent scroll 0 -870px repeat-x;
+    height: 95px;
+    width: 178px;
+    display: block;
+    overflow: hidden;
+    float: left;
+    cursor: pointer
+}

@@ -1,0 +1,332 @@
+@charset "utf-8";
+
+.success-invitation {
+    padding: 7px 10px 12px 21px;
+    border: 1px solid #F5F5F5;
+    background: #FCFCFC;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.success-invitation p {
+    height: 28px;
+}
+
+.success-invitation span {
+    display: inline-block;
+    position: relative;
+    margin-right: 5px;
+    float: left;
+}
+
+.success-invitation input {
+    width: 383px;
+    padding-left: 5px;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #C2C2C2;
+    color: #333;
+    float: left;
+}
+
+.success-invitation span b {
+    width: 388px;
+    height: 1px;
+    border-top: 1px solid #DDD;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+.get-tips {
+    border: 1px solid #FEDD98;
+    padding: 7px 0 6px 12px;
+    background: #FFFBE3;
+    margin: 15px auto;
+}
+
+.get-tips a {
+    margin-right: 15px;
+}
+
+.SuccessCon {
+    color: #999;
+    border-top: #e3e3e3 1px solid;
+}
+
+.SuccessCon ul li.w180 {
+    width: 180px;
+}
+
+.SuccessCon ul li.w200 {
+    width: 200px;
+    text-align: left;
+}
+
+.SuccessCon ul li.w200 .name-img {
+    float: left;
+    display: block;
+}
+
+.SuccessCon ul li.w200 .name-img img {
+    width: 20px;
+    height: 20px;
+}
+
+.SuccessCon ul li.w200 p {
+    margin-left: 30px;
+}
+
+.SuccessCon ul {
+    border-bottom: #eee 1px solid;
+    height: 35px;
+}
+
+.SuccessCon ul.listTitle li {
+    padding-top: 0 !important;
+}
+
+.SuccessCon ul li {
+    padding-left: 14px;
+    padding-top: 8px;
+}
+
+.total {
+    margin-top: 10px;
+    background: #fffce2;
+    line-height: 20px;
+    border: #fd9 1px solid;
+    padding: 10px 20px;
+    overflow: hidden;
+    color: #666;
+    zoom: 1;
+}
+
+.total dd {
+    float: left;
+    margin-right: 18px;
+}
+
+.total a {
+    float: left;
+    margin-right: 10px;
+    display: block;
+    height: 19px;
+    line-height: 19px;
+    line-height: 21px \9;
+}
+
+.total b {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.total dd.gray02 {
+    clear: both;
+    width: 400px;
+}
+
+.commission {
+    clear: both;
+}
+
+.commission ul.listTitle {
+    border-top: #e3e3e3 1px solid;
+    border-bottom: #e3e3e3 1px solid;
+}
+
+.commission li {
+    padding: 10px 0;
+    text-align: left;
+    padding-left: 15px !important;
+}
+
+.commission ul, .cash ul {
+    border-bottom: #eee 1px solid;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.commission ul li.w140 {
+    width: 120px;
+    overflow: hidden;
+}
+
+.commission ul li.w140 a.blue {
+    width: 80px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.commission ul li.w140 a {
+    float: left;
+    margin-right: 8px;
+    display: inline;
+}
+
+.commission ul li.w140 img {
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.commission ul li.w150 {
+    width: 150px;
+}
+
+.commission ul li.w280 {
+    width: 280px;
+}
+
+.commission ul li.w280 a {
+    color: #49b8ff;
+}
+
+.commission ul li.w90 {
+    width: 70px;
+    text-align: center;
+}
+
+.commission ul li.orange {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.Apply-con {
+    width: 780px;
+    margin-top: 20px;
+}
+
+.Apply-con dl {
+    display: inline-block;
+    margin-top: 10px;
+    height: 29px;
+    overflow: hidden;
+}
+
+.Apply-con dt {
+    width: 100px;
+    line-height: 27px;
+    color: #666;
+    margin-right: 5px;
+    float: left;
+    text-align: right;
+}
+
+.Apply-con dd {
+    width: 500px;
+    float: left;
+    line-height: 27px;
+}
+
+.Apply-con dd b {
+    font-weight: normal;
+    float: left;
+    margin-right: 5px;
+}
+
+.Apply-con dd em {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: -102px -99px;
+    float: left;
+    position: relative;
+    top: 6px;
+    left: 3px;
+    margin-right: 8px;
+}
+
+.Apply-con .inp-money, .Apply-con .input-txt {
+    height: 27px;
+    line-height: 25px;
+    padding: 0 3px;
+    border-left: 1px solid #C2C2C2;
+    border-top: 1px solid #C2C2C2;
+    border-right: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    font-size: 14px;
+    vertical-align: middle;
+    display: block;
+    float: left;
+}
+
+.txtAri {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Apply-con .inp-money {
+    width: 73px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.Apply-con .input-txt {
+    width: 197px;
+}
+
+.Apply-button {
+    padding-left: 105px;
+    margin-top: 15px;
+}
+
+.Apply-button a {
+    font-weight: bold;
+}
+
+.Apply-con span.orange {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.Apply-con span.oran {
+    color: #f60;
+    overflow: hidden;
+    display: inline-block;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.recharge {
+    width: 750px;
+    padding-left: 30px;
+}
+
+.cash {
+    clear: both;
+}
+
+.cash ul.listTitle {
+    border-top: #e3e3e3 1px solid;
+}
+
+.cash ul.listTitle li, .commission ul.listTitle li {
+    padding: 0;
+}
+
+.cash li {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.cash ul li.w150 {
+    width: 140px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.cash ul li.w300 {
+    width: 250px;
+    text-align: left;
+}
+
+.cash ul li.w300 em {
+    margin-right: 8px;
+    display: inline;
+}
+
+.cash ul li.w120 {
+    width: 120px;
+}

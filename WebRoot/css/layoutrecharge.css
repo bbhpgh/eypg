@@ -1,0 +1,515 @@
+@charset "utf-8";
+
+.last {
+    color: #666;
+}
+
+.last ul li {
+    background: #fcfcfc;
+    border: #f5f5f5 1px solid;
+    height: 57px;
+    line-height: 45px;
+    padding-left: 13px;
+}
+
+.last ul li h3 {
+    font-size: 14px;
+    display: inline;
+    font-weight: normal;
+}
+
+.last ul li b {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin-left: 5px;
+}
+
+.last li {
+    font-size: 14px;
+}
+
+.last li b {
+    top: 3px;
+    margin-right: 5px;
+}
+
+.last li a {
+    position: relative;
+    top: -2px;
+    left: 10px;
+}
+
+.type {
+    height: 28px;
+    line-height: 28px;
+    background: #f5f5f5;
+    border-top: #d6d6d6 1px solid;
+    border-bottom: #d6d6d6 1px solid;
+    padding-left: 10px;
+}
+
+.type a {
+    color: #666;
+    float: left;
+    display: block;
+    width: 71px;
+    height: 29px;
+    text-align: center;
+}
+
+.type a.annal1 {
+    background: #fcfcfc;
+    border-left: #d6d6d6 1px solid;
+    border-right: #d6d6d6 1px solid;
+    font-weight: bold;
+    position: relative;
+    _bottom: -1px;
+}
+
+.recordList {
+    color: #666;
+}
+
+.recordList ul, .cash ul, .commission ul {
+    border-bottom: #eee 1px solid;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.recordList ul li {
+    padding: 8px 10px;
+    text-align: center;
+    width: 170px;
+    line-height: 22px;
+}
+
+.recordList ul.listTitle {
+    border-top: #e3e3e3 1px solid;
+    border-bottom: #e3e3e3 1px solid;
+}
+
+.recordList ul.listTitle li {
+    padding: 0 10px;
+    line-height: 28px;
+}
+
+.recordList ul li.leftTitle {
+    text-align: left;
+}
+
+.recordList ul li.leftTitle, .recordList ul li.fontAri {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.recordList ul li a {
+    color: #43b6ff;
+}
+
+.recordList ul li a:hover {
+    color: #f60;
+    text-decoration: underline;
+}
+
+.recordList ul li.price {
+    padding-left: 50px;
+    width: 300px;
+}
+
+.recordList ul li.regard {
+    text-align: right;
+}
+
+.buyDetail ul li.leftTitle {
+    width: 450px;
+}
+
+.buyDetail ul li.regard {
+    width: 80px;
+}
+
+.count {
+    height: 25px;
+    line-height: 25px;
+    margin: 10px 0 15px;
+}
+
+.count dd {
+    float: left;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.count dd em {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 17px;
+}
+
+.count dd.btn {
+    float: right;
+    position: relative;
+    width: 88px;
+}
+
+.count dd.btn, .count dd a {
+    height: 25px;
+}
+
+.count dd.btn a {
+    display: block;
+    background: #f1f1f1;
+    border: #d6d6d6 1px solid;
+    text-align: right;
+    color: #878787;
+    padding-right: 14px;
+    width: 74px;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 2px;
+    height: 25px;
+    line-height: 23px;
+    line-height: 25px \9;
+}
+
+.count span {
+    display: block;
+    background-repeat: 0;
+    width: 8px;
+    height: 11px;
+    background-position: -115px -80px;
+    position: absolute;
+    left: 21px;
+    top: 7px;
+}
+
+.select {
+    width: 780px;
+    margin: 10px auto 25px;
+    display: inline-block;
+}
+
+.select ul {
+    margin-top: 15px;
+}
+
+.select li {
+    float: left;
+    background: #fdfdfd;
+    border: #efefef 1px solid;
+    width: 110px;
+    height: 38px;
+    text-align: left;
+    line-height: 38px;
+    color: #666;
+    font-size: 12px;
+    font-family: "宋体";
+    font-weight: bold;
+    padding-left: 18px;
+    margin-left: 17px;
+    *line-height: 35px;
+    _height: 30px;
+    _padding-top: 8px;
+    _line-height: 27px;
+    cursor: pointer;
+}
+
+.select li label {
+    cursor: pointer;
+}
+
+.select li input {
+    position: relative;
+    top: 2px;
+    *top: 1px;
+    _top: 2px;
+}
+
+.select li label b, .select li input.enter {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #f60;
+}
+
+.select li label strong {
+    font-family: "宋体";
+    color: #f60;
+}
+
+.select li.rdoCheck {
+    border: #bebebe 1px solid;
+}
+
+.select li.selected {
+    border: #ff7010 1px solid;
+}
+
+.select li.custom {
+    width: 170px;
+    _height: 35px;
+    _padding-top: 3px;
+    _line-height: 23px;
+}
+
+.select li input.enter {
+    width: 68px;
+    height: 22px;
+    line-height: 22px;
+    border: #d6d3d6 1px solid;
+    padding: 0 3px;
+    margin-left: 5px;
+    color: #f60;
+    position: relative;
+    top: 1px;
+    _top: 3px;
+}
+
+.charge_money_list {
+    width: 770px;
+    padding: 13px 0 0 10px;
+    border-top: #eee 1px solid;
+    position: relative;
+}
+
+.charge_money_list p.title {
+    font-weight: bold;
+}
+
+.charge_money_list ul.payment {
+    clear: both;
+    width: 750px;
+    padding: 0 10px;
+    float: left;
+    border-bottom: 1px solid #e6e7e8;
+}
+
+.charge_money_list ul.sel li {
+    float: left;
+}
+
+.charge_money_list ul.payment li {
+    float: left;
+}
+
+.charge_money_list ul.payment li.top {
+    padding-bottom: 20px;
+}
+
+.charge_money_list ul.payment li input {
+    display: block;
+    float: left;
+    margin: 12px 5px 0 0;
+    *margin: 10px 1px 0 0;
+}
+
+.charge_money_list ul.payment span {
+    width: 130px;
+    height: 36px;
+    border: #ddd 1px solid;
+    text-indent: -9999px;
+    margin: 0 25px 0 0;
+    display: block;
+    float: left;
+    cursor: pointer;
+}
+
+.charge_money_list li span.zfb {
+    background: url(/Images/bank_logo.png) 8px -613px;
+}
+
+.charge_money_list li span.cft {
+    background: url(/Images/bank_logo.png) 8px -500px;
+}
+
+.charge_money_list li span.yl {
+    background: url(/Images/bank_logo.png) 8px -550px;
+}
+
+.charge_money_list li span.kq {
+    background: url(/Images/bank_logo.png) 8px -577px;
+}
+
+.charge_money_list li span.wy {
+    background: url(/Images/bank_logo.png) 8px -540px;
+}
+
+.charge_money_list li span.online {
+    background: url(/Images/bank_logo.png) 8px -650px;
+}
+
+p.leix {
+    clear: both;
+    float: left;
+    margin: 10px 0;
+    display: block;
+    width: 150px;
+    color: #666;
+}
+
+.charge_money_list li span.gh_bank {
+    background: url(/Images/bank_logo.png) 8px 0;
+}
+
+.charge_money_list li span.zh_bank {
+    background: url(/Images/bank_logo.png) 8px -32px;
+}
+
+.charge_money_list li span.jh_bank {
+    background: url(/Images/bank_logo.png) 8px -67px;
+}
+
+.charge_money_list li span.nh_bank {
+    background: url(/Images/bank_logo.png) 8px -99px;
+}
+
+.charge_money_list li span.pf_bank {
+    background: url(/Images/bank_logo.png) 8px -132px;
+}
+
+.charge_money_list li span.sf_bank {
+    background: url(/Images/bank_logo.png) 8px -165px;
+}
+
+.charge_money_list li span.xy_bank {
+    background: url(/Images/bank_logo.png) 8px -199px;
+}
+
+.charge_money_list li span.bj_bank {
+    background: url(/Images/bank_logo.png) 8px -232px;
+}
+
+.charge_money_list li span.gd_bank {
+    background: url(/Images/bank_logo.png) 8px -264px;
+}
+
+.charge_money_list li span.ms_bank {
+    background: url(/Images/bank_logo.png) 8px -297px;
+}
+
+.charge_money_list li span.zx_bank {
+    background: url(/Images/bank_logo.png) 8px -329px;
+}
+
+.charge_money_list li span.gf_bank {
+    background: url(/Images/bank_logo.png) 8px -362px;
+}
+
+.charge_money_list li span.pa_bank {
+    background: url(/Images/bank_logo.png) 8px -397px;
+}
+
+.charge_money_list li span.zg_bank {
+    background: url(/Images/bank_logo.png) 8px -429px;
+}
+
+.charge_money_list li span.jt_bank {
+    background: url(/Images/bank_logo.png) 8px -462px;
+}
+
+.charge_money_list p.much {
+    width: 770px;
+    float: left;
+    border-bottom: 1px solid #e6e7e8;
+    padding: 10px 0;
+    color: #666;
+    font-weight: bold;
+}
+
+.charge_money_list p.much span {
+    font-size: 12px;
+    color: #f40;
+    font-weight: bold;
+}
+
+.charge_money_list p.much span#Money {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 2px;
+}
+
+.charge_money_list h6 {
+    clear: both;
+    margin-left: 68px;
+    padding: 15px 0;
+}
+
+.charge_money_list .imm {
+    padding: 6px 19px;
+    padding: 8px 19px 4px \9;
+    *padding: 5px 19px 1px;
+    _padding: 6px 19px 2px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.prompt_box {
+    width: 340px;
+    height: 140px;
+    position: relative;
+}
+
+.prompt_box p.pic {
+    color: #fe7800;
+    height: 15px;
+    line-height: 15px;
+    padding: 10px 0 0 33px;
+}
+
+.prompt_box p.pic em {
+    float: left;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url(/Images/new-admin.png) -82px -98px no-repeat;
+    margin-right: 2px;
+}
+
+.prompt_box p.ts {
+    width: 280px;
+    padding: 10px 0 0 50px;
+    color: #999;
+}
+
+.prompt_box p a {
+    color: #1070C4;
+}
+
+.prompt_box p a:hover {
+    color: #f60;
+}
+
+.prompt_box ul {
+    width: 280px;
+    padding: 10px 0 0 50px;
+    float: left;
+}
+
+.prompt_box ul li {
+    float: left;
+    padding-right: 20px;
+}
+
+.prompt_box ul li a.look {
+    width: 110px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    display: block;
+    color: #666;
+    background: url(/Images/arrow_button.png) no-repeat 0 -410px;
+}
+
+.prompt_box ul li a.back {
+    width: 94px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    display: block;
+    color: #666;
+    background: url(/Images/arrow_button.png) no-repeat 0 -440px;
+}
+
+.prompt_box ul li a {
+    text-decoration: none;
+}

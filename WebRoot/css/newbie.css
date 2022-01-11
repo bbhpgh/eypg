@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+.clear {
+    clear: both;
+}
+
+.nav_class {
+    margin-bottom: 3px;
+}
+
+.footer_content {
+    margin-top: 0;
+}
+
+.GuideContent {
+    background: url(/Images/Guide_13.jpg);
+}
+
+.GuideW {
+    width: 979px;
+    margin: 0 auto;
+}
+
+.Guidebor {
+    width: 977px;
+    border: 1px solid #DCE0D5;
+    border-top: none;
+    border-bottom: none;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.Guide-Separate {
+    text-align: center;
+}
+
+.Guide-Explain {
+    width: 829px;
+    margin: 0 auto;
+}
+
+.Guide-Explain li {
+    float: left;
+}
+
+.Guide-Explain li.Explainimg {
+    font-size: 0;
+}
+
+.Guide-Explain li.Explain-l {
+    position: relative;
+    color: #666;
+}
+
+.Guide-Explain li.Explain-r {
+    position: relative;
+    color: #666;
+}
+
+.Guide-Explain li.Explain-l p {
+    font-size: 14px;
+    font-family: 微软雅黑, 宋体;
+}
+
+.Guide-Explain li.Explain-r p {
+    font-size: 14px;
+    font-family: 微软雅黑, 宋体;
+}
+
+.ExplainA {
+    padding-top: 74px;
+}
+
+.ExplainB {
+    padding-top: 37px;
+}
+
+.ExplainC {
+    padding-top: 26px;
+}
+
+.ExplainA p {
+    position: absolute;
+    top: 122px;
+    left: 83px;
+}
+
+.ExplainB p {
+    position: absolute;
+    top: 85px;
+    right: 83px;
+}
+
+.ExplainC p {
+    position: absolute;
+    top: 74px;
+    left: 88px;
+}
+
+.Rule {
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.Rule .Rule-Exp li {
+    height: 35px;
+    font-family: 微软雅黑, 宋体;
+    font-size: 15px;
+    color: #666;
+}
+
+.Rule .Rule-Exp {
+    background: url(/Images/Guide_12.jpg) 0 -2px no-repeat;
+    padding-left: 30px;
+    margin-left: 30px;
+    margin-top: 13px;
+}
+
+.Rulemat {
+    margin-top: 40px;
+}
+
+.Rule-line {
+    width: 848px;
+    overflow: hidden;
+    height: 1px;
+    border-top: 1px solid #EEE;
+    margin: 75px auto 50px auto;
+}
+
+.Rule-button {
+    text-align: center;
+}
+
+.Rule-Anglebg {
+    width: 979px;
+    height: 172px;
+    margin-bottom: 30px;
+    background: url(/Images/Guide_16.png) no-repeat;
+    _background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="Images/Guide_16.png");
+}

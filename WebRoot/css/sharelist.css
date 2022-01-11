@@ -1,0 +1,624 @@
+@charset "utf-8";
+
+body {
+    background: #f7f7f7;
+}
+
+.share_Curtit {
+    width: 978px;
+    height: 39px;
+    background: #fff;
+    border: 1px solid #E4E4E4;
+}
+
+.share_Curtit h1 {
+    font-size: 18px;
+    line-height: 22px;
+    color: #F60;
+    font-family: 微软雅黑, 宋体;
+    font-weight: bold;
+    padding: 8px 10px 0 10px;
+    _padding: 9px 10px 0 10px;
+}
+
+.share_Curtit span {
+    font-family: 微软雅黑, 宋体;
+    padding: 11px 10px 0 10px;
+    _padding: 12px 10px 0 10px;
+    display: block;
+    color: #999;
+}
+
+.share_Curtit span em {
+    margin: 0 5px;
+}
+
+.list_Sort {
+    width: 978px;
+    height: 48px;
+    background: #fff;
+    border: 1px solid #E4E4E4;
+    border-top: none;
+}
+
+.list_Sort dl {
+    float: left;
+    padding-top: 10px;
+}
+
+.list_Sort dt {
+    float: left;
+    width: 53px;
+    text-align: center;
+    padding-top: 4px;
+    color: #BBB;
+}
+
+.list_Sort dd {
+    float: left;
+    padding-left: 1px;
+    height: 28px;
+}
+
+.list_Sort dd a {
+    border: 1px solid #CCC;
+    margin-right: 10px;
+    padding: 2px 20px 2px 20px;
+    padding: 4px 20px 0 20px \9;
+    _padding: 2px 20px 2px 20px;
+    margin-left: 1px;
+    margin-top: 2px;
+    margin-bottom: 1px;
+    color: #999;
+    display: inline-block;
+    float: left;
+}
+
+.list_Sort dd a:hover {
+    color: #f60;
+}
+
+.list_Sort dd a.SortCur {
+    border: 2px solid #F60;
+    color: #666;
+    margin-right: 10px;
+    margin-top: 1px;
+    margin-left: -1px;
+    margin-bottom: 0;
+}
+
+.list_Sort dd a.Price_Sort {
+    padding: 2px 20px 2px 20px;
+    padding: 3px 20px 1px 20px \9;
+    _padding: 4px 20px 3px 20px;
+    display: inline-block;
+    vertical-align: 0;
+    _vertical-align: -3px;
+}
+
+.list_Sort dd .Price_Sort i, .list_Sort dd .SortCur b, .list_Sort dd .SortCur s {
+    width: 7px;
+    height: 9px;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.list_Sort dd .Price_Sort i {
+    background-position: 0 -170px;
+    _vertical-align: 2px;
+}
+
+.list_Sort dd .SortCur b {
+    background-position: -22px -170px;
+    _vertical-align: 2px;
+}
+
+.list_Sort dd .SortCur s {
+    background-position: -43px -170px;
+    _vertical-align: 2px;
+}
+
+.tsed, .ts, .Close a, .smile_message i, .smile i, .smile-have i, .much i, .icon, .icon1 {
+    background: url(/Images/share_icon.png);
+}
+
+.share_list {
+    width: 980px;
+    padding: 0 0 20px 0;
+    background: #f7f7f7;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.goods_share_list ul {
+    width: 980px;
+    float: left;
+}
+
+.goods_share_listC {
+    width: 980px;
+    overflow: hidden;
+    padding: 0 0 10px 0;
+}
+
+.goods_share_listC ul {
+    width: 980px;
+}
+
+.goods_share_listC li {
+    width: 235px;
+    overflow: hidden;
+    padding: 10px 0 0 0;
+    margin-right: 13px;
+    display: inline;
+    float: left;
+}
+
+.goods_share_listC li.share-liR {
+    float: right;
+    margin-right: 0;
+}
+
+.goods_share_listC .share_list_content {
+    width: 233px;
+    border: 1px solid #E4E4E4;
+    position: relative;
+    background: #fff;
+    margin: 0 auto 10px;
+    overflow: hidden;
+    padding: 10px 0 0 0;
+    display: inline;
+    float: left;
+}
+
+.text-h10 {
+    height: 0;
+    overflow: hidden;
+}
+
+.goods_share_listC .hover {
+    border: 1px solid #F60;
+}
+
+.share_list_content dt {
+    width: 223px;
+    padding: 6px;
+    position: relative;
+    display: block;
+}
+
+.share_list_content dt a {
+    display: block;
+}
+
+.share_list_content dd {
+    padding-left: 6px;
+    padding-right: 6px;
+    position: relative;
+}
+
+.share_list_content dt img {
+    width: 220px;
+}
+
+.smile_message {
+    position: absolute;
+    height: 22px;
+    background: #098;
+    overflow: hidden;
+    bottom: 10px;
+    right: 10px;
+}
+
+.smile_click {
+    position: relative;
+    background: #FF6000;
+    width: 30px;
+    line-height: 22px;
+    height: 22px;
+    padding-left: 28px;
+    display: inline-block;
+    color: #fff;
+    float: left;
+}
+
+a.smile_click {
+    color: #fff;
+}
+
+a.smile_click:hover {
+    color: #fff;
+}
+
+.much_click {
+    position: relative;
+    background: #EEE;
+    width: 33px;
+    line-height: 22px;
+    height: 22px;
+    padding-left: 25px;
+    display: inline-block;
+    color: #333;
+    float: left;
+}
+
+.smile_click i {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-position: -20px -155px;
+    position: absolute;
+    left: 7px;
+    top: 5px;
+}
+
+.much_click i {
+    width: 13px;
+    height: 12px;
+    display: inline-block;
+    background-position: -36px -155px;
+    position: absolute;
+    left: 7px;
+    top: 6px;
+}
+
+.share_list_content h3 {
+    width: 37px;
+    height: 36px;
+    position: absolute;
+    top: -1px;
+    left: 4px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(/Images/share.png) -100px -300px;
+}
+
+.share-name {
+    width: 223px;
+}
+
+.share-name .name-img {
+    width: 35px;
+    overflow: hidden;
+    float: left;
+}
+
+.share-name .name-img img {
+    width: 35px;
+    height: 35px;
+    margin-top: 2px;
+}
+
+.share-name .share-name-r {
+    margin-left: 35px;
+    color: #666;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.share-name .share-name-r span {
+    width: 180px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.share-name .share-name-r span.gray03 a {
+    margin-right: 5px;
+}
+
+.share-name .share-name-r a {
+    display: inline-block;
+}
+
+.share_info {
+    width: 179px;
+    word-wrap: break-word;
+    line-height: 20px;
+    margin-right: 0;
+    margin-left: 40px;
+}
+
+.message {
+    text-align: left;
+    height: 24px;
+    padding-bottom: 8px;
+    margin-top: 8px;
+}
+
+.tsed, .ts {
+    width: 51px;
+    height: 23px;
+    border-radius: 3px;
+    line-height: 23px;
+    _line-height: 23px;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    display: block;
+    padding-left: 6px;
+    z-index: 99999;
+}
+
+.tsed {
+    background-position: 0 -176px;
+    color: #666;
+}
+
+.ts {
+    border: 1px solid #A1D26C;
+    background-color: #F4FFEA;
+    background-position: 4px 4px;
+    padding-left: 24px;
+    background-repeat: no-repeat;
+    color: #83BE42;
+}
+
+.message .smile {
+    padding: 4px 6px 2px 22px;
+    _padding: 5px 6px 2px 22px;
+    float: left;
+    position: relative;
+    margin-right: 5px;
+    margin-left: 40px;
+    border-radius: 3px;
+    font-family: 宋体;
+    font-size: 12px;
+}
+
+.message .gray03 {
+    color: #BABABA;
+}
+
+.message .smile b {
+    font-weight: normal;
+}
+
+.message .much {
+    float: left;
+    font-family: 宋体;
+    font-size: 12px;
+}
+
+.message .much a {
+    display: inline-block;
+    position: relative;
+    padding: 4px 5px 2px 19px;
+    _padding: 5px 5px 2px 19px;
+}
+
+.message .much a:hover {
+    color: #f60;
+}
+
+.message .much a:hover i {
+    background-position: 0 -85px;
+    left: 0;
+}
+
+.message .smile i {
+    width: 13px;
+    height: 11px;
+    display: inline-block;
+    background-position: 0 -72px;
+    position: absolute;
+    left: 4px;
+    top: 7px;
+}
+
+.message .much i {
+    width: 15px;
+    height: 14px;
+    display: inline-block;
+    background-position: 0 -58px;
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
+
+.goods_share_listC .hover span.smile {
+    background: #f60;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+}
+
+.goods_share_listC .hover span.smile i {
+    background-position: 0 -30px;
+}
+
+.goods_share_listC .hover span.smile-have {
+    background: #CACACA;
+    padding: 4px 6px 2px 22px;
+    display: inline-block;
+    position: relative;
+    margin-right: 5px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: default;
+}
+
+.goods_share_listC .hover span.smile-have i {
+    background-position: 0 -44px;
+    width: 13px;
+    height: 11px;
+    display: inline-block;
+    position: absolute;
+    left: 4px;
+    top: 7px;
+}
+
+.text_message:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.text_message {
+    width: 223px;
+    padding: 5px 5px 5px 5px;
+    line-height: 19px;
+    border-top: 1px dotted #E5E5E5;
+    zoom: 1;
+}
+
+.text_message .name-img {
+    float: left;
+}
+
+.text_message .name-img img {
+    width: 20px;
+    height: 20px;
+    margin-top: 0;
+    margin-right: 5px;
+}
+
+.text_message p {
+    padding-top: 0;
+    word-wrap: break-word;
+    color: #666;
+    margin-left: 25px;
+}
+
+.text_message p a {
+    white-space: nowrap;
+}
+
+.text_message span img {
+    vertical-align: middle;
+}
+
+.pages {
+    overflow: hidden;
+    height: 50px;
+    clear: both;
+    padding-right: 20px;
+}
+
+.pages ul.pageULEx {
+    float: right;
+    padding: 10px 0 0 0;
+    margin-right: 0;
+    display: inline;
+}
+
+.pages ul.pageULEx li {
+    line-height: 32px;
+}
+
+.pages ul.pageULEx li.curr_page {
+    padding: 4px 0 3px 0;
+    font-size: 14px;
+    font-family: Arial;
+    line-height: 22px;
+}
+
+.pages ul.pageULEx li a {
+    padding: 3px 0 4px 0;
+    font-size: 14px;
+    font-family: Arial;
+    line-height: 22px;
+}
+
+.pages ul.pageULEx li.prev_page a, .pages ul.pageULEx li.next_page a {
+    padding: 4px 0 3px 0;
+    padding: 5px 0 2px 0 \9;
+    _padding: 5px 0 2px 0;
+    line-height: 22px;
+}
+
+.pages ul.pageULEx li.prev_page i, .pages ul.pageULEx li.next_page i {
+    font-family: 宋体;
+    font-weight: bold;
+}
+
+.pages ul.pageULEx li.prev_page i {
+    padding-right: 5px;
+}
+
+.pages ul.pageULEx li.next_page i {
+    padding-left: 5px;
+}
+
+.pages ul.pageULEx li {
+    float: left;
+    list-style: none;
+    margin: 0 0 0 5px;
+    text-align: center;
+}
+
+.pages ul.pageULEx li {
+    float: left;
+    text-align: center;
+    color: #666;
+    font-family: Arial;
+}
+
+.pages ul.pageULEx li.curr_page {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #F60;
+    border: 1px solid #F60;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pages ul.pageULEx li a {
+    border: 1px solid #DEDEDE;
+    display: inline-block;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    color: #999;
+}
+
+.pages ul.pageULEx li a, .pages li a:hover {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.pages ul.pageULEx li a:hover {
+    color: #f60;
+    text-decoration: none;
+}
+
+.pages ul.pageULEx li.prev_page a {
+    border: 1px solid #DEDEDE;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    width: 65px;
+    border-radius: 5px;
+    color: #999;
+}
+
+.pages ul.pageULEx li.next_page a {
+    white-space: nowrap;
+    width: 65px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.pages ul.pageULEx li.prev_page a:hover, .pages li.next_page a:hover {
+    color: #f60;
+    overflow: hidden;
+}
+
+.pages ul.pageULEx li.page_curgray a, .pages ul.pageULEx li.page_curgray a:hover {
+    cursor: default;
+    display: inline-block;
+    background: #F4F4F4;
+    border: 1px solid #E4E4E4;
+    color: #CCC;
+}
+
+.footer_content {
+    margin-top: 0;
+}

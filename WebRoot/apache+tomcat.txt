@@ -1,0 +1,190 @@
+环境：
+操作系统均为：CentOS 5.1 
+Apache2.X服务器一台：IP地址192.168.232.4；安装路径/usr/local/apache； 
+Tomcat6服务器一台：IP地址192.168.232.5；安装路径/usr/local/tomcat； 
+Tomcat6服务器一台：IP地址192.168.232.6；安装路径/usr/local/tomcat；
+ 
+配置：
+Apache安装：
+#./configure --prefix=/usr/local/apache --enable-modules=so --enable-mods-shared=all --enable-proxy --enable-proxy-connect --enable-proxy-ftp --enable-proxy-http --enable-proxy-ajp --enable-proxy-balancer --enable-rewrite
+注释：激活tomcat集群需要的 enable-proxy，enable-proxy-http，enable-proxy-connect，enable-proxy-ajp和enable-proxy-balancer，其中proxy-ajp和proxy-balancer必须依赖proxy，如果是自定义的编译除了以上几个必须的模块外，mod_status也要编译进去，切记。enable-proxy-ftp可以不编译。
+#make;make install
+ 
+制作Apache启动项：
+#cp support/apachectl /etc/rc.d/init.d/httpd
+#vi /etc/rc.d/init.d/httpd
+添加以下内容：（包括＃号）
+# Startup script for the Apache Web Server
+# chkconfig: 2345 85 15
+# description: Apache is a World Wide Web server .It is used to server
+# HTML files and CGI.
+# processname: httpd
+# pidfile: /usr/local/apache/log/httpd.pid
+# config: /usr/local/apache/conf/httpd.conf
+增加服务项
+#chkconfig --add httpd
+#chmod 755 /etc/rc.d/init.d/httpd
+#chkconfig --level 345 httpd on
+ 
+JDK安装：
+#chmod a+x jdk-6u4-linux-i586-rpm.bin
+#./jdk-6u4-linux-i586-rpm.bin
+ 
+JAVA环境变量设置：
+#vi /etc/profile
+在文件最后添加以下内容：
+JAVA_HOME=/usr/java/jdk1.7.0
+CLASSPATH=.:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar
+PATH=$JAVA_HOME/bin:$PATH
+CATALINA_HOME=/usr/local/tomcat
+export JAVA_HOME CLASSPATH PATH CATALINA_HOME 
+执行如下命令使环境变量生效：
+source /etc/profile
+测试配置是否成功：
+java –version
+ 
+Tomcat安装：
+#wget [url]http://apache.mirror.phpchina.com/tomcat/tomcat-6/v6.0.16/bin/apache-tomcat-6.0.16.tar.gz[/url]
+#tar zxvf apache-tomcat-6.0.16.tar.gz
+#mv apache-tomcat-6.0.16 /usr/local/tomcat
+ 
+Tomcat随机启动：
+#vi /etc/rc.local
+添加以下内容：
+/usr/local/tomcat/bin/startup.sh
+ 
+tomcat6配置文件server.xml：
+把
+<!-- You should set jvmRoute to support load-balancing via AJP ie :
+<Engine name="Standalone" defaultHost="localhost" jvmRoute="jvm1">
+-->
+<Engine name="Catalina" defaultHost="localhost">
+改成
+ 
+<!-- You should set jvmRoute to support load-balancing via AJP ie :
+-->
+<Engine name="Standalone" defaultHost="localhost" jvmRoute="tomcatX">
+<!-- 
+<Engine name="Catalina" defaultHost="localhost">
+-->
+说明：
+第一台tomcat就把jvmRoute="tomcat1"
+第二台tomcat就把jvmRoute="tomcat2"
+ 
+把
+<!--
+<Cluster className="org.apache.catalina.ha.tcp.SimpleTcpCluster"/>
+-->
+去掉注释变为
+<Cluster className="org.apache.catalina.ha.tcp.SimpleTcpCluster"/>
+***群集详细配置***
+<Cluster className="org.apache.catalina.ha.tcp.SimpleTcpCluster"
+channelSendOptions="8">
+ 
+<Manager className="org.apache.catalina.ha.session.DeltaManager"
+expireSessionsOnShutdown="false"
+notifyListenersOnReplication="true"/>
+ 
+<Channel className="org.apache.catalina.tribes.group.GroupChannel">
+<Membership className="org.apache.catalina.tribes.membership.McastService"
+address="228.0.0.4"
+port="45564"
+frequency="500"
+dropTime="3000"/>
+<Receiver className="org.apache.catalina.tribes.transport.nio.NioReceiver"
+address="auto"
+port="4000"
+autoBind="100"
+selectorTimeout="5000"
+maxThreads="6"/>
+ 
+<Sender className="org.apache.catalina.tribes.transport.ReplicationTransmitter">
+<Transport className="org.apache.catalina.tribes.transport.nio.PooledParallelSender"/>
+</Sender>
+<Interceptor className="org.apache.catalina.tribes.group.interceptors.TcpFailureDetector"/>
+<Interceptor className="org.apache.catalina.tribes.group.interceptors.MessageDispatch15Interceptor"/>
+</Channel>
+ 
+<Valve className="org.apache.catalina.ha.tcp.ReplicationValve"
+filter=""/>
+<Valve className="org.apache.catalina.ha.session.JvmRouteBinderValve"/>
+ 
+<Deployer className="org.apache.catalina.ha.deploy.FarmWarDeployer"
+tempDir="/tmp/war-temp/"
+deployDir="/tmp/war-deploy/"
+watchDir="/tmp/war-listen/"
+watchEnabled="false"/>
+ 
+<ClusterListener className="org.apache.catalina.ha.session.JvmRouteSessionIDBinderListener"/>
+<ClusterListener className="org.apache.catalina.ha.session.ClusterSessionListener"/>
+</Cluster>
+ 
+配置应用的web.xml：
+在每个webapps应用中,修改配置文件web.xml文件 添加元素<distributable/> 
+在web.xml文件中<web-app>元素下增加以下内容： 
+<!--此应用将与群集服务器复制Session--> 
+<distributable/> 
+具体修改如下: 
+修改前: 
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<web-app xmlns="[url]http://java.sun.com/xml/ns/javaee[/url]" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee [url]http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd[/url]" 
+version="2.5"> 
+</web-app> 
+修改后: 
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<web-app xmlns="[url]http://java.sun.com/xml/ns/javaee[/url]" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee [url]http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd[/url]" 
+version="2.5"> 
+<!--此应用将与群集服务器复制Session--> 
+<distributable/> 
+</web-app>
+配置apache的ajp负载均衡功能：
+确保将以下Module的注释去掉
+LoadModule proxy_module modules/mod_proxy.so 
+LoadModule proxy_connect_module modules/mod_proxy_connect.so 
+LoadModule proxy_ftp_module modules/mod_proxy_ftp.so 
+LoadModule proxy_http_module modules/mod_proxy_http.so 
+LoadModule proxy_ajp_module modules/mod_proxy_ajp.so 
+LoadModule proxy_balancer_module modules/mod_proxy_balancer.so 
+LoadModule status_module modules/mod_status.so
+增加以下内容：
+# Proxypass Config
+Include conf/extra/httpd-modproxy.conf
+建立文件httpd-modproxy.conf输入内容：
+<Location /server-status> 
+SetHandler server-status 
+Order Deny,Allow 
+Deny from all 
+Allow from all 
+</Location> 
+<Location /balancer-manager> 
+SetHandler balancer-manager 
+Order Deny,Allow 
+Deny from all 
+Allow from all 
+</Location> 
+ProxyRequests Off 
+ProxyPass / balancer://tomcatcluster stickysession=jsessionid nofailover=On
+ 
+<Proxy balancer://tomcatcluster> 
+BalancerMember [url]http://192.168.232.5:8080[/url] loadfactor=1 
+BalancerMember [url]http://192.168.232.6:8080[/url] loadfactor=2 
+</Proxy>
+注释：
+ProxyRequests Off 表示启用反向代理，必须开启； 
+ProxyPass为代理转发的Url,即将所有访问/的请求转发到群集balancer://tomcatcluster，这里为/即将所有访问/的请求转发到群集balancer://tomcatcluster的/test目录； 
+BalancerMember为群集的成员,即群集服务器1或2,负载均衡服务器会根据均衡规则来将请求转发给BalancerMember；
+ 
+调试负载均衡集群系统：
+访问apache服务器的web服务：[url]http://192.168.232.4/balancer-manager[/url]
+如果显示负载均衡有关信息则说明成功了，接着可以访问[url]http://192.168.232.4/[/url]即访问到了tomcat的应用
+***必须先启动Tomcat服务再启动Apache服务！***
+ 
+参考文档：
+[url]http://tomcat.apache.org/tomcat-6.0-doc/cluster-howto.html[/url] 
+[url]http://tomcat.apache.org/tomcat-6.0-doc/balancer-howto.html[/url] 
+[url]http://man.chinaunix.net/newsoft/ApacheMenual_CN_2.2new/mod/mod_proxy.html[/url] 
+[url]http://man.chinaunix.net/newsoft/ApacheMenual_CN_2.2new/mod/mod_proxy_balancer.html[/url]

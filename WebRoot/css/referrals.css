@@ -1,0 +1,345 @@
+.gray-1 {
+    color: #999;
+}
+
+.orange {
+    color: #F60;
+}
+
+.hidden {
+    display: none;
+}
+
+.W-left h4 i, .process li.p-1, .process li.p-2, .process li.p-3, .process li.p-4, .M126, .M163, .Mmsn, .Msohu, .Mgmail, .Msina, .Myahoo {
+    background: url(/Images/referrals_bg.png) no-repeat;
+}
+
+.referrals_box:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.referrals_box {
+    width: 980px;
+    margin: 0 auto 0;
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.W-left {
+    width: 700px;
+    padding: 19px;
+    border: 2px solid #FF9000;
+}
+
+.W-left h4 {
+    height: 40px;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.W-left h4 i {
+    background-position: 0 0;
+    width: 116px;
+    height: 32px;
+    display: block;
+}
+
+.W-left h4 a {
+    width: 116px;
+    height: 32px;
+    text-indent: -99999px;
+    display: block;
+}
+
+.wqyl {
+    width: 700px;
+    margin: 20px auto;
+    display: inline-block;
+}
+
+.wqylL, .wqylR {
+    padding: 10px 0;
+    border: 2px solid #ededed;
+    background: #f7f7f7;
+    width: 340px;
+    height: 115px;
+}
+
+.wqylL {
+    float: left;
+}
+
+.wqyl dl {
+    float: left;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #666;
+    line-height: 25px;
+}
+
+.wqyl dl h3 {
+    font-size: 18px;
+    color: #f60;
+    font-family: "微软雅黑";
+    margin-bottom: 15px;
+}
+
+.wqylR {
+    float: right;
+}
+
+.referrals_banner {
+    padding-bottom: 20px;
+}
+
+.referrals_banner li {
+    font-size: 0;
+    line-height: 0;
+}
+
+.login_reg {
+    height: 45px;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.login_reg a {
+    color: #2af;
+    text-decoration: underline;
+    margin: 0 5px;
+}
+
+.login_button {
+    text-align: center;
+}
+
+.login_button a, .login_button a:visited {
+    text-decoration: none;
+    width: 196px;
+    height: 45px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 45px;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    background: #f60;
+    border-radius: 3px;
+    margin-bottom: 145px;
+}
+
+.login_button a:hover {
+    color: #fff;
+}
+
+.reg-txt {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.reg-txt a {
+    color: #FF6500;
+    text-decoration: underline;
+}
+
+.W-right {
+    width: 227px;
+    border: 1px solid #E3E3E3;
+    color: #666;
+}
+
+.W-right h4 {
+    background-position: 0 -138px;
+    font-size: 14px;
+    font-weight: bold;
+    text-indent: 10px;
+    margin-top: 8px;
+    line-height: 30px;
+}
+
+.rig_con {
+    padding: 7px 7px 0;
+}
+
+.rig_con li {
+    border-top: 1px solid #f0f0f0;
+    padding: 15px 0;
+    line-height: 22px;
+}
+
+.rig_con li a {
+    color: #666;
+}
+
+.rig_con li a:hover {
+    color: #f60;
+}
+
+.rig_con h5 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.rig_con p {
+    font-weight: normal;
+}
+
+.rig_con li.none {
+    border: 0 solid #000;
+}
+
+.Invitation-t {
+    border-bottom: 1px solid #EDEDED;
+    font-size: 14px;
+    height: 25px;
+    font-weight: bold;
+    text-indent: 0.5em;
+}
+
+.fs14 {
+    font-size: 14px;
+    color: #666;
+}
+
+#bdshare a {
+    color: #929292;
+}
+
+.Invitation-C1 {
+    height: 160px;
+    border-bottom: 1px dashed #EDEDED;
+    padding-top: 25px;
+}
+
+.Invitation-C1 p {
+    padding-bottom: 15px;
+    color: #686868;
+}
+
+.Invitation-C1 .textarea {
+    width: 678px;
+    height: 50px;
+    padding: 5px 10px;
+    line-height: 22px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    color: #333;
+    background: #f7f7f7;
+    -moz-box-shadow: 1px 1px 1px #ddd inset;
+    -webkit-box-shadow: 1px 1px 1px #ddd inset;
+    box-shadow: 1px 1px 1px #ddd inset;
+}
+
+#btnCopy {
+    width: 91px;
+    height: 34px;
+    cursor: pointer;
+    font-size: 14px;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 7px;
+    background: #f60;
+}
+
+.Invitation-C2 {
+    height: 90px;
+    border-bottom: 1px dashed #EDEDED;
+    padding-top: 30px;
+}
+
+.Invitation-C2 p {
+    padding-bottom: 15px;
+}
+
+.Invitation-C3 {
+    height: 88px;
+    padding-top: 20px;
+}
+
+.Invitation-C3 p {
+    padding-bottom: 15px;
+}
+
+.Invitation-C3 li {
+    width: 88px;
+    float: left;
+    margin-right: 10px;
+}
+
+a.M126 {
+    width: 84px;
+    height: 32px;
+    display: block;
+    border: 1px solid #D9D9D9;
+    background-position: -10px -90px;
+}
+
+a.M163 {
+    width: 84px;
+    height: 32px;
+    display: block;
+    border: 1px solid #D9D9D9;
+    background-position: -106px -90px;
+}
+
+a.Mmsn {
+    width: 84px;
+    height: 32px;
+    display: block;
+    border: 1px solid #D9D9D9;
+    background-position: -202px -90px;
+}
+
+a.Msohu {
+    width: 84px;
+    height: 32px;
+    display: block;
+    border: 1px solid #D9D9D9;
+    background-position: -297px -90px;
+}
+
+a.Mgmail {
+    width: 84px;
+    height: 32px;
+    display: block;
+    border: 1px solid #D9D9D9;
+    background-position: -394px -90px;
+}
+
+a.Msina {
+    width: 84px;
+    height: 32px;
+    display: block;
+    border: 1px solid #D9D9D9;
+    background-position: -488px -90px;
+}
+
+a.Myahoo {
+    width: 84px;
+    height: 32px;
+    display: block;
+    border: 1px solid #D9D9D9;
+    background-position: -584px -90px;
+}
+
+a.M126:hover, a.M163:hover, a.Mmsn:hover, a.Msohu:hover, a.Mgmail:hover, a.Msina:hover, a.Myahoo:hover {
+    border: 1px solid #f60;
+}
